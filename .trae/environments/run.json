@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "defaultActionId": "build-debug-apk",
+  "actions": [
+    {
+      "id": "build-debug-apk",
+      "name": "Build Debug APK",
+      "command": "$props = Get-Content gradle.properties | ConvertFrom-StringData; $env:JAVA_HOME=$props.'unity.jdkPath'; $env:ANDROID_HOME=$props.'unity.androidSdkPath'; $env:ANDROID_SDK_ROOT=$env:ANDROID_HOME; $java=Join-Path $env:JAVA_HOME 'bin/java.exe'; $gradleLib=Join-Path (Split-Path $env:ANDROID_HOME) 'Tools/gradle/lib/*'; & $java -classpath $gradleLib org.gradle.launcher.GradleMain :launcher:assembleDebug --no-daemon",
+      "cwd": ".",
+      "background": false,
+      "source": "agent",
+      "open": {
+        "type": "terminal"
+      }
+    }
+  ]
+}

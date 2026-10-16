@@ -8,6 +8,8 @@
 
 # Generated Unity native symbols
 /unityLibrary/symbols/
+/unityLibrary/src/main/jniLibs/*/libil2cpp.so
+/unityLibrary/src/main/Il2CppOutputProject/Source/il2cppOutput/compile-data.json
 
 # Local configuration file (sdk path, etc)
 local.properties
