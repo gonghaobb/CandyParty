@@ -1331,6 +1331,10 @@ struct ReflectionProbeRefreshMode_tB0E2E262AF4202160FD065066BB6575EAF8911FC
 {
 	int32_t ___value__;
 };
+struct ReflectionProbeUsage_t033508C14CD4AD926A3A215D19913DC21EA22705 
+{
+	int32_t ___value__;
+};
 struct RenderBufferLoadAction_t3333B2CABABAC39DA0CDC25602E5E4FD93C2CB0E 
 {
 	int32_t ___value__;
@@ -9032,6 +9036,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RenderTargetBinding_get_flags_mEB4229
 		return L_0;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

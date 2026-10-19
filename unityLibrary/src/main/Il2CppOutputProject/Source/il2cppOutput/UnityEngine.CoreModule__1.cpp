@@ -69,6 +69,7 @@ struct RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A;
 struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
 struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
+struct TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24;
 struct TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB;
 struct UInt16U5BU5D_tEB7C42D811D999D2AA815BADC3FCCDD9C67B3F83;
 struct Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA;
@@ -123,6 +124,7 @@ struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4;
 struct Texture2DArray_t5ADB8D23A8AA2F2F3916F43852194B78E579E6BA;
 struct Texture3D_tDC30A0F19B6055086859D1ABC098D6E6762000E1;
 struct TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39;
+struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
 struct Type_t;
 struct UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B;
 struct UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF;
@@ -394,6 +396,7 @@ struct RenderBufferStoreActionU5BU5D_tFEA8F5DD460573EA9F35FBEC5727D1804C5DCBF5;
 struct RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A;
 struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
+struct TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24;
 struct UInt16U5BU5D_tEB7C42D811D999D2AA815BADC3FCCDD9C67B3F83;
 struct Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA;
 struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C;
@@ -1248,6 +1251,10 @@ struct LeakCategory_tE021F3E55FD2F61A7026FDC5A9069E1212A3B3F4
 {
 	int32_t ___value__;
 };
+struct LightProbeUsage_tC6292C7B7CBA0E5AA2A56F40D71F58A7E06C2948 
+{
+	int32_t ___value__;
+};
 struct LightShadowResolution_tA4E88BF65D850F34CC01860E921817FA81ADB268 
 {
 	int32_t ___value__;
@@ -1315,6 +1322,10 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
 {
 	intptr_t ___m_CachedPtr;
+};
+struct ReflectionProbeUsage_t033508C14CD4AD926A3A215D19913DC21EA22705 
+{
+	int32_t ___value__;
 };
 struct RenderBuffer_tBE7B342979EF2FA36E24C8A7F9242212F5B89551 
 {
@@ -1784,6 +1795,9 @@ struct Texture2DArray_t5ADB8D23A8AA2F2F3916F43852194B78E579E6BA  : public Textur
 {
 };
 struct Texture3D_tDC30A0F19B6055086859D1ABC098D6E6762000E1  : public Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700
+{
+};
+struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
 };
 struct ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129  : public ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263
@@ -2353,6 +2367,40 @@ struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248  : public RuntimeA
 		return m_Items + index;
 	}
 	inline void SetAtUnchecked(il2cpp_array_size_t index, String_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+struct TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* m_Items[1];
+
+	inline Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
@@ -2981,6 +3029,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_shadowCastingMode_Injected_
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_receiveShadows_Injected_m2ED62ABE91C4240722B1AB48A79D038357463F7B (intptr_t ___0__unity_self, bool ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_allowGPUDrivenRendering_Injected_m41FF8D864B0A346754562985AED01F58E522AA6D (intptr_t ___0__unity_self, bool ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_smallMeshCulling_Injected_m5E17296F2EB9E0643A02BFAF061834CE6DD0842A (intptr_t ___0__unity_self, bool ___1_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_lightProbeUsage_Injected_m985DE6329535BC62E745C1DDB5150127C7FBCE86 (intptr_t ___0__unity_self, int32_t ___1_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_reflectionProbeUsage_Injected_m7525BC5E190848107225E587E282A83742A25DB5 (intptr_t ___0__unity_self, int32_t ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Renderer_get_sortingLayerID_Injected_m24808EE68E09D48CA713CFD3746E0EC1CB7A8E07 (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_sortingLayerID_Injected_m2253EAC9C03A44E7943B6FADD663A60609BA6CE2 (intptr_t ___0__unity_self, int32_t ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Renderer_get_sortingOrder_Injected_mCC5C528F62043D4A3D095F64FBDEC5827D078E16 (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
@@ -3248,6 +3298,7 @@ inline intptr_t MarshalledUnityObject_MarshalNotNull_TisSkinnedMeshRenderer_t020
 {
 	return ((  intptr_t (*) (SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E*, const RuntimeMethod*))MarshalledUnityObject_MarshalNotNull_TisIl2CppSharedGenericObject_mCE897EC9A79983B4B1E6E2C8342452256309044A_gshared_inline)(___0_obj, method);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* SkinnedMeshRenderer_get_bones_Injected_m69929167B47EC9A846B67BDC85A89D063A6E9743 (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SkinnedMeshRenderer_GetBlendShapeWeight_Injected_mFE08215663E71BB7844E9DDED8FA23EA28D6AC8B (intptr_t ___0__unity_self, int32_t ___1_index, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkinnedMeshRenderer_SetBlendShapeWeight_Injected_m01002CFEF56D19146BF839CF9CED85C384E941E2 (intptr_t ___0__unity_self, int32_t ___1_index, float ___2_value, const RuntimeMethod* method) ;
 inline intptr_t MarshalledUnityObject_MarshalNotNull_TisLODGroup_tA4C4F98D3F698143BC7529146AB31A3D2EF24D9A_m31EF23D884C1EC6794052913E9FA6C2CCEB0226A_inline (LODGroup_tA4C4F98D3F698143BC7529146AB31A3D2EF24D9A* ___0_obj, const RuntimeMethod* method)
@@ -9187,6 +9238,64 @@ IL_000f:
 		return;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_lightProbeUsage_mDCCD970DAC3546B32EF58876BABBD3353624F703 (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	intptr_t G_B2_0;
+	memset((&G_B2_0), 0, sizeof(G_B2_0));
+	intptr_t G_B1_0;
+	memset((&G_B1_0), 0, sizeof(G_B1_0));
+	{
+		intptr_t L_0;
+		L_0 = MarshalledUnityObject_MarshalNotNull_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_mE24DBA5136B536DAFB5CECF6D193AEA90EFA51A0_inline(__this, NULL);
+		intptr_t L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000f;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		ThrowHelper_ThrowNullReferenceException_mA9C7629D32240EE0218631933DAC647668CA63CF(__this, NULL);
+		G_B2_0 = G_B1_0;
+	}
+
+IL_000f:
+	{
+		int32_t L_2 = ___0_value;
+		Renderer_set_lightProbeUsage_Injected_m985DE6329535BC62E745C1DDB5150127C7FBCE86(G_B2_0, L_2, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_reflectionProbeUsage_m54A268EACA655AC3C66C4CD7F8C1EF3B41F3E008 (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	intptr_t G_B2_0;
+	memset((&G_B2_0), 0, sizeof(G_B2_0));
+	intptr_t G_B1_0;
+	memset((&G_B1_0), 0, sizeof(G_B1_0));
+	{
+		intptr_t L_0;
+		L_0 = MarshalledUnityObject_MarshalNotNull_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_mE24DBA5136B536DAFB5CECF6D193AEA90EFA51A0_inline(__this, NULL);
+		intptr_t L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000f;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		ThrowHelper_ThrowNullReferenceException_mA9C7629D32240EE0218631933DAC647668CA63CF(__this, NULL);
+		G_B2_0 = G_B1_0;
+	}
+
+IL_000f:
+	{
+		int32_t L_2 = ___0_value;
+		Renderer_set_reflectionProbeUsage_Injected_m7525BC5E190848107225E587E282A83742A25DB5(G_B2_0, L_2, NULL);
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Renderer_get_sortingLayerID_m3D7AE74F1B87099810CF969CB4520C85F9AE5F92 (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* __this, const RuntimeMethod* method) 
 {
 	intptr_t G_B2_0;
@@ -9704,6 +9813,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_smallMeshCulling_Injected_m
 	static Renderer_set_smallMeshCulling_Injected_m5E17296F2EB9E0643A02BFAF061834CE6DD0842A_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Renderer_set_smallMeshCulling_Injected_m5E17296F2EB9E0643A02BFAF061834CE6DD0842A_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Renderer::set_smallMeshCulling_Injected(System.IntPtr,System.Boolean)");
+	_il2cpp_icall_func(___0__unity_self, ___1_value);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_lightProbeUsage_Injected_m985DE6329535BC62E745C1DDB5150127C7FBCE86 (intptr_t ___0__unity_self, int32_t ___1_value, const RuntimeMethod* method) 
+{
+	typedef void (*Renderer_set_lightProbeUsage_Injected_m985DE6329535BC62E745C1DDB5150127C7FBCE86_ftn) (intptr_t, int32_t);
+	static Renderer_set_lightProbeUsage_Injected_m985DE6329535BC62E745C1DDB5150127C7FBCE86_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Renderer_set_lightProbeUsage_Injected_m985DE6329535BC62E745C1DDB5150127C7FBCE86_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Renderer::set_lightProbeUsage_Injected(System.IntPtr,UnityEngine.Rendering.LightProbeUsage)");
+	_il2cpp_icall_func(___0__unity_self, ___1_value);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_reflectionProbeUsage_Injected_m7525BC5E190848107225E587E282A83742A25DB5 (intptr_t ___0__unity_self, int32_t ___1_value, const RuntimeMethod* method) 
+{
+	typedef void (*Renderer_set_reflectionProbeUsage_Injected_m7525BC5E190848107225E587E282A83742A25DB5_ftn) (intptr_t, int32_t);
+	static Renderer_set_reflectionProbeUsage_Injected_m7525BC5E190848107225E587E282A83742A25DB5_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Renderer_set_reflectionProbeUsage_Injected_m7525BC5E190848107225E587E282A83742A25DB5_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Renderer::set_reflectionProbeUsage_Injected(System.IntPtr,UnityEngine.Rendering.ReflectionProbeUsage)");
 	_il2cpp_icall_func(___0__unity_self, ___1_value);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Renderer_get_sortingLayerID_Injected_m24808EE68E09D48CA713CFD3746E0EC1CB7A8E07 (intptr_t ___0__unity_self, const RuntimeMethod* method) 
@@ -16748,6 +16873,35 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshFilter_set_mesh_Injected_mA168D4BD1E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* SkinnedMeshRenderer_get_bones_mEB62CD46E7CE5C0F682C29FD0E14188707F05F09 (SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E* __this, const RuntimeMethod* method) 
+{
+	intptr_t G_B2_0;
+	memset((&G_B2_0), 0, sizeof(G_B2_0));
+	intptr_t G_B1_0;
+	memset((&G_B1_0), 0, sizeof(G_B1_0));
+	{
+		intptr_t L_0;
+		L_0 = MarshalledUnityObject_MarshalNotNull_TisSkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E_mB8600C7C545122FCFB386BE7CCC6973714879BFF_inline(__this, NULL);
+		intptr_t L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000f;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		ThrowHelper_ThrowNullReferenceException_mA9C7629D32240EE0218631933DAC647668CA63CF(__this, NULL);
+		G_B2_0 = G_B1_0;
+	}
+
+IL_000f:
+	{
+		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_2;
+		L_2 = SkinnedMeshRenderer_get_bones_Injected_m69929167B47EC9A846B67BDC85A89D063A6E9743(G_B2_0, NULL);
+		return L_2;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SkinnedMeshRenderer_GetBlendShapeWeight_m8659C3960388D9B0EF2514CB0E0D9BD4B87E9A08 (SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E* __this, int32_t ___0_index, const RuntimeMethod* method) 
 {
 	intptr_t G_B2_0;
@@ -16814,6 +16968,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkinnedMeshRenderer__ctor_mC4A13A2CDC5B2
 		Renderer__ctor_m8B4EE9696B155A1B0A2CF13EBFC363CE175B9271(__this, NULL);
 		return;
 	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* SkinnedMeshRenderer_get_bones_Injected_m69929167B47EC9A846B67BDC85A89D063A6E9743 (intptr_t ___0__unity_self, const RuntimeMethod* method) 
+{
+	typedef TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* (*SkinnedMeshRenderer_get_bones_Injected_m69929167B47EC9A846B67BDC85A89D063A6E9743_ftn) (intptr_t);
+	static SkinnedMeshRenderer_get_bones_Injected_m69929167B47EC9A846B67BDC85A89D063A6E9743_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (SkinnedMeshRenderer_get_bones_Injected_m69929167B47EC9A846B67BDC85A89D063A6E9743_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SkinnedMeshRenderer::get_bones_Injected(System.IntPtr)");
+	TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* icallRetVal = _il2cpp_icall_func(___0__unity_self);
+	return icallRetVal;
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SkinnedMeshRenderer_GetBlendShapeWeight_Injected_mFE08215663E71BB7844E9DDED8FA23EA28D6AC8B (intptr_t ___0__unity_self, int32_t ___1_index, const RuntimeMethod* method) 
 {

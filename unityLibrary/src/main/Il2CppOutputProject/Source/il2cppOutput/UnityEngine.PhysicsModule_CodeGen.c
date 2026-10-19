@@ -98,6 +98,7 @@ extern void Physics_get_queriesHitTriggers_m786C7A820398456AEA1972FB9DF02D8E7ED6
 extern void Physics_get_invokeCollisionCallbacks_m73AE9C988EC57467D9B8699B376759D8E44133C8 (void);
 extern void Physics_get_defaultPhysicsScene_mC5D2BC20734D32FB421163F066BD5FB4118C633A (void);
 extern void Physics_IgnoreCollision_mA8E5C54299FC47921E41BF864C7C2214621595D6 (void);
+extern void Physics_IgnoreLayerCollision_mBB904E854512B9F1A4EFD4E23D61BF2D0E0AA879 (void);
 extern void Physics_GetIgnoreCollision_mDE42B19E92F4D749E111346E31B652A3A41915AB (void);
 extern void Physics_Raycast_mA782767AD4F149FBEA32C71460DFF061B7563688 (void);
 extern void Physics_Raycast_m56120FFEF0D4F0A44CCA505B5C946E6FB8742F12 (void);
@@ -282,7 +283,7 @@ extern void SphereCollider__ctor_mA8570CBE8C0E74C607669DC4E0CCA6CB1E4CB200 (void
 extern void SphereCollider_get_center_Injected_m092FEA1F41E394E8C2E25921DFD2A1425F8874E9 (void);
 extern void SphereCollider_get_radius_Injected_mF96901A391F7DBD16C5895D85C4853B65CD033A0 (void);
 extern void SphereCollider_set_radius_Injected_m1A4885A34095D7CE22CE2001BA6D47022F387747 (void);
-static Il2CppMethodPointer s_methodPointers[275] = 
+static Il2CppMethodPointer s_methodPointers[276] = 
 {
 	EmbeddedAttribute__ctor_m97DAFCB0D0AB5343C00A91C28E32BC2BB8949B37,
 	RefSafetyRulesAttribute__ctor_m8F1FAFFA7508731C7EA4C4138F035BDCBCE0DFED,
@@ -375,6 +376,7 @@ static Il2CppMethodPointer s_methodPointers[275] =
 	Physics_get_invokeCollisionCallbacks_m73AE9C988EC57467D9B8699B376759D8E44133C8,
 	Physics_get_defaultPhysicsScene_mC5D2BC20734D32FB421163F066BD5FB4118C633A,
 	Physics_IgnoreCollision_mA8E5C54299FC47921E41BF864C7C2214621595D6,
+	Physics_IgnoreLayerCollision_mBB904E854512B9F1A4EFD4E23D61BF2D0E0AA879,
 	Physics_GetIgnoreCollision_mDE42B19E92F4D749E111346E31B652A3A41915AB,
 	Physics_Raycast_mA782767AD4F149FBEA32C71460DFF061B7563688,
 	Physics_Raycast_m56120FFEF0D4F0A44CCA505B5C946E6FB8742F12,
@@ -566,16 +568,16 @@ extern void PhysicsScene_Equals_mE3A11329AB6C2F4F76D2321D8BAE52671A2EDDA3_Adjust
 extern void PhysicsScene_Equals_m81E4A78FC3644FDC44044B3A5F19F1C4283648A1_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[4] = 
 {
-	{ 0x060000B2, PhysicsScene_ToString_mA4E28A3068A823D16D96BBA45115A2C457FC57C7_AdjustorThunk },
-	{ 0x060000B4, PhysicsScene_GetHashCode_m368888FB861F994FADEEDD281BD02B090C561814_AdjustorThunk },
-	{ 0x060000B5, PhysicsScene_Equals_mE3A11329AB6C2F4F76D2321D8BAE52671A2EDDA3_AdjustorThunk },
-	{ 0x060000B6, PhysicsScene_Equals_m81E4A78FC3644FDC44044B3A5F19F1C4283648A1_AdjustorThunk },
+	{ 0x060000B3, PhysicsScene_ToString_mA4E28A3068A823D16D96BBA45115A2C457FC57C7_AdjustorThunk },
+	{ 0x060000B5, PhysicsScene_GetHashCode_m368888FB861F994FADEEDD281BD02B090C561814_AdjustorThunk },
+	{ 0x060000B6, PhysicsScene_Equals_mE3A11329AB6C2F4F76D2321D8BAE52671A2EDDA3_AdjustorThunk },
+	{ 0x060000B7, PhysicsScene_Equals_m81E4A78FC3644FDC44044B3A5F19F1C4283648A1_AdjustorThunk },
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_PhysicsModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_PhysicsModule_CodeGenModule = 
 {
 	"UnityEngine.PhysicsModule.dll",
-	275,
+	276,
 	s_methodPointers,
 	4,
 	s_adjustorThunks,

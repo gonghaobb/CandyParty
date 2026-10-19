@@ -82,6 +82,7 @@ struct ReadValueDelegate_tB77147F2FE0C4C8F6B861760C53AC667A6F2F8CC;
 struct ReadValueDelegate_t51560EFCFFDA4E2466A68CDA4C5E1CD393D6050E;
 struct ReadValueDelegate_tD3D3D0D91E1971AA5EDFF762D4E8B4687FFC65FA;
 struct ReadValueDelegate_t32E2746CF78F8AF1D87702FFBE6B29FF440D0BE6;
+struct ReadValueDelegate_tF3950EBA0BB9C8284760CAEC0FEEF01043548CC9;
 struct ReadValueDelegate_tE24B0F9F49321B27C541DEC9029CA808B100CD53;
 struct ReadValueDelegate_t5F6F1590F08FB0CF846A44A79465AAEDE1AEC3E3;
 struct ReadValueDelegate_tE547175D8F79A85429B7B598964AD215349D8AA4;
@@ -169,6 +170,7 @@ IL2CPP_EXTERN_C RuntimeClass* RowingProgressEntry_t3BA27C9184456A51ACBC156296221
 IL2CPP_EXTERN_C RuntimeClass* RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StringBuilder_t_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Type_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_il2cpp_TypeInfo_var;
@@ -2262,6 +2264,16 @@ struct RawData_t37CAF2D3F74B7723974ED7CEEE9B297D8FA64ED0_marshaled_com
 	intptr_t ___Count;
 	uint8_t ___Data;
 };
+struct TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___rotation;
+	int32_t ___state;
+	int32_t ___waypoint;
+	int32_t ___visible;
+	int32_t ___detected;
+	int32_t ___reprimandSeat;
+};
 struct HopPawnEntry_t47AA250F90984ADD7C3282787B94200CCFDEA02E 
 {
 	uint64_t ___clientId;
@@ -2825,6 +2837,9 @@ struct ReadValueDelegate_tD3D3D0D91E1971AA5EDFF762D4E8B4687FFC65FA  : public Mul
 {
 };
 struct ReadValueDelegate_t32E2746CF78F8AF1D87702FFBE6B29FF440D0BE6  : public MulticastDelegate_t
+{
+};
+struct ReadValueDelegate_tF3950EBA0BB9C8284760CAEC0FEEF01043548CC9  : public MulticastDelegate_t
 {
 };
 struct ReadValueDelegate_tE24B0F9F49321B27C541DEC9029CA808B100CD53  : public MulticastDelegate_t
@@ -14166,6 +14181,89 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ReadValueDelegate_BeginInvoke_
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___2_callback, (RuntimeObject*)___3_object);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadValueDelegate_EndInvoke_mE6820C040B5168D27BAC396F5B608104843ACEA6_fshared (ReadValueDelegate_t32E2746CF78F8AF1D87702FFBE6B29FF440D0BE6* __this, Il2CppFullySharedGenericAny* ___0_value, RuntimeObject* ___1_result, const RuntimeMethod* method) 
+{
+	void* ___out_args[] = {
+	___0_value,
+	};
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___1_result, ___out_args);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+void ReadValueDelegate_Invoke_mEADEB367C8DE4A64867DE1F6D3C2C22AC22C4E58_Multicast(ReadValueDelegate_tF3950EBA0BB9C8284760CAEC0FEEF01043548CC9* __this, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 ___0_reader, TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6* ___1_value, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		ReadValueDelegate_tF3950EBA0BB9C8284760CAEC0FEEF01043548CC9* currentDelegate = reinterpret_cast<ReadValueDelegate_tF3950EBA0BB9C8284760CAEC0FEEF01043548CC9*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99, TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6*, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl)((Il2CppObject*)currentDelegate->___method_code, ___0_reader, ___1_value, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method));
+	}
+}
+void ReadValueDelegate_Invoke_mEADEB367C8DE4A64867DE1F6D3C2C22AC22C4E58_OpenStatic(ReadValueDelegate_tF3950EBA0BB9C8284760CAEC0FEEF01043548CC9* __this, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 ___0_reader, TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6* ___1_value, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99, TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr)(___0_reader, ___1_value, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadValueDelegate__ctor_mFAADB1993A3A49D836EFE8EA039E42334DA9E18B (ReadValueDelegate_tF3950EBA0BB9C8284760CAEC0FEEF01043548CC9* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) 
+{
+	__this->___method_ptr = (intptr_t)il2cpp_codegen_get_direct_method_pointer((RuntimeMethod*)___1_method);
+	__this->___method = ___1_method;
+	__this->___m_target = ___0_object;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target), (void*)___0_object);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___1_method);
+	__this->___method_code = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___1_method))
+	{
+		bool isOpen = parameterCount == 2;
+		if (isOpen)
+		{
+			__this->___invoke_impl = (intptr_t)ReadValueDelegate_Invoke_mEADEB367C8DE4A64867DE1F6D3C2C22AC22C4E58_OpenStatic;
+		}
+		else
+		{
+			__this->___method_code = (intptr_t)__this->___m_target;
+			__this->___invoke_impl = (intptr_t)__this->___method_ptr;
+		}
+	}
+	else
+	{
+		if (___0_object == NULL)
+			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
+		if (il2cpp_codegen_class_is_value_type(il2cpp_codegen_object_get_class(__this->___m_target)))
+			__this->___method_code = (intptr_t)il2cpp_codegen_get_raw_data<void*>(__this->___m_target);
+		else
+			__this->___method_code = (intptr_t)__this->___m_target;
+		__this->___invoke_impl = (intptr_t)__this->___method_ptr;
+	}
+	__this->___extra_arg = (intptr_t)ReadValueDelegate_Invoke_mEADEB367C8DE4A64867DE1F6D3C2C22AC22C4E58_Multicast;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadValueDelegate_Invoke_mEADEB367C8DE4A64867DE1F6D3C2C22AC22C4E58 (ReadValueDelegate_tF3950EBA0BB9C8284760CAEC0FEEF01043548CC9* __this, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 ___0_reader, TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6* ___1_value, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99, TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_reader, ___1_value, reinterpret_cast<RuntimeMethod*>(__this->___method));
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ReadValueDelegate_BeginInvoke_mF4940CC029051CF15D1A135D6C38DC5091A6B628 (ReadValueDelegate_tF3950EBA0BB9C8284760CAEC0FEEF01043548CC9* __this, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 ___0_reader, TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6* ___1_value, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___2_callback, RuntimeObject* ___3_object, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[3] = {0};
+	__d_args[0] = Box(FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99_il2cpp_TypeInfo_var, &___0_reader);
+	__d_args[1] = Box(TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6_il2cpp_TypeInfo_var, &*___1_value);
+	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___2_callback, (RuntimeObject*)___3_object);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadValueDelegate_EndInvoke_m989F31E6C13D5B8DD6348272F14E5E2D2C069B3B (ReadValueDelegate_tF3950EBA0BB9C8284760CAEC0FEEF01043548CC9* __this, TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6* ___0_value, RuntimeObject* ___1_result, const RuntimeMethod* method) 
 {
 	void* ___out_args[] = {
 	___0_value,

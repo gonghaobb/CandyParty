@@ -802,6 +802,7 @@ struct Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4;
 struct MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5;
 struct MeshQueue_t26B4E176CCC12C4B59FB67D25E0926EA697E4FC8;
 struct MethodInfo_t;
+struct NetworkLayerWrapper_t6D78DE474098851EC3C82A6085753A4BF1ADC5F8;
 struct NetworkPipelineStage_tEF17CBE5C7F718292F2E9F3E51D727D672A0400E;
 struct NetworkPipelineStageId_tBE4FAE81AD1922E0BEEDBC611342E3B0A7B5ECCA;
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
@@ -2419,6 +2420,14 @@ struct Iterator_1_t336734ECDA49CADE59B5C4592466F45D9B9DC43E  : public RuntimeObj
 	int32_t ___state;
 	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___current;
 };
+struct UnsafeList_1_t82F42318A0459C3699EAFEFFF8A8BA3D3A098E33 
+{
+	NetworkLayerWrapper_t6D78DE474098851EC3C82A6085753A4BF1ADC5F8* ___Ptr;
+	int32_t ___m_length;
+	int32_t ___m_capacity;
+	AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 ___Allocator;
+	int32_t ___padding;
+};
 struct UnsafeList_1_t663E4C6332C30AD19F05EF986ECCEDC60B61CF52 
 {
 	NetworkPipelineStage_tEF17CBE5C7F718292F2E9F3E51D727D672A0400E* ___Ptr;
@@ -3079,6 +3088,10 @@ struct InteractableFocusMode_tD8F528B65B8FA0E9C71F8A7BCABD7F99BA5982CB
 struct InteractableSelectMode_tEEBF3D8EB75149E3417BDA4C0BC6A1C27BB25AC7 
 {
 	int32_t ___value__;
+};
+struct ManagedCallWrapper_t3B4797EF1A8280564B8EE82F05363C6A1CEA4C8E 
+{
+	intptr_t ___m_WrappedFunctionPtr;
 };
 struct MeshChangeState_t4CCBA82867A78CD1241B037198571A5365D7910C 
 {
@@ -5388,6 +5401,14 @@ struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvo
 struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
 {
 	Delegate_t_marshaled_com** ___delegates;
+};
+struct NetworkLayerWrapper_t6D78DE474098851EC3C82A6085753A4BF1ADC5F8 
+{
+	void* ___m_RawLayerData;
+	int64_t ___m_TypeHash;
+	ManagedCallWrapper_t3B4797EF1A8280564B8EE82F05363C6A1CEA4C8E ___m_Dispose_FPtr;
+	ManagedCallWrapper_t3B4797EF1A8280564B8EE82F05363C6A1CEA4C8E ___m_ScheduleReceive_FPtr;
+	ManagedCallWrapper_t3B4797EF1A8280564B8EE82F05363C6A1CEA4C8E ___m_ScheduleSend_FPtr;
 };
 struct PassData_t88911D47229A306D70A3F6A7D3B2FC8FF12F8BAD 
 {
@@ -8296,11 +8317,12 @@ struct JsonValueU5BU5D_tCC9BDCF1DE43F923B72BEF6FE9AB4FBAEF445DB3  : public Runti
 };
 
 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeList_1_get_Capacity_m163371206E2F39354C1DF26C807700F2FDF08C8B_fshared_inline (UnsafeList_1_t3A26A222433F7993EC942046A500D6EA3DCB97E6* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeList_1_ResizeExact_TisAllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148_m326288034CB8E2FC8BE1B333B5990839993ED6BE (UnsafeList_1_t82F42318A0459C3699EAFEFFF8A8BA3D3A098E33* __this, AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148* ___0_allocator, int32_t ___1_newCapacity, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnsafeList_1_t663E4C6332C30AD19F05EF986ECCEDC60B61CF52* AllocatorManager_Allocate_TisAllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148_TisUnsafeList_1_t663E4C6332C30AD19F05EF986ECCEDC60B61CF52_mC164FE84BF01D1F2BFDF3EAD2B0BC971E9CFE089 (AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148* ___0_t, UnsafeList_1_t663E4C6332C30AD19F05EF986ECCEDC60B61CF52 ___1_u, int32_t ___2_items, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeList_1__ctor_m4A371D8FBF125801DC6BD8DB623BB6200B178723 (UnsafeList_1_t663E4C6332C30AD19F05EF986ECCEDC60B61CF52* __this, int32_t ___0_initialCapacity, AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 ___1_allocator, int32_t ___2_options, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtility_AlignOf_TisNetworkPipelineStage_tEF17CBE5C7F718292F2E9F3E51D727D672A0400E_m3148C64AD42D6EC6EF46B17488F830682421B414_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* AllocatorManager_Allocate_TisAllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148_m43A019819F71A8FEF183CDF7F4ADB85CD94BE5AB (AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148* ___0_t, int32_t ___1_sizeOf, int32_t ___2_alignOf, int32_t ___3_items, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeList_1_get_Capacity_m163371206E2F39354C1DF26C807700F2FDF08C8B_fshared_inline (UnsafeList_1_t3A26A222433F7993EC942046A500D6EA3DCB97E6* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AllocatorManager_Free_TisAllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148_TisNetworkPipelineStage_tEF17CBE5C7F718292F2E9F3E51D727D672A0400E_m6A29F83B458262AB5CA1D03355DA2AE6CD0AB83C (AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148* ___0_t, NetworkPipelineStage_tEF17CBE5C7F718292F2E9F3E51D727D672A0400E* ___1_pointer, int32_t ___2_items, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeList_1_ResizeExact_TisAllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148_m468EC1403BBA13FFE488FC4BA41D3DBA14F6D04E (UnsafeList_1_t663E4C6332C30AD19F05EF986ECCEDC60B61CF52* __this, AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148* ___0_allocator, int32_t ___1_newCapacity, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnsafeList_1_t3B699AD7B2AAAB1ECC45766BCC7D8994E28DF28D* AllocatorManager_Allocate_TisAllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148_TisUnsafeList_1_t3B699AD7B2AAAB1ECC45766BCC7D8994E28DF28D_mBC0DC23E9AA948AF8E155B96D08BF2983EB5F196 (AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148* ___0_t, UnsafeList_1_t3B699AD7B2AAAB1ECC45766BCC7D8994E28DF28D ___1_u, int32_t ___2_items, const RuntimeMethod* method) ;
@@ -9204,10 +9226,17 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtilityInternal_Siz
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtilityInternal_SizeOf_TisAlignOfHelper_1_t8AB7E847361CE006A7E9FFF8628C6BBCD41ACEC2_m9BB4CAE0E238FD7091F7BA8AC3AAD586CF6B50CC_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtilityInternal_SizeOf_TisSendTarget_tAD1A6A2A5769AE7D57910A8DA4F258B09A45F653_m0827C5E14D394FC42B15A46309F90FB69EF0B3A3_inline (const RuntimeMethod* method) ;
 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t math_max_m5EE58D9462EC2A39BDE97B0C27BB14CF4A0DB651_inline (int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int64_t math_ceilpow2_m8691C3C194B41660E1FB2E694F7D209BE60DDCC7_inline (int64_t ___0_x, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int64_t math_min_m6674C357E84B2452F6CB1C0E4DE6156C6BDEFA2F_inline (int64_t ___0_x, int64_t ___1_y, const RuntimeMethod* method) ;
+inline int32_t UnsafeList_1_get_Capacity_m14844256DAE23002ED0568AF82FD99854ED67960_inline (UnsafeList_1_t82F42318A0459C3699EAFEFFF8A8BA3D3A098E33* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (UnsafeList_1_t82F42318A0459C3699EAFEFFF8A8BA3D3A098E33*, const RuntimeMethod*))UnsafeList_1_get_Capacity_m163371206E2F39354C1DF26C807700F2FDF08C8B_fshared_inline)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeList_1_ResizeExact_TisAllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148_m326288034CB8E2FC8BE1B333B5990839993ED6BE (UnsafeList_1_t82F42318A0459C3699EAFEFFF8A8BA3D3A098E33* __this, AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148* ___0_allocator, int32_t ___1_newCapacity, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnsafeList_1_t663E4C6332C30AD19F05EF986ECCEDC60B61CF52* AllocatorManager_Allocate_TisAllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148_TisUnsafeList_1_t663E4C6332C30AD19F05EF986ECCEDC60B61CF52_mC164FE84BF01D1F2BFDF3EAD2B0BC971E9CFE089 (AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148* ___0_t, UnsafeList_1_t663E4C6332C30AD19F05EF986ECCEDC60B61CF52 ___1_u, int32_t ___2_items, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 AllocatorHandle_get_Handle_m440EA9B9A4306115087775DA2AA0AC034107D0E2 (AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeList_1__ctor_m4A371D8FBF125801DC6BD8DB623BB6200B178723 (UnsafeList_1_t663E4C6332C30AD19F05EF986ECCEDC60B61CF52* __this, int32_t ___0_initialCapacity, AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 ___1_allocator, int32_t ___2_options, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t math_max_m5EE58D9462EC2A39BDE97B0C27BB14CF4A0DB651_inline (int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtility_AlignOf_TisNetworkPipelineStage_tEF17CBE5C7F718292F2E9F3E51D727D672A0400E_m3148C64AD42D6EC6EF46B17488F830682421B414_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* AllocatorManager_Allocate_TisAllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148_m43A019819F71A8FEF183CDF7F4ADB85CD94BE5AB (AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148* ___0_t, int32_t ___1_sizeOf, int32_t ___2_alignOf, int32_t ___3_items, const RuntimeMethod* method) ;
 inline int32_t UnsafeList_1_get_Capacity_m21F9E972EBE15AF0C8A334F5B1D83591CDEEB299_inline (UnsafeList_1_t663E4C6332C30AD19F05EF986ECCEDC60B61CF52* __this, const RuntimeMethod* method)
@@ -9217,8 +9246,6 @@ inline int32_t UnsafeList_1_get_Capacity_m21F9E972EBE15AF0C8A334F5B1D83591CDEEB2
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t math_min_m0D183243301588F5000801E35B451374CD10DFC1_inline (int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeUtility_MemCpy_m5CEA91ACDADC522E584AE3A2AB2B0B74393A9177 (void* ___0_destination, void* ___1_source, int64_t ___2_size, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AllocatorManager_Free_TisAllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148_TisNetworkPipelineStage_tEF17CBE5C7F718292F2E9F3E51D727D672A0400E_m6A29F83B458262AB5CA1D03355DA2AE6CD0AB83C (AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148* ___0_t, NetworkPipelineStage_tEF17CBE5C7F718292F2E9F3E51D727D672A0400E* ___1_pointer, int32_t ___2_items, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int64_t math_ceilpow2_m8691C3C194B41660E1FB2E694F7D209BE60DDCC7_inline (int64_t ___0_x, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int64_t math_min_m6674C357E84B2452F6CB1C0E4DE6156C6BDEFA2F_inline (int64_t ___0_x, int64_t ___1_y, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeList_1_ResizeExact_TisAllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148_m468EC1403BBA13FFE488FC4BA41D3DBA14F6D04E (UnsafeList_1_t663E4C6332C30AD19F05EF986ECCEDC60B61CF52* __this, AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148* ___0_allocator, int32_t ___1_newCapacity, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnsafeList_1_t3B699AD7B2AAAB1ECC45766BCC7D8994E28DF28D* AllocatorManager_Allocate_TisAllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148_TisUnsafeList_1_t3B699AD7B2AAAB1ECC45766BCC7D8994E28DF28D_mBC0DC23E9AA948AF8E155B96D08BF2983EB5F196 (AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148* ___0_t, UnsafeList_1_t3B699AD7B2AAAB1ECC45766BCC7D8994E28DF28D ___1_u, int32_t ___2_items, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeList_1__ctor_m86E4864813B8094052CBF040A31D5A8A317FB205 (UnsafeList_1_t3B699AD7B2AAAB1ECC45766BCC7D8994E28DF28D* __this, int32_t ___0_initialCapacity, AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 ___1_allocator, int32_t ___2_options, const RuntimeMethod* method) ;
@@ -11274,8 +11301,8 @@ inline bool NativeArray_1_get_IsCreated_m74801BC75EFFE1FB8815613CAC0CB2DDB4AD936
 	return ((  bool (*) (NativeArray_1_t1ABEAB84724CAEAFCB8767B8502FD3185AC9CAD0*, const RuntimeMethod*))NativeArray_1_get_IsCreated_m527A2C3B75C25BFF29D1D9EA88C81172FF4F5A5A_fshared_inline)(__this, method);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeArray_1_Dispose_m80961963BF541F388F0067D545B948EDAEA543AE (NativeArray_1_t1ABEAB84724CAEAFCB8767B8502FD3185AC9CAD0* __this, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtilityInternal_AlignOf_TisNetworkPipelineStage_tEF17CBE5C7F718292F2E9F3E51D727D672A0400E_m1AEB44D0CBF267AF9E0F9DD506426527C43EF0A1_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t CollectionHelper_AssumePositive_mD1EC1F05F50F605141D9BA5D70C4332AC902B4B1_inline (int32_t ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtilityInternal_AlignOf_TisNetworkPipelineStage_tEF17CBE5C7F718292F2E9F3E51D727D672A0400E_m1AEB44D0CBF267AF9E0F9DD506426527C43EF0A1_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtilityInternal_AlignOf_TisNetworkPipelineStageId_tBE4FAE81AD1922E0BEEDBC611342E3B0A7B5ECCA_mAE9BA81BD2A0A25AAF82728B7BDD349DF051EF8A_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtilityInternal_AlignOf_TisPassData_t88911D47229A306D70A3F6A7D3B2FC8FF12F8BAD_mA24A3213CA30BB87BE6CDB3296B5468B7E6D34EC_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtilityInternal_AlignOf_TisPassFragmentData_t67D0B4EC16AF3DBC4233CC7537B93A27C78BFA8C_mFB44487C0EE49EFA2E7CA1CF7AE3842BD66C1857_inline (const RuntimeMethod* method) ;
@@ -11428,6 +11455,50 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtilityInternal_Siz
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtilityInternal_SizeOf_TisPendingSend_tC3CE84554C44A80712A3DA2E69BD887F0300440E_m7EAF3575ACC46BACB66B42D439272D276BA42CB9_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtilityInternal_SizeOf_TisAlignOfHelper_1_t8AB7E847361CE006A7E9FFF8628C6BBCD41ACEC2_m9BB4CAE0E238FD7091F7BA8AC3AAD586CF6B50CC_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtilityInternal_SizeOf_TisSendTarget_tAD1A6A2A5769AE7D57910A8DA4F258B09A45F653_m0827C5E14D394FC42B15A46309F90FB69EF0B3A3_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeList_1_SetCapacity_TisAllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148_m0438AEE11BAE369B58CE12E36468A0260FBE5E1D (UnsafeList_1_t82F42318A0459C3699EAFEFFF8A8BA3D3A098E33* __this, AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148* ___0_allocator, int32_t ___1_capacity, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	int64_t V_2 = 0;
+	{
+		uint32_t L_0 = sizeof(NetworkLayerWrapper_t6D78DE474098851EC3C82A6085753A4BF1ADC5F8);
+		V_0 = (int32_t)L_0;
+		int32_t L_1 = ___1_capacity;
+		int32_t L_2 = V_0;
+		int32_t L_3;
+		L_3 = math_max_m5EE58D9462EC2A39BDE97B0C27BB14CF4A0DB651_inline(L_1, ((int32_t)(((int32_t)64)/L_2)), NULL);
+		V_1 = L_3;
+		int32_t L_4 = V_1;
+		int64_t L_5 = (il2cpp_codegen_conv<int64_t,int32_t,int32_t,false,false>(L_4,NULL));
+		int64_t L_6;
+		L_6 = math_ceilpow2_m8691C3C194B41660E1FB2E694F7D209BE60DDCC7_inline(L_5, NULL);
+		V_2 = L_6;
+		int64_t L_7 = (il2cpp_codegen_conv<int64_t,int32_t,int32_t,false,false>(((int32_t)2147483647LL),NULL));
+		int64_t L_8 = V_2;
+		int64_t L_9;
+		L_9 = math_min_m6674C357E84B2452F6CB1C0E4DE6156C6BDEFA2F_inline(L_7, L_8, NULL);
+		int32_t L_10 = (il2cpp_codegen_conv<int32_t,int64_t,int64_t,false,false>(L_9,NULL));
+		V_1 = L_10;
+		int32_t L_11 = V_1;
+		int32_t L_12;
+		L_12 = UnsafeList_1_get_Capacity_m14844256DAE23002ED0568AF82FD99854ED67960_inline(__this, NULL);
+		if ((!(((uint32_t)L_11) == ((uint32_t)L_12))))
+		{
+			goto IL_0032;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0032:
+	{
+		AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148* L_13 = ___0_allocator;
+		int32_t L_14 = V_1;
+		UnsafeList_1_ResizeExact_TisAllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148_m326288034CB8E2FC8BE1B333B5990839993ED6BE(__this, L_13, L_14, NULL);
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnsafeList_1_t663E4C6332C30AD19F05EF986ECCEDC60B61CF52* UnsafeList_1_Create_TisAllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148_mEC4C77FC8F300BDC2978C85A4B4515C69E3CB717 (int32_t ___0_initialCapacity, AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148* ___1_allocator, int32_t ___2_options, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27465,75 +27536,12 @@ IL_0048:
 		return L_11;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18 ARRaycastManager_CombineNativeArraysAndDispose_TisIl2CppFullySharedGenericStruct_mB85D3269F2E42060F21E268FE98F515EAE383274_fshared (ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* __this, NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18 ___0_first, NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18 ___1_second, int32_t ___2_allocator, const RuntimeMethod* method) 
-{
-	il2cpp_rgctx_method_init(method);
-	NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18 V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		int32_t L_0;
-		L_0 = ((  int32_t (*) (NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)))((&___0_first), NULL);
-		int32_t L_1;
-		L_1 = ((  int32_t (*) (NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)))((&___1_second), NULL);
-		int32_t L_2 = ___2_allocator;
-		((  void (*) (NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18*, int32_t, int32_t, int32_t, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 1)))((&V_0), ((int32_t)il2cpp_codegen_add(L_0, L_1)), L_2, 1, il2cpp_rgctx_method(method->rgctx_data, 1));
-		NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18 L_3 = ___0_first;
-		NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18 L_4 = V_0;
-		int32_t L_5;
-		L_5 = ((  int32_t (*) (NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)))((&___0_first), NULL);
-		((  void (*) (NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18, int32_t, NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18, int32_t, int32_t, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 2)))(L_3, 0, L_4, 0, L_5, il2cpp_rgctx_method(method->rgctx_data, 2));
-		int32_t L_6;
-		L_6 = ((  int32_t (*) (NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)))((&___1_second), NULL);
-		if ((((int32_t)L_6) <= ((int32_t)0)))
-		{
-			goto IL_0048;
-		}
-	}
-	{
-		NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18 L_7 = ___1_second;
-		NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18 L_8 = V_0;
-		int32_t L_9;
-		L_9 = ((  int32_t (*) (NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)))((&___0_first), NULL);
-		int32_t L_10;
-		L_10 = ((  int32_t (*) (NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)))((&___1_second), NULL);
-		((  void (*) (NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18, int32_t, NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18, int32_t, int32_t, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 2)))(L_7, 0, L_8, L_9, L_10, il2cpp_rgctx_method(method->rgctx_data, 2));
-	}
-
-IL_0048:
-	{
-		((  void (*) (NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 3)))((&___0_first), il2cpp_rgctx_method(method->rgctx_data, 3));
-		((  void (*) (NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 3)))((&___1_second), il2cpp_rgctx_method(method->rgctx_data, 3));
-		NativeArray_1_tDB8B8DC66CC8E16ED6D9A8C75D2C1AFC80AC1E18 L_11 = V_0;
-		return L_11;
-	}
-}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t math_max_m5EE58D9462EC2A39BDE97B0C27BB14CF4A0DB651_inline (int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = ___0_x;
 		int32_t L_1 = ___1_y;
 		if ((((int32_t)L_0) > ((int32_t)L_1)))
-		{
-			goto IL_0006;
-		}
-	}
-	{
-		int32_t L_2 = ___1_y;
-		return L_2;
-	}
-
-IL_0006:
-	{
-		int32_t L_3 = ___0_x;
-		return L_3;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t math_min_m0D183243301588F5000801E35B451374CD10DFC1_inline (int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) 
-{
-	{
-		int32_t L_0 = ___0_x;
-		int32_t L_1 = ___1_y;
-		if ((((int32_t)L_0) < ((int32_t)L_1)))
 		{
 			goto IL_0006;
 		}
@@ -27599,6 +27607,27 @@ IL_0006:
 		return L_3;
 	}
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t math_min_m0D183243301588F5000801E35B451374CD10DFC1_inline (int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_x;
+		int32_t L_1 = ___1_y;
+		if ((((int32_t)L_0) < ((int32_t)L_1)))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		int32_t L_2 = ___1_y;
+		return L_2;
+	}
+
+IL_0006:
+	{
+		int32_t L_3 = ___0_x;
+		return L_3;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t DragGesture_get_fingerId_mC062E0D10340EA92C1082C0BCEEA948255C7BF34_inline (DragGesture_tF1E1F57E706E0CA095772FA1580A5FD1B182CCAD* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27655,14 +27684,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t TwoFingerDragGesture_get_
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtility_AlignOf_TisNetworkPipelineStage_tEF17CBE5C7F718292F2E9F3E51D727D672A0400E_m3148C64AD42D6EC6EF46B17488F830682421B414_inline (const RuntimeMethod* method) 
-{
-	{
-		int32_t L_0;
-		L_0 = UnsafeUtilityInternal_AlignOf_TisNetworkPipelineStage_tEF17CBE5C7F718292F2E9F3E51D727D672A0400E_m1AEB44D0CBF267AF9E0F9DD506426527C43EF0A1_inline(NULL);
-		return L_0;
-	}
-}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeList_1_get_Capacity_m163371206E2F39354C1DF26C807700F2FDF08C8B_fshared_inline (UnsafeList_1_t3A26A222433F7993EC942046A500D6EA3DCB97E6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27670,6 +27691,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeList_1_get_Capacity
 		int32_t L_1;
 		L_1 = CollectionHelper_AssumePositive_mD1EC1F05F50F605141D9BA5D70C4332AC902B4B1_inline(L_0, NULL);
 		return L_1;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtility_AlignOf_TisNetworkPipelineStage_tEF17CBE5C7F718292F2E9F3E51D727D672A0400E_m3148C64AD42D6EC6EF46B17488F830682421B414_inline (const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0;
+		L_0 = UnsafeUtilityInternal_AlignOf_TisNetworkPipelineStage_tEF17CBE5C7F718292F2E9F3E51D727D672A0400E_m1AEB44D0CBF267AF9E0F9DD506426527C43EF0A1_inline(NULL);
+		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtility_AlignOf_TisNetworkPipelineStageId_tBE4FAE81AD1922E0BEEDBC611342E3B0A7B5ECCA_m9FA6AD9B1729C23E3AC2F3958E8C1D4F9293B2D9_inline (const RuntimeMethod* method) 

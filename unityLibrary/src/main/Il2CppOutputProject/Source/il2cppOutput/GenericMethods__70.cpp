@@ -169,6 +169,235 @@ inline uint16_t* UnsafeUtilityInternal_As_TisUInt16_tF4C148C876015C212FD72652D0B
 {
 	return ((  uint16_t* (*) (uint16_t*, const RuntimeMethod*))UnsafeUtilityInternal_As_TisIl2CppFullySharedGenericAny_TisIl2CppFullySharedGenericAny_mE1CA751887466B801BE69083C2B0EA3EDE41FF9B_fshared_inline)(___0_from, method);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t PrimitivesConverters_DoConvert_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_mB7E4DEC5C704A3115C6BA8E74DACD24D8E23BEDF (double* ___0_source, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	uint8_t V_1 = 0x0;
+	Il2CppChar V_2 = 0x0;
+	int16_t V_3 = 0;
+	int32_t V_4 = 0;
+	int64_t V_5 = 0;
+	int8_t V_6 = 0x0;
+	float V_7 = 0.0f;
+	String_t* V_8 = NULL;
+	uint16_t V_9 = 0;
+	uint32_t V_10 = 0;
+	uint64_t V_11 = 0;
+	{
+		goto IL_0039;
+	}
+
+IL_0039:
+	{
+		goto IL_0065;
+	}
+
+IL_0065:
+	{
+		goto IL_0091;
+	}
+
+IL_0091:
+	{
+		goto IL_00b8;
+	}
+
+IL_00b8:
+	{
+		goto IL_00e4;
+	}
+
+IL_00e4:
+	{
+		goto IL_0111;
+	}
+
+IL_0111:
+	{
+	}
+	{
+		double* L_0 = ___0_source;
+		double L_1 = *(L_0);
+		int64_t L_2 = (il2cpp_codegen_conv<int64_t,double,double,false,false>(L_1,NULL));
+		V_5 = L_2;
+		int64_t* L_3;
+		L_3 = UnsafeUtility_As_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_mF07903F5A6A3374E9178699AE4D414931863B517_inline((&V_5), NULL);
+		int64_t L_4 = (*(int64_t*)L_3);
+		return L_4;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t PrimitivesConverters_DoConvert_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_mD621A4499A852576FB68C637CF904CD897E15F44 (int16_t* ___0_source, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	uint8_t V_1 = 0x0;
+	Il2CppChar V_2 = 0x0;
+	double V_3 = 0.0;
+	int32_t V_4 = 0;
+	int64_t V_5 = 0;
+	int8_t V_6 = 0x0;
+	float V_7 = 0.0f;
+	String_t* V_8 = NULL;
+	uint16_t V_9 = 0;
+	uint32_t V_10 = 0;
+	uint64_t V_11 = 0;
+	{
+		goto IL_002e;
+	}
+
+IL_002e:
+	{
+		goto IL_005a;
+	}
+
+IL_005a:
+	{
+		goto IL_0086;
+	}
+
+IL_0086:
+	{
+		goto IL_00b2;
+	}
+
+IL_00b2:
+	{
+		goto IL_00d9;
+	}
+
+IL_00d9:
+	{
+		goto IL_0105;
+	}
+
+IL_0105:
+	{
+	}
+	{
+		int16_t* L_0 = ___0_source;
+		int32_t L_1 = ((int32_t)*(L_0));
+		int64_t L_2 = (il2cpp_codegen_conv<int64_t,int32_t,int32_t,false,false>(L_1,NULL));
+		V_5 = L_2;
+		int64_t* L_3;
+		L_3 = UnsafeUtility_As_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_mF07903F5A6A3374E9178699AE4D414931863B517_inline((&V_5), NULL);
+		int64_t L_4 = (*(int64_t*)L_3);
+		return L_4;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t PrimitivesConverters_DoConvert_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_m0C25E0C8A8B7292CFC9041169EBB4A589C3FC909 (int32_t* ___0_source, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	uint8_t V_1 = 0x0;
+	Il2CppChar V_2 = 0x0;
+	double V_3 = 0.0;
+	int16_t V_4 = 0;
+	int32_t V_5 = 0;
+	int64_t V_6 = 0;
+	int8_t V_7 = 0x0;
+	float V_8 = 0.0f;
+	String_t* V_9 = NULL;
+	uint16_t V_10 = 0;
+	uint32_t V_11 = 0;
+	uint64_t V_12 = 0;
+	{
+		goto IL_002e;
+	}
+
+IL_002e:
+	{
+		goto IL_005a;
+	}
+
+IL_005a:
+	{
+		goto IL_0086;
+	}
+
+IL_0086:
+	{
+		goto IL_00b2;
+	}
+
+IL_00b2:
+	{
+		goto IL_00df;
+	}
+
+IL_00df:
+	{
+		goto IL_010b;
+	}
+
+IL_010b:
+	{
+	}
+	{
+		int32_t* L_0 = ___0_source;
+		int32_t L_1 = *(L_0);
+		int64_t L_2 = (il2cpp_codegen_conv<int64_t,int32_t,int32_t,false,false>(L_1,NULL));
+		V_6 = L_2;
+		int64_t* L_3;
+		L_3 = UnsafeUtility_As_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_mF07903F5A6A3374E9178699AE4D414931863B517_inline((&V_6), NULL);
+		int64_t L_4 = (*(int64_t*)L_3);
+		return L_4;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t PrimitivesConverters_DoConvert_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_m4D5552BBE4F4FC164E418513FD41C80A2FD5C092 (int64_t* ___0_source, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	uint8_t V_1 = 0x0;
+	Il2CppChar V_2 = 0x0;
+	double V_3 = 0.0;
+	int16_t V_4 = 0;
+	int32_t V_5 = 0;
+	int64_t V_6 = 0;
+	int8_t V_7 = 0x0;
+	float V_8 = 0.0f;
+	String_t* V_9 = NULL;
+	uint16_t V_10 = 0;
+	uint32_t V_11 = 0;
+	uint64_t V_12 = 0;
+	{
+		goto IL_002f;
+	}
+
+IL_002f:
+	{
+		goto IL_005b;
+	}
+
+IL_005b:
+	{
+		goto IL_0087;
+	}
+
+IL_0087:
+	{
+		goto IL_00b3;
+	}
+
+IL_00b3:
+	{
+		goto IL_00e0;
+	}
+
+IL_00e0:
+	{
+		goto IL_010d;
+	}
+
+IL_010d:
+	{
+	}
+	{
+		int64_t* L_0 = ___0_source;
+		int64_t L_1 = *(L_0);
+		V_6 = L_1;
+		int64_t* L_2;
+		L_2 = UnsafeUtility_As_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_mF07903F5A6A3374E9178699AE4D414931863B517_inline((&V_6), NULL);
+		int64_t L_3 = (*(int64_t*)L_2);
+		return L_3;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t PrimitivesConverters_DoConvert_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_m7617262D39184305AD10A16164A7282DB737C977 (int8_t* ___0_source, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -2803,318 +3032,6 @@ IL_01c1:
 		V_9 = L_2;
 		uint16_t* L_3;
 		L_3 = UnsafeUtility_As_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_m54C065C9E0AB49A3A0486D989FA86B6E9D8BF4F0_inline((&V_9), NULL);
-		uint16_t L_4 = (*(uint16_t*)L_3);
-		return L_4;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t PrimitivesConverters_DoConvert_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_m636C825DA7C5732E62B94D9B2D2F272B84A84891 (int32_t* ___0_source, const RuntimeMethod* method) 
-{
-	bool V_0 = false;
-	uint8_t V_1 = 0x0;
-	Il2CppChar V_2 = 0x0;
-	double V_3 = 0.0;
-	int16_t V_4 = 0;
-	int32_t V_5 = 0;
-	int64_t V_6 = 0;
-	int8_t V_7 = 0x0;
-	float V_8 = 0.0f;
-	String_t* V_9 = NULL;
-	uint16_t V_10 = 0;
-	uint32_t V_11 = 0;
-	uint64_t V_12 = 0;
-	{
-		goto IL_002e;
-	}
-
-IL_002e:
-	{
-		goto IL_005a;
-	}
-
-IL_005a:
-	{
-		goto IL_0086;
-	}
-
-IL_0086:
-	{
-		goto IL_00b2;
-	}
-
-IL_00b2:
-	{
-		goto IL_00df;
-	}
-
-IL_00df:
-	{
-		goto IL_010b;
-	}
-
-IL_010b:
-	{
-		goto IL_0138;
-	}
-
-IL_0138:
-	{
-		goto IL_0165;
-	}
-
-IL_0165:
-	{
-		goto IL_0192;
-	}
-
-IL_0192:
-	{
-		goto IL_01c7;
-	}
-
-IL_01c7:
-	{
-	}
-	{
-		int32_t* L_0 = ___0_source;
-		int32_t L_1 = *(L_0);
-		uint16_t L_2 = (il2cpp_codegen_conv<uint16_t,int32_t,int32_t,false,false>(L_1,NULL));
-		V_10 = L_2;
-		uint16_t* L_3;
-		L_3 = UnsafeUtility_As_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_m54C065C9E0AB49A3A0486D989FA86B6E9D8BF4F0_inline((&V_10), NULL);
-		uint16_t L_4 = (*(uint16_t*)L_3);
-		return L_4;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t PrimitivesConverters_DoConvert_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_m422AAA369FC33085EB86DEDE75934CBE667C4E7D (int64_t* ___0_source, const RuntimeMethod* method) 
-{
-	bool V_0 = false;
-	uint8_t V_1 = 0x0;
-	Il2CppChar V_2 = 0x0;
-	double V_3 = 0.0;
-	int16_t V_4 = 0;
-	int32_t V_5 = 0;
-	int64_t V_6 = 0;
-	int8_t V_7 = 0x0;
-	float V_8 = 0.0f;
-	String_t* V_9 = NULL;
-	uint16_t V_10 = 0;
-	uint32_t V_11 = 0;
-	uint64_t V_12 = 0;
-	{
-		goto IL_002f;
-	}
-
-IL_002f:
-	{
-		goto IL_005b;
-	}
-
-IL_005b:
-	{
-		goto IL_0087;
-	}
-
-IL_0087:
-	{
-		goto IL_00b3;
-	}
-
-IL_00b3:
-	{
-		goto IL_00e0;
-	}
-
-IL_00e0:
-	{
-		goto IL_010d;
-	}
-
-IL_010d:
-	{
-		goto IL_0139;
-	}
-
-IL_0139:
-	{
-		goto IL_0166;
-	}
-
-IL_0166:
-	{
-		goto IL_0193;
-	}
-
-IL_0193:
-	{
-		goto IL_01c8;
-	}
-
-IL_01c8:
-	{
-	}
-	{
-		int64_t* L_0 = ___0_source;
-		int64_t L_1 = *(L_0);
-		uint16_t L_2 = (il2cpp_codegen_conv<uint16_t,int64_t,int64_t,false,false>(L_1,NULL));
-		V_10 = L_2;
-		uint16_t* L_3;
-		L_3 = UnsafeUtility_As_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_m54C065C9E0AB49A3A0486D989FA86B6E9D8BF4F0_inline((&V_10), NULL);
-		uint16_t L_4 = (*(uint16_t*)L_3);
-		return L_4;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t PrimitivesConverters_DoConvert_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_mA3B5FF14D1BF46934494B1A188CB70CFCF49BF9B (int8_t* ___0_source, const RuntimeMethod* method) 
-{
-	bool V_0 = false;
-	uint8_t V_1 = 0x0;
-	Il2CppChar V_2 = 0x0;
-	double V_3 = 0.0;
-	int16_t V_4 = 0;
-	int32_t V_5 = 0;
-	int64_t V_6 = 0;
-	int8_t V_7 = 0x0;
-	float V_8 = 0.0f;
-	String_t* V_9 = NULL;
-	uint16_t V_10 = 0;
-	uint32_t V_11 = 0;
-	uint64_t V_12 = 0;
-	{
-		goto IL_002e;
-	}
-
-IL_002e:
-	{
-		goto IL_005a;
-	}
-
-IL_005a:
-	{
-		goto IL_0086;
-	}
-
-IL_0086:
-	{
-		goto IL_00b2;
-	}
-
-IL_00b2:
-	{
-		goto IL_00de;
-	}
-
-IL_00de:
-	{
-		goto IL_010a;
-	}
-
-IL_010a:
-	{
-		goto IL_0137;
-	}
-
-IL_0137:
-	{
-		goto IL_0163;
-	}
-
-IL_0163:
-	{
-		goto IL_0190;
-	}
-
-IL_0190:
-	{
-		goto IL_01c5;
-	}
-
-IL_01c5:
-	{
-	}
-	{
-		int8_t* L_0 = ___0_source;
-		int32_t L_1 = ((int32_t)*(L_0));
-		uint16_t L_2 = (il2cpp_codegen_conv<uint16_t,int32_t,int32_t,false,false>(L_1,NULL));
-		V_10 = L_2;
-		uint16_t* L_3;
-		L_3 = UnsafeUtility_As_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_m54C065C9E0AB49A3A0486D989FA86B6E9D8BF4F0_inline((&V_10), NULL);
-		uint16_t L_4 = (*(uint16_t*)L_3);
-		return L_4;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t PrimitivesConverters_DoConvert_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_mC823AB5CF6977429790AB4E8E49DAC6D343CE665 (float* ___0_source, const RuntimeMethod* method) 
-{
-	bool V_0 = false;
-	uint8_t V_1 = 0x0;
-	Il2CppChar V_2 = 0x0;
-	double V_3 = 0.0;
-	int16_t V_4 = 0;
-	int32_t V_5 = 0;
-	int64_t V_6 = 0;
-	int8_t V_7 = 0x0;
-	float V_8 = 0.0f;
-	String_t* V_9 = NULL;
-	uint16_t V_10 = 0;
-	uint32_t V_11 = 0;
-	uint64_t V_12 = 0;
-	{
-		goto IL_0035;
-	}
-
-IL_0035:
-	{
-		goto IL_0061;
-	}
-
-IL_0061:
-	{
-		goto IL_008d;
-	}
-
-IL_008d:
-	{
-		goto IL_00b9;
-	}
-
-IL_00b9:
-	{
-		goto IL_00e6;
-	}
-
-IL_00e6:
-	{
-		goto IL_0113;
-	}
-
-IL_0113:
-	{
-		goto IL_0140;
-	}
-
-IL_0140:
-	{
-		goto IL_016d;
-	}
-
-IL_016d:
-	{
-		goto IL_0199;
-	}
-
-IL_0199:
-	{
-		goto IL_01ce;
-	}
-
-IL_01ce:
-	{
-	}
-	{
-		float* L_0 = ___0_source;
-		float L_1 = *(L_0);
-		uint16_t L_2 = (il2cpp_codegen_conv<uint16_t,float,float,false,false>(L_1,NULL));
-		V_10 = L_2;
-		uint16_t* L_3;
-		L_3 = UnsafeUtility_As_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_m54C065C9E0AB49A3A0486D989FA86B6E9D8BF4F0_inline((&V_10), NULL);
 		uint16_t L_4 = (*(uint16_t*)L_3);
 		return L_4;
 	}

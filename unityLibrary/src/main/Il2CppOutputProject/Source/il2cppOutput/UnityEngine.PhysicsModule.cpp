@@ -3484,6 +3484,14 @@ IL_0047:
 		return;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_IgnoreLayerCollision_mBB904E854512B9F1A4EFD4E23D61BF2D0E0AA879 (int32_t ___0_layer1, int32_t ___1_layer2, bool ___2_ignore, const RuntimeMethod* method) 
+{
+	typedef void (*Physics_IgnoreLayerCollision_mBB904E854512B9F1A4EFD4E23D61BF2D0E0AA879_ftn) (int32_t, int32_t, bool);
+	static Physics_IgnoreLayerCollision_mBB904E854512B9F1A4EFD4E23D61BF2D0E0AA879_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Physics_IgnoreLayerCollision_mBB904E854512B9F1A4EFD4E23D61BF2D0E0AA879_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Physics::IgnoreLayerCollision(System.Int32,System.Int32,System.Boolean)");
+	_il2cpp_icall_func(___0_layer1, ___1_layer2, ___2_ignore);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_GetIgnoreCollision_mDE42B19E92F4D749E111346E31B652A3A41915AB (Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_collider1, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___1_collider2, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;

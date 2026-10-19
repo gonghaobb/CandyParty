@@ -33,6 +33,7 @@ struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA;
 struct Delegate_t;
 struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
 struct EmbeddedAttribute_t2889D9D2292799BA0731C937FD29E78FB88B75E5;
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
 struct InvalidCastException_t47FC62F21A3937E814D20381DDACEF240E95AC2E;
 struct InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB;
@@ -72,8 +73,10 @@ IL2CPP_EXTERN_C String_t* _stringLiteral98C704D69BD1A288ED31DEE4ED4E50097A2D7018
 IL2CPP_EXTERN_C String_t* _stringLiteralA3C8FF345EC45846B2EE6801F84DD49340F0A9E1;
 IL2CPP_EXTERN_C String_t* _stringLiteralBF563F6FCC25CE41FFE0BF7590AF9F4475916665;
 IL2CPP_EXTERN_C String_t* _stringLiteralD2435BFAEB0372E848D9BE812E3B06AB862CC3D1;
+IL2CPP_EXTERN_C String_t* _stringLiteralD5F2B3561CFA951FF37495C4B6AE6DB436EC2259;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 IL2CPP_EXTERN_C String_t* _stringLiteralE066D08B565F88D413FDACA14C42BFF008FF4EB9;
+IL2CPP_EXTERN_C String_t* _stringLiteralE84A3B2CB16AF20654B162562A7360C9FC00FD54;
 IL2CPP_EXTERN_C String_t* _stringLiteralF5510C45DDAD777CCB4893578D995C9739F990F2;
 IL2CPP_EXTERN_C const RuntimeMethod* AnimationLayerMixerPlayable__ctor_m28884B8B9F7E057DF947E3B43ED78EA107368BD6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AnimationMixerPlayable__ctor_mBF84CC064549C2C00B2AE1174018335958EB7EA7_RuntimeMethod_var;
@@ -494,6 +497,10 @@ struct TrackedReference_tF35FF4FB6E89ACD81C24469FAF0CA6FFF29262A2_marshaled_com
 {
 	intptr_t ___m_Ptr;
 };
+struct WrapMode_t6C6EABC32662DF078C3C977196618603C2F3A079 
+{
+	int32_t ___value__;
+};
 struct ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 
 {
 	ByReference_1_t7BA5A6CA164F770BC688F21C5978D368716465F5 ____pointer;
@@ -631,6 +638,9 @@ struct AvatarMask_tC1D777FFB77C952502ECF6D80FAFAD16B27B02AF  : public Object_tC1
 {
 };
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
 {
 };
 struct HumanBone_t9A978BB2457E935D0B6FA64ADDE60562ADAE5FD8 
@@ -867,6 +877,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR intptr_t MarshalledUnityObject_Ma
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppFullySharedGenericAny* ReadOnlySpan_1_GetPinnableReference_m9D6823661F0B12D72F4403789EFBE9FB85F765B0_fshared (ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ReadOnlySpan_1_get_Length_m4430960CA0D0458B1A1106DD246CA9AB746B5DB2_fshared_inline (ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Il2CppSharedGenericObject* MarshalledUnityObject_Unmarshal_TisIl2CppSharedGenericObject_mDFF812844C3A315BA334E9FD102E4EE28E2847B1_gshared_inline (intptr_t ___0_gcHandlePtr, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR intptr_t MarshalledUnityObject_Marshal_TisIl2CppSharedGenericObject_m35CB06885EF5600EDBB840B54EDAF3A806896DBB_gshared_inline (Il2CppSharedGenericObject* ___0_obj, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableHandle_IsPlayableOfType_TisAnimationLayerMixerPlayable_tAD8D28A1E2FB76567E9748CDD11699AEF0B4317D_m23764EE36FE7A81A245C7146FF1E9DF6530DA321 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableHandle_IsPlayableOfType_TisAnimationMixerPlayable_t2984697B87B8719A34519FCF2130545D6D7AB6C0_m644E76378CB4DDC0CE669FE1DCE8A8917595D0ED (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableHandle_IsPlayableOfType_TisAnimationMotionXToDeltaPlayable_t3946605ADB0B4C054A27B3D65A59F8EB75B6BE18_mE6DAD58415B04EE79FD34641B365283758722ABF (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, const RuntimeMethod* method) ;
@@ -885,12 +896,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC8
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnimationEvent__ctor_mBC954085B1D18B436D08E7ADE3458B91E208F3B2 (AnimationEvent_t77294DB2372A5C387B53EEA3EFDC550C75EC3174* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Motion__ctor_mB6190858E566BFA1B80D2E94B65CD27920A49443 (Motion_tBCD49FBF5608AD21FC03B63C8182FABCEF2707AC* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnimationClip_Internal_CreateAnimationClip_m1410C35D6386CEA1F068C9314751D0F6A7D34789 (AnimationClip_t00BD2F131D308A4AD2C6B0BF66644FC25FECE712* ___0_self, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AnimationClip_get_wrapMode_m7D79D3FE7785D25ECCD8C16ADF289654E9BCAC97 (AnimationClip_t00BD2F131D308A4AD2C6B0BF66644FC25FECE712* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnimationClip_SampleAnimation_m1707BCA02475EBB318BA0F12C857CF5503C30904 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_go, AnimationClip_t00BD2F131D308A4AD2C6B0BF66644FC25FECE712* ___1_clip, float ___2_inTime, int32_t ___3_wrapMode, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleThrowHelper_ThrowArgumentNullException_m7F2DC9C17105429BA3367C6956EA28B7DB7A4D58 (RuntimeObject* ___0_obj, String_t* ___1_parameterName, const RuntimeMethod* method) ;
+inline intptr_t MarshalledUnityObject_MarshalNotNull_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m0278A52AA1F06089A078ACF3134B3847F1EC2A2F_inline (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_obj, const RuntimeMethod* method)
+{
+	return ((  intptr_t (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))MarshalledUnityObject_MarshalNotNull_TisIl2CppSharedGenericObject_mCE897EC9A79983B4B1E6E2C8342452256309044A_gshared_inline)(___0_obj, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThrowHelper_ThrowArgumentNullException_m57232D0804E4F65D1C0D86129C5BFD0DC950CA01 (RuntimeObject* ___0_obj, String_t* ___1_parameterName, const RuntimeMethod* method) ;
 inline intptr_t MarshalledUnityObject_MarshalNotNull_TisAnimationClip_t00BD2F131D308A4AD2C6B0BF66644FC25FECE712_mDC0A34FC0A90466D5697136EE3804B8650035D54_inline (AnimationClip_t00BD2F131D308A4AD2C6B0BF66644FC25FECE712* ___0_obj, const RuntimeMethod* method)
 {
 	return ((  intptr_t (*) (AnimationClip_t00BD2F131D308A4AD2C6B0BF66644FC25FECE712*, const RuntimeMethod*))MarshalledUnityObject_MarshalNotNull_TisIl2CppSharedGenericObject_mCE897EC9A79983B4B1E6E2C8342452256309044A_gshared_inline)(___0_obj, method);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnimationClip_SampleAnimation_Injected_m5F95A13A6E5F5380964F97966E4D816AA72E2C7F (intptr_t ___0_go, intptr_t ___1_clip, float ___2_inTime, int32_t ___3_wrapMode, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThrowHelper_ThrowNullReferenceException_mA9C7629D32240EE0218631933DAC647668CA63CF (RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AnimationClip_get_length_Injected_m2E05F6F38757B2001AE2EC9DEA65F63127E6BB85 (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AnimationClip_get_wrapMode_Injected_mFD07BF2A75E72B7141437794C22876F597CFA38E (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Animator_StringToHash_mD67B872C411BE37641F49D7AA1DBD45B67F63E3A (String_t* ___0_name, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Animator_GetFloatID_m0300DB1901B65F007EA9E0E98ACB91E105FDD366 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, int32_t ___0_id, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetFloatID_m348942A23D4C734DDF4D04C7609E5CD9EBAB66AA (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, int32_t ___0_id, float ___1_value, const RuntimeMethod* method) ;
@@ -931,6 +952,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_GetAnimatorTransitionInfo_m9338
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Animator_IsInTransition_Injected_m757CE2468B95386E7DEA0F6552C953061B440126 (intptr_t ___0__unity_self, int32_t ___1_layerIndex, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnimatorControllerParameterU5BU5D_tAB05125F5DC0D98F59351CD7D8C9880DFFA8EA21* Animator_get_parameters_Injected_m5A40D91306A3DA0BD2C2B139B8BE6DC9E706FA07 (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_set_speed_Injected_mE41FA1AC5C2BF3CE474839EFEA07590E5C381EF8 (intptr_t ___0__unity_self, float ___1_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_CrossFadeInFixedTime_m93D7442691AF96BD416878312D71B8EBD248340D (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, int32_t ___0_stateHashName, float ___1_fixedTransitionDuration, int32_t ___2_layer, float ___3_fixedTimeOffset, float ___4_normalizedTransitionTime, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_CrossFadeInFixedTime_Injected_mF4649073C4B9E93A6DDF4C7FF02D9E4B74D02E11 (intptr_t ___0__unity_self, int32_t ___1_stateHashName, float ___2_fixedTransitionDuration, int32_t ___3_layer, float ___4_fixedTimeOffset, float ___5_normalizedTransitionTime, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_CrossFade_Injected_m7564E04CFD2CC6ADACAACEFA46E49328DA51541D (intptr_t ___0__unity_self, int32_t ___1_stateHashName, float ___2_normalizedTransitionDuration, int32_t ___3_layer, float ___4_normalizedTimeOffset, float ___5_normalizedTransitionTime, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_CrossFade_m34D1F0B5D8E14FC3D685D91D412ACA3F69F16186 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, int32_t ___0_stateHashName, float ___1_normalizedTransitionDuration, int32_t ___2_layer, float ___3_normalizedTimeOffset, float ___4_normalizedTransitionTime, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_Play_m5565F093F0752D4DD9B451686F71C7A8F23F6744 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, String_t* ___0_stateName, int32_t ___1_layer, float ___2_normalizedTime, const RuntimeMethod* method) ;
@@ -942,6 +965,11 @@ inline RuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254* Mars
 {
 	return ((  RuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254* (*) (intptr_t, const RuntimeMethod*))MarshalledUnityObject_Unmarshal_TisIl2CppSharedGenericObject_mDFF812844C3A315BA334E9FD102E4EE28E2847B1_gshared_inline)(___0_gcHandlePtr, method);
 }
+inline intptr_t MarshalledUnityObject_Marshal_TisRuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254_m0FFB53BC39C5CFA7D5261A8AFC8AC842916B57D3_inline (RuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254* ___0_obj, const RuntimeMethod* method)
+{
+	return ((  intptr_t (*) (RuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254*, const RuntimeMethod*))MarshalledUnityObject_Marshal_TisIl2CppSharedGenericObject_m35CB06885EF5600EDBB840B54EDAF3A806896DBB_gshared_inline)(___0_obj, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_set_runtimeAnimatorController_Injected_m1C56BDD292525ED865B90276871BB466D1EB711F (intptr_t ___0__unity_self, intptr_t ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Animator_get_hasBoundPlayables_Injected_mD45F2A48DBD6AC97C94C15BE92005D6BDE362054 (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Animator_HasState_Injected_m433572E75ECE578014A9DBD44C808835E12E019C (intptr_t ___0__unity_self, int32_t ___1_layerIndex, int32_t ___2_stateID, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Animator_StringToHash_Injected_m14E872CA09303B188D45717861E9B74F652B6DC9 (ManagedSpanWrapper_tE5AE0420F9CEEE99A6586A5D9E7E73C92BC01455* ___0_name, const RuntimeMethod* method) ;
@@ -1019,6 +1047,10 @@ inline void ReadOnlySpan_1__ctor_m0152E50B40750679B83FF9F30CA539FFBB98EEE8_inlin
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool IntPtr_op_Equality_m7D9CDCDE9DC2A0C2C614633F4921E90187FAB271_inline (intptr_t ___0_value1, intptr_t ___1_value2, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC MarshalledUnityObject_FromIntPtrUnsafe_m1C5AE0FB7CD1978A8387B0081DB909BAAC2324C3_inline (intptr_t ___0_gcHandle, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* GCHandle_get_Target_m481F9508DA5E384D33CD1F4450060DC56BBD4CD5_inline (GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC* __this, const RuntimeMethod* method) ;
+inline intptr_t MarshalledUnityObject_MarshalNotNull_TisIl2CppSharedGenericObject_mCE897EC9A79983B4B1E6E2C8342452256309044A_inline (Il2CppSharedGenericObject* ___0_obj, const RuntimeMethod* method)
+{
+	return ((  intptr_t (*) (Il2CppSharedGenericObject*, const RuntimeMethod*))MarshalledUnityObject_MarshalNotNull_TisIl2CppSharedGenericObject_mCE897EC9A79983B4B1E6E2C8342452256309044A_gshared_inline)(___0_obj, method);
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC* UnsafeUtility_As_TisIntPtr_t_TisGCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC_mD94F597CB91662C823496DA9FA9A7CF908734A78_inline (intptr_t* ___0_from, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool GCHandle_get_IsAllocated_m241908103D8D867E11CCAB73C918729825E86843_inline (GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool GCHandle_CanDereferenceHandle_mAAAC42D1268CEF3FDD040A3D1574773D08140579_inline (intptr_t ___0_handle, const RuntimeMethod* method) ;
@@ -1400,6 +1432,112 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnimationClip_Internal_CreateAnimationCl
 	_il2cpp_icall_func = (AnimationClip_Internal_CreateAnimationClip_m1410C35D6386CEA1F068C9314751D0F6A7D34789_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AnimationClip::Internal_CreateAnimationClip(UnityEngine.AnimationClip)");
 	_il2cpp_icall_func(___0_self);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnimationClip_SampleAnimation_mD9BD020CC922D1E818D0C2163D543CF7BBAF6488 (AnimationClip_t00BD2F131D308A4AD2C6B0BF66644FC25FECE712* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_go, float ___1_time, const RuntimeMethod* method) 
+{
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___0_go;
+		float L_1 = ___1_time;
+		int32_t L_2;
+		L_2 = AnimationClip_get_wrapMode_m7D79D3FE7785D25ECCD8C16ADF289654E9BCAC97(__this, NULL);
+		AnimationClip_SampleAnimation_m1707BCA02475EBB318BA0F12C857CF5503C30904(L_0, __this, L_1, L_2, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnimationClip_SampleAnimation_m1707BCA02475EBB318BA0F12C857CF5503C30904 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_go, AnimationClip_t00BD2F131D308A4AD2C6B0BF66644FC25FECE712* ___1_clip, float ___2_inTime, int32_t ___3_wrapMode, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD5F2B3561CFA951FF37495C4B6AE6DB436EC2259);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE84A3B2CB16AF20654B162562A7360C9FC00FD54);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t G_B6_0;
+	memset((&G_B6_0), 0, sizeof(G_B6_0));
+	intptr_t G_B5_0;
+	memset((&G_B5_0), 0, sizeof(G_B5_0));
+	intptr_t G_B8_0;
+	memset((&G_B8_0), 0, sizeof(G_B8_0));
+	intptr_t G_B8_1;
+	memset((&G_B8_1), 0, sizeof(G_B8_1));
+	intptr_t G_B7_0;
+	memset((&G_B7_0), 0, sizeof(G_B7_0));
+	intptr_t G_B7_1;
+	memset((&G_B7_1), 0, sizeof(G_B7_1));
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___0_go;
+		if (L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = ___0_go;
+		SimpleThrowHelper_ThrowArgumentNullException_m7F2DC9C17105429BA3367C6956EA28B7DB7A4D58(L_1, _stringLiteralE84A3B2CB16AF20654B162562A7360C9FC00FD54, NULL);
+	}
+
+IL_000e:
+	{
+		AnimationClip_t00BD2F131D308A4AD2C6B0BF66644FC25FECE712* L_2 = ___1_clip;
+		if (L_2)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		AnimationClip_t00BD2F131D308A4AD2C6B0BF66644FC25FECE712* L_3 = ___1_clip;
+		SimpleThrowHelper_ThrowArgumentNullException_m7F2DC9C17105429BA3367C6956EA28B7DB7A4D58(L_3, _stringLiteralD5F2B3561CFA951FF37495C4B6AE6DB436EC2259, NULL);
+	}
+
+IL_001d:
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = ___0_go;
+		intptr_t L_5;
+		L_5 = MarshalledUnityObject_MarshalNotNull_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m0278A52AA1F06089A078ACF3134B3847F1EC2A2F_inline(L_4, NULL);
+		intptr_t L_6 = L_5;
+		if (L_6)
+		{
+			G_B6_0 = L_6;
+			goto IL_0032;
+		}
+		G_B5_0 = L_6;
+	}
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = ___0_go;
+		ThrowHelper_ThrowArgumentNullException_m57232D0804E4F65D1C0D86129C5BFD0DC950CA01(L_7, _stringLiteralE84A3B2CB16AF20654B162562A7360C9FC00FD54, NULL);
+		G_B6_0 = G_B5_0;
+	}
+
+IL_0032:
+	{
+		AnimationClip_t00BD2F131D308A4AD2C6B0BF66644FC25FECE712* L_8 = ___1_clip;
+		intptr_t L_9;
+		L_9 = MarshalledUnityObject_MarshalNotNull_TisAnimationClip_t00BD2F131D308A4AD2C6B0BF66644FC25FECE712_mDC0A34FC0A90466D5697136EE3804B8650035D54_inline(L_8, NULL);
+		intptr_t L_10 = L_9;
+		if (L_10)
+		{
+			G_B8_0 = L_10;
+			G_B8_1 = G_B6_0;
+			goto IL_0047;
+		}
+		G_B7_0 = L_10;
+		G_B7_1 = G_B6_0;
+	}
+	{
+		AnimationClip_t00BD2F131D308A4AD2C6B0BF66644FC25FECE712* L_11 = ___1_clip;
+		ThrowHelper_ThrowArgumentNullException_m57232D0804E4F65D1C0D86129C5BFD0DC950CA01(L_11, _stringLiteralD5F2B3561CFA951FF37495C4B6AE6DB436EC2259, NULL);
+		G_B8_0 = G_B7_0;
+		G_B8_1 = G_B7_1;
+	}
+
+IL_0047:
+	{
+		float L_12 = ___2_inTime;
+		int32_t L_13 = ___3_wrapMode;
+		AnimationClip_SampleAnimation_Injected_m5F95A13A6E5F5380964F97966E4D816AA72E2C7F(G_B8_1, G_B8_0, L_12, L_13, NULL);
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AnimationClip_get_length_mAD91A1C134662285F26886489AC2D8E0EC79AF41 (AnimationClip_t00BD2F131D308A4AD2C6B0BF66644FC25FECE712* __this, const RuntimeMethod* method) 
 {
 	intptr_t G_B2_0;
@@ -1429,6 +1567,43 @@ IL_000f:
 		return L_2;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AnimationClip_get_wrapMode_m7D79D3FE7785D25ECCD8C16ADF289654E9BCAC97 (AnimationClip_t00BD2F131D308A4AD2C6B0BF66644FC25FECE712* __this, const RuntimeMethod* method) 
+{
+	intptr_t G_B2_0;
+	memset((&G_B2_0), 0, sizeof(G_B2_0));
+	intptr_t G_B1_0;
+	memset((&G_B1_0), 0, sizeof(G_B1_0));
+	{
+		intptr_t L_0;
+		L_0 = MarshalledUnityObject_MarshalNotNull_TisAnimationClip_t00BD2F131D308A4AD2C6B0BF66644FC25FECE712_mDC0A34FC0A90466D5697136EE3804B8650035D54_inline(__this, NULL);
+		intptr_t L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000f;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		ThrowHelper_ThrowNullReferenceException_mA9C7629D32240EE0218631933DAC647668CA63CF(__this, NULL);
+		G_B2_0 = G_B1_0;
+	}
+
+IL_000f:
+	{
+		int32_t L_2;
+		L_2 = AnimationClip_get_wrapMode_Injected_mFD07BF2A75E72B7141437794C22876F597CFA38E(G_B2_0, NULL);
+		return L_2;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnimationClip_SampleAnimation_Injected_m5F95A13A6E5F5380964F97966E4D816AA72E2C7F (intptr_t ___0_go, intptr_t ___1_clip, float ___2_inTime, int32_t ___3_wrapMode, const RuntimeMethod* method) 
+{
+	typedef void (*AnimationClip_SampleAnimation_Injected_m5F95A13A6E5F5380964F97966E4D816AA72E2C7F_ftn) (intptr_t, intptr_t, float, int32_t);
+	static AnimationClip_SampleAnimation_Injected_m5F95A13A6E5F5380964F97966E4D816AA72E2C7F_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (AnimationClip_SampleAnimation_Injected_m5F95A13A6E5F5380964F97966E4D816AA72E2C7F_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AnimationClip::SampleAnimation_Injected(System.IntPtr,System.IntPtr,System.Single,UnityEngine.WrapMode)");
+	_il2cpp_icall_func(___0_go, ___1_clip, ___2_inTime, ___3_wrapMode);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AnimationClip_get_length_Injected_m2E05F6F38757B2001AE2EC9DEA65F63127E6BB85 (intptr_t ___0__unity_self, const RuntimeMethod* method) 
 {
 	typedef float (*AnimationClip_get_length_Injected_m2E05F6F38757B2001AE2EC9DEA65F63127E6BB85_ftn) (intptr_t);
@@ -1436,6 +1611,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AnimationClip_get_length_Injected_m2E05
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (AnimationClip_get_length_Injected_m2E05F6F38757B2001AE2EC9DEA65F63127E6BB85_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AnimationClip::get_length_Injected(System.IntPtr)");
 	float icallRetVal = _il2cpp_icall_func(___0__unity_self);
+	return icallRetVal;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AnimationClip_get_wrapMode_Injected_mFD07BF2A75E72B7141437794C22876F597CFA38E (intptr_t ___0__unity_self, const RuntimeMethod* method) 
+{
+	typedef int32_t (*AnimationClip_get_wrapMode_Injected_mFD07BF2A75E72B7141437794C22876F597CFA38E_ftn) (intptr_t);
+	static AnimationClip_get_wrapMode_Injected_mFD07BF2A75E72B7141437794C22876F597CFA38E_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (AnimationClip_get_wrapMode_Injected_mFD07BF2A75E72B7141437794C22876F597CFA38E_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AnimationClip::get_wrapMode_Injected(System.IntPtr)");
+	int32_t icallRetVal = _il2cpp_icall_func(___0__unity_self);
 	return icallRetVal;
 }
 #ifdef __clang__
@@ -2210,6 +2394,53 @@ IL_000f:
 		return;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_CrossFadeInFixedTime_mC0A7F0188309753098EFF103FFA511A4377EEC55 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, int32_t ___0_stateHashName, float ___1_fixedTransitionDuration, int32_t ___2_layer, float ___3_fixedTimeOffset, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		V_0 = (0.0f);
+		int32_t L_0 = ___0_stateHashName;
+		float L_1 = ___1_fixedTransitionDuration;
+		int32_t L_2 = ___2_layer;
+		float L_3 = ___3_fixedTimeOffset;
+		float L_4 = V_0;
+		Animator_CrossFadeInFixedTime_m93D7442691AF96BD416878312D71B8EBD248340D(__this, L_0, L_1, L_2, L_3, L_4, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_CrossFadeInFixedTime_m93D7442691AF96BD416878312D71B8EBD248340D (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, int32_t ___0_stateHashName, float ___1_fixedTransitionDuration, int32_t ___2_layer, float ___3_fixedTimeOffset, float ___4_normalizedTransitionTime, const RuntimeMethod* method) 
+{
+	intptr_t G_B2_0;
+	memset((&G_B2_0), 0, sizeof(G_B2_0));
+	intptr_t G_B1_0;
+	memset((&G_B1_0), 0, sizeof(G_B1_0));
+	{
+		intptr_t L_0;
+		L_0 = MarshalledUnityObject_MarshalNotNull_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_m7B071EDE70A999827D66796CB3D8C40800E84206_inline(__this, NULL);
+		intptr_t L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000f;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		ThrowHelper_ThrowNullReferenceException_mA9C7629D32240EE0218631933DAC647668CA63CF(__this, NULL);
+		G_B2_0 = G_B1_0;
+	}
+
+IL_000f:
+	{
+		int32_t L_2 = ___0_stateHashName;
+		float L_3 = ___1_fixedTransitionDuration;
+		int32_t L_4 = ___2_layer;
+		float L_5 = ___3_fixedTimeOffset;
+		float L_6 = ___4_normalizedTransitionTime;
+		Animator_CrossFadeInFixedTime_Injected_mF4649073C4B9E93A6DDF4C7FF02D9E4B74D02E11(G_B2_0, L_2, L_3, L_4, L_5, L_6, NULL);
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_CrossFade_m34D1F0B5D8E14FC3D685D91D412ACA3F69F16186 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, int32_t ___0_stateHashName, float ___1_normalizedTransitionDuration, int32_t ___2_layer, float ___3_normalizedTimeOffset, float ___4_normalizedTransitionTime, const RuntimeMethod* method) 
 {
 	intptr_t G_B2_0;
@@ -2378,6 +2609,37 @@ IL_000f:
 		RuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254* L_3;
 		L_3 = MarshalledUnityObject_Unmarshal_TisRuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254_m33233EA2962977EFD9D274996B435F8EC8E64F40_inline(L_2, MarshalledUnityObject_Unmarshal_TisRuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254_m33233EA2962977EFD9D274996B435F8EC8E64F40_RuntimeMethod_var);
 		return L_3;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_set_runtimeAnimatorController_m505ACBA1D2E59814239EF3760A9F537D03301311 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, RuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254* ___0_value, const RuntimeMethod* method) 
+{
+	intptr_t G_B2_0;
+	memset((&G_B2_0), 0, sizeof(G_B2_0));
+	intptr_t G_B1_0;
+	memset((&G_B1_0), 0, sizeof(G_B1_0));
+	{
+		intptr_t L_0;
+		L_0 = MarshalledUnityObject_MarshalNotNull_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_m7B071EDE70A999827D66796CB3D8C40800E84206_inline(__this, NULL);
+		intptr_t L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000f;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		ThrowHelper_ThrowNullReferenceException_mA9C7629D32240EE0218631933DAC647668CA63CF(__this, NULL);
+		G_B2_0 = G_B1_0;
+	}
+
+IL_000f:
+	{
+		RuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254* L_2 = ___0_value;
+		intptr_t L_3;
+		L_3 = MarshalledUnityObject_Marshal_TisRuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254_m0FFB53BC39C5CFA7D5261A8AFC8AC842916B57D3_inline(L_2, NULL);
+		Animator_set_runtimeAnimatorController_Injected_m1C56BDD292525ED865B90276871BB466D1EB711F(G_B2_0, L_3, NULL);
+		return;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Animator_get_hasBoundPlayables_mA5A6132C03593851FE80D8E7490191E051E5A1C9 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, const RuntimeMethod* method) 
@@ -3128,6 +3390,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_set_speed_Injected_mE41FA1AC5C2
 	_il2cpp_icall_func = (Animator_set_speed_Injected_mE41FA1AC5C2BF3CE474839EFEA07590E5C381EF8_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::set_speed_Injected(System.IntPtr,System.Single)");
 	_il2cpp_icall_func(___0__unity_self, ___1_value);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_CrossFadeInFixedTime_Injected_mF4649073C4B9E93A6DDF4C7FF02D9E4B74D02E11 (intptr_t ___0__unity_self, int32_t ___1_stateHashName, float ___2_fixedTransitionDuration, int32_t ___3_layer, float ___4_fixedTimeOffset, float ___5_normalizedTransitionTime, const RuntimeMethod* method) 
+{
+	typedef void (*Animator_CrossFadeInFixedTime_Injected_mF4649073C4B9E93A6DDF4C7FF02D9E4B74D02E11_ftn) (intptr_t, int32_t, float, int32_t, float, float);
+	static Animator_CrossFadeInFixedTime_Injected_mF4649073C4B9E93A6DDF4C7FF02D9E4B74D02E11_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Animator_CrossFadeInFixedTime_Injected_mF4649073C4B9E93A6DDF4C7FF02D9E4B74D02E11_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::CrossFadeInFixedTime_Injected(System.IntPtr,System.Int32,System.Single,System.Int32,System.Single,System.Single)");
+	_il2cpp_icall_func(___0__unity_self, ___1_stateHashName, ___2_fixedTransitionDuration, ___3_layer, ___4_fixedTimeOffset, ___5_normalizedTransitionTime);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_CrossFade_Injected_m7564E04CFD2CC6ADACAACEFA46E49328DA51541D (intptr_t ___0__unity_self, int32_t ___1_stateHashName, float ___2_normalizedTransitionDuration, int32_t ___3_layer, float ___4_normalizedTimeOffset, float ___5_normalizedTransitionTime, const RuntimeMethod* method) 
 {
 	typedef void (*Animator_CrossFade_Injected_m7564E04CFD2CC6ADACAACEFA46E49328DA51541D_ftn) (intptr_t, int32_t, float, int32_t, float, float);
@@ -3160,6 +3430,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Animator_get_runtimeAnimatorControll
 	_il2cpp_icall_func = (Animator_get_runtimeAnimatorController_Injected_m2FCF48593920056E475FE66F8BD49352D48ECFDF_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::get_runtimeAnimatorController_Injected(System.IntPtr)");
 	intptr_t icallRetVal = _il2cpp_icall_func(___0__unity_self);
 	return icallRetVal;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_set_runtimeAnimatorController_Injected_m1C56BDD292525ED865B90276871BB466D1EB711F (intptr_t ___0__unity_self, intptr_t ___1_value, const RuntimeMethod* method) 
+{
+	typedef void (*Animator_set_runtimeAnimatorController_Injected_m1C56BDD292525ED865B90276871BB466D1EB711F_ftn) (intptr_t, intptr_t);
+	static Animator_set_runtimeAnimatorController_Injected_m1C56BDD292525ED865B90276871BB466D1EB711F_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Animator_set_runtimeAnimatorController_Injected_m1C56BDD292525ED865B90276871BB466D1EB711F_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::set_runtimeAnimatorController_Injected(System.IntPtr,System.IntPtr)");
+	_il2cpp_icall_func(___0__unity_self, ___1_value);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Animator_get_hasBoundPlayables_Injected_mD45F2A48DBD6AC97C94C15BE92005D6BDE362054 (intptr_t ___0__unity_self, const RuntimeMethod* method) 
 {
@@ -3796,6 +4074,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Motion_get_isLooping_Injected_m242CEF08E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeAnimatorController__ctor_m676D4538BB6C62314B256173C5F592EFCA16AAC8 (RuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	CHECKED_LOCAL(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticInit);
+	{
+		CHECKED_LOCAL_INIT(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticInit,(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var),il2cpp_codegen_runtime_class_init_inline);
+		Object__ctor_m2149FA40CEC8D82AC20D3508AB40C0D8EFEF68E6(__this, NULL);
+		return;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -5000,6 +5293,27 @@ IL_0017:
 		RuntimeObject* L_5;
 		L_5 = GCHandle_get_Target_m481F9508DA5E384D33CD1F4450060DC56BBD4CD5_inline((&V_0), NULL);
 		return ((Il2CppSharedGenericObject*)Castclass((RuntimeObject*)L_5, il2cpp_rgctx_data(method->rgctx_data, 0)));
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR intptr_t MarshalledUnityObject_Marshal_TisIl2CppSharedGenericObject_m35CB06885EF5600EDBB840B54EDAF3A806896DBB_gshared_inline (Il2CppSharedGenericObject* ___0_obj, const RuntimeMethod* method) 
+{
+	{
+		Il2CppSharedGenericObject* L_0 = ___0_obj;
+		if (L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		return 0;
+	}
+
+IL_000e:
+	{
+		Il2CppSharedGenericObject* L_1 = ___0_obj;
+		intptr_t L_2;
+		L_2 = MarshalledUnityObject_MarshalNotNull_TisIl2CppSharedGenericObject_mCE897EC9A79983B4B1E6E2C8342452256309044A_inline(L_1, NULL);
+		return L_2;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline (String_t* __this, const RuntimeMethod* method) 
