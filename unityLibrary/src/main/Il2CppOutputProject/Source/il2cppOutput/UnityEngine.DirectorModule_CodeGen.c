@@ -10,6 +10,7 @@
 extern void EmbeddedAttribute__ctor_mEF2EC6C87FFCBA521EDBF0EE8E0227CDBAE67E8D (void);
 extern void RefSafetyRulesAttribute__ctor_m8EDB2628C701ADF220D88F52B38D2D56345956B3 (void);
 extern void DataPlayableOutput__ctor_m09D4185F0C250450BE1FF451995AC6DFDF8176DD (void);
+extern void DataPlayableOutput_GetHandle_m80B8C82F9002EC765218149A007490FEBAEE07B7 (void);
 extern void DataPlayableOutput_Internal_CallOnPlayerChanged_mE9D28970561BDA75DE3C3605481E417D94E1F084 (void);
 extern void PlayableDirector_SendOnPlayableDirectorPlay_m7F75DBA4355DAA92F53AC337BB952069B63081A0 (void);
 extern void PlayableDirector_SendOnPlayableDirectorPause_m1B8EE7CBD23957C664AA417A9261194DFFFADFE1 (void);
@@ -30,11 +31,12 @@ extern void DataPlayableOutputEnumerator_System_Collections_IEnumerator_get_Curr
 extern void DataPlayableOutputEnumerator_Dispose_m5BD2B7D3897D0EBF12FAE16E334B3951BAD4C8A0 (void);
 extern void DataPlayableOutputEnumerator_MoveNext_m79AF7F2D9D94412B14EE28BA574B598B61B382D9 (void);
 extern void DataPlayableOutputEnumerator_Reset_mD8CE079A62EAB2C1D0A3D4CC780C7748D47247FF (void);
-static Il2CppMethodPointer s_methodPointers[25] = 
+static Il2CppMethodPointer s_methodPointers[26] = 
 {
 	EmbeddedAttribute__ctor_mEF2EC6C87FFCBA521EDBF0EE8E0227CDBAE67E8D,
 	RefSafetyRulesAttribute__ctor_m8EDB2628C701ADF220D88F52B38D2D56345956B3,
 	DataPlayableOutput__ctor_m09D4185F0C250450BE1FF451995AC6DFDF8176DD,
+	DataPlayableOutput_GetHandle_m80B8C82F9002EC765218149A007490FEBAEE07B7,
 	DataPlayableOutput_Internal_CallOnPlayerChanged_mE9D28970561BDA75DE3C3605481E417D94E1F084,
 	NULL,
 	NULL,
@@ -58,14 +60,19 @@ static Il2CppMethodPointer s_methodPointers[25] =
 	DataPlayableOutputEnumerator_MoveNext_m79AF7F2D9D94412B14EE28BA574B598B61B382D9,
 	DataPlayableOutputEnumerator_Reset_mD8CE079A62EAB2C1D0A3D4CC780C7748D47247FF,
 };
+extern void DataPlayableOutput_GetHandle_m80B8C82F9002EC765218149A007490FEBAEE07B7_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[1] = 
+{
+	{ 0x06000004, DataPlayableOutput_GetHandle_m80B8C82F9002EC765218149A007490FEBAEE07B7_AdjustorThunk },
+};
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_DirectorModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_DirectorModule_CodeGenModule = 
 {
 	"UnityEngine.DirectorModule.dll",
-	25,
+	26,
 	s_methodPointers,
-	0,
-	NULL,
+	1,
+	s_adjustorThunks,
 	0,
 	NULL,
 	NULL,

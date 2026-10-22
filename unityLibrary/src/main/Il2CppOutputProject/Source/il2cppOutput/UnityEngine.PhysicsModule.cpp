@@ -1133,12 +1133,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CharacterController_Move_Injected_mBE
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CharacterController_get_isGrounded_Injected_m987841759335E5E44E02AAD43FF657597E41AA14 (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CharacterController_get_collisionFlags_Injected_m0637C060B2D4A83BA3AAA399FAD0BBEAA69151C8 (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CharacterController_get_radius_Injected_m859965251C821A168F5F574771F89DEBCDF2072E (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterController_set_radius_Injected_mD822434C9A2AD967E290076DD8F6858E3205FCD4 (intptr_t ___0__unity_self, float ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CharacterController_get_height_Injected_m0168388356878A67B8E1154B04EC98BE738DED7D (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterController_set_height_Injected_mF8060A8DF6FB694D76BBC9EBC6A565EB022A3F6C (intptr_t ___0__unity_self, float ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterController_get_center_Injected_mED8B7334604519BF1A17B08A0D702F20F23524E5 (intptr_t ___0__unity_self, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_ret, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterController_set_center_Injected_m9841AD3950C3ADAB495D33E6E5B0DD78FCA73663 (intptr_t ___0__unity_self, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CharacterController_get_stepOffset_Injected_m920A27F7BA9EBD39C7A07E90CE4BB7AE80F92F51 (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterController_set_stepOffset_Injected_m32DDE860E8FB16DD97C7803AAA02803773AEF3F7 (intptr_t ___0__unity_self, float ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CharacterController_get_skinWidth_Injected_mA4192AA3E875CB7D001D46F128966640710EFCB7 (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterController_set_skinWidth_Injected_m9FC9EDD278478D93C1F78ABA9A3B20DA1C9F7BDA (intptr_t ___0__unity_self, float ___1_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterController_set_minMoveDistance_Injected_mAAB2F5A3D895FF5859A30AC4A07E3549BA3A4673 (intptr_t ___0__unity_self, float ___1_value, const RuntimeMethod* method) ;
 inline intptr_t MarshalledUnityObject_MarshalNotNull_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_mB656C608A0E2710E0AED29BB52269E9B29959875_inline (Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_obj, const RuntimeMethod* method)
 {
 	return ((  intptr_t (*) (Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76*, const RuntimeMethod*))MarshalledUnityObject_MarshalNotNull_TisIl2CppSharedGenericObject_mCE897EC9A79983B4B1E6E2C8342452256309044A_gshared_inline)(___0_obj, method);
@@ -2579,6 +2583,35 @@ IL_000f:
 		return L_2;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterController_set_radius_m9F783918C4DF101C705DA1280F2D6143FC622B20 (CharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	intptr_t G_B2_0;
+	memset((&G_B2_0), 0, sizeof(G_B2_0));
+	intptr_t G_B1_0;
+	memset((&G_B1_0), 0, sizeof(G_B1_0));
+	{
+		intptr_t L_0;
+		L_0 = MarshalledUnityObject_MarshalNotNull_TisCharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A_m6EE03A429E228BEF5A30CE6A9031EDEBD0DEF601_inline(__this, NULL);
+		intptr_t L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000f;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		ThrowHelper_ThrowNullReferenceException_mA9C7629D32240EE0218631933DAC647668CA63CF(__this, NULL);
+		G_B2_0 = G_B1_0;
+	}
+
+IL_000f:
+	{
+		float L_2 = ___0_value;
+		CharacterController_set_radius_Injected_mD822434C9A2AD967E290076DD8F6858E3205FCD4(G_B2_0, L_2, NULL);
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CharacterController_get_height_m18EC4D93673A225648DCB302BAB4F8A5FE4A20AF (CharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A* __this, const RuntimeMethod* method) 
 {
 	intptr_t G_B2_0;
@@ -2725,6 +2758,35 @@ IL_000f:
 		return L_2;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterController_set_stepOffset_mF609F26572304DF66AE2E17AA524DC8F51C1BE68 (CharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	intptr_t G_B2_0;
+	memset((&G_B2_0), 0, sizeof(G_B2_0));
+	intptr_t G_B1_0;
+	memset((&G_B1_0), 0, sizeof(G_B1_0));
+	{
+		intptr_t L_0;
+		L_0 = MarshalledUnityObject_MarshalNotNull_TisCharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A_m6EE03A429E228BEF5A30CE6A9031EDEBD0DEF601_inline(__this, NULL);
+		intptr_t L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000f;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		ThrowHelper_ThrowNullReferenceException_mA9C7629D32240EE0218631933DAC647668CA63CF(__this, NULL);
+		G_B2_0 = G_B1_0;
+	}
+
+IL_000f:
+	{
+		float L_2 = ___0_value;
+		CharacterController_set_stepOffset_Injected_m32DDE860E8FB16DD97C7803AAA02803773AEF3F7(G_B2_0, L_2, NULL);
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CharacterController_get_skinWidth_mF22F34BB1F1824D67171FCF5F187F5585749A5DA (CharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A* __this, const RuntimeMethod* method) 
 {
 	intptr_t G_B2_0;
@@ -2752,6 +2814,64 @@ IL_000f:
 		float L_2;
 		L_2 = CharacterController_get_skinWidth_Injected_mA4192AA3E875CB7D001D46F128966640710EFCB7(G_B2_0, NULL);
 		return L_2;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterController_set_skinWidth_m195DD3EEDE89C015239FF100E9BDE8DEA806EB07 (CharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	intptr_t G_B2_0;
+	memset((&G_B2_0), 0, sizeof(G_B2_0));
+	intptr_t G_B1_0;
+	memset((&G_B1_0), 0, sizeof(G_B1_0));
+	{
+		intptr_t L_0;
+		L_0 = MarshalledUnityObject_MarshalNotNull_TisCharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A_m6EE03A429E228BEF5A30CE6A9031EDEBD0DEF601_inline(__this, NULL);
+		intptr_t L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000f;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		ThrowHelper_ThrowNullReferenceException_mA9C7629D32240EE0218631933DAC647668CA63CF(__this, NULL);
+		G_B2_0 = G_B1_0;
+	}
+
+IL_000f:
+	{
+		float L_2 = ___0_value;
+		CharacterController_set_skinWidth_Injected_m9FC9EDD278478D93C1F78ABA9A3B20DA1C9F7BDA(G_B2_0, L_2, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterController_set_minMoveDistance_m690AB5F824C765B3F6994EA4E79C5AB67A613257 (CharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	intptr_t G_B2_0;
+	memset((&G_B2_0), 0, sizeof(G_B2_0));
+	intptr_t G_B1_0;
+	memset((&G_B1_0), 0, sizeof(G_B1_0));
+	{
+		intptr_t L_0;
+		L_0 = MarshalledUnityObject_MarshalNotNull_TisCharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A_m6EE03A429E228BEF5A30CE6A9031EDEBD0DEF601_inline(__this, NULL);
+		intptr_t L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000f;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		ThrowHelper_ThrowNullReferenceException_mA9C7629D32240EE0218631933DAC647668CA63CF(__this, NULL);
+		G_B2_0 = G_B1_0;
+	}
+
+IL_000f:
+	{
+		float L_2 = ___0_value;
+		CharacterController_set_minMoveDistance_Injected_mAAB2F5A3D895FF5859A30AC4A07E3549BA3A4673(G_B2_0, L_2, NULL);
+		return;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterController__ctor_m6A906ADB773BC0AE534C9348A56747D931B194B3 (CharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A* __this, const RuntimeMethod* method) 
@@ -2797,6 +2917,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CharacterController_get_radius_Injected
 	float icallRetVal = _il2cpp_icall_func(___0__unity_self);
 	return icallRetVal;
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterController_set_radius_Injected_mD822434C9A2AD967E290076DD8F6858E3205FCD4 (intptr_t ___0__unity_self, float ___1_value, const RuntimeMethod* method) 
+{
+	typedef void (*CharacterController_set_radius_Injected_mD822434C9A2AD967E290076DD8F6858E3205FCD4_ftn) (intptr_t, float);
+	static CharacterController_set_radius_Injected_mD822434C9A2AD967E290076DD8F6858E3205FCD4_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (CharacterController_set_radius_Injected_mD822434C9A2AD967E290076DD8F6858E3205FCD4_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.CharacterController::set_radius_Injected(System.IntPtr,System.Single)");
+	_il2cpp_icall_func(___0__unity_self, ___1_value);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CharacterController_get_height_Injected_m0168388356878A67B8E1154B04EC98BE738DED7D (intptr_t ___0__unity_self, const RuntimeMethod* method) 
 {
 	typedef float (*CharacterController_get_height_Injected_m0168388356878A67B8E1154B04EC98BE738DED7D_ftn) (intptr_t);
@@ -2839,6 +2967,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CharacterController_get_stepOffset_Inje
 	float icallRetVal = _il2cpp_icall_func(___0__unity_self);
 	return icallRetVal;
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterController_set_stepOffset_Injected_m32DDE860E8FB16DD97C7803AAA02803773AEF3F7 (intptr_t ___0__unity_self, float ___1_value, const RuntimeMethod* method) 
+{
+	typedef void (*CharacterController_set_stepOffset_Injected_m32DDE860E8FB16DD97C7803AAA02803773AEF3F7_ftn) (intptr_t, float);
+	static CharacterController_set_stepOffset_Injected_m32DDE860E8FB16DD97C7803AAA02803773AEF3F7_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (CharacterController_set_stepOffset_Injected_m32DDE860E8FB16DD97C7803AAA02803773AEF3F7_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.CharacterController::set_stepOffset_Injected(System.IntPtr,System.Single)");
+	_il2cpp_icall_func(___0__unity_self, ___1_value);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CharacterController_get_skinWidth_Injected_mA4192AA3E875CB7D001D46F128966640710EFCB7 (intptr_t ___0__unity_self, const RuntimeMethod* method) 
 {
 	typedef float (*CharacterController_get_skinWidth_Injected_mA4192AA3E875CB7D001D46F128966640710EFCB7_ftn) (intptr_t);
@@ -2847,6 +2983,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CharacterController_get_skinWidth_Injec
 	_il2cpp_icall_func = (CharacterController_get_skinWidth_Injected_mA4192AA3E875CB7D001D46F128966640710EFCB7_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.CharacterController::get_skinWidth_Injected(System.IntPtr)");
 	float icallRetVal = _il2cpp_icall_func(___0__unity_self);
 	return icallRetVal;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterController_set_skinWidth_Injected_m9FC9EDD278478D93C1F78ABA9A3B20DA1C9F7BDA (intptr_t ___0__unity_self, float ___1_value, const RuntimeMethod* method) 
+{
+	typedef void (*CharacterController_set_skinWidth_Injected_m9FC9EDD278478D93C1F78ABA9A3B20DA1C9F7BDA_ftn) (intptr_t, float);
+	static CharacterController_set_skinWidth_Injected_m9FC9EDD278478D93C1F78ABA9A3B20DA1C9F7BDA_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (CharacterController_set_skinWidth_Injected_m9FC9EDD278478D93C1F78ABA9A3B20DA1C9F7BDA_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.CharacterController::set_skinWidth_Injected(System.IntPtr,System.Single)");
+	_il2cpp_icall_func(___0__unity_self, ___1_value);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterController_set_minMoveDistance_Injected_mAAB2F5A3D895FF5859A30AC4A07E3549BA3A4673 (intptr_t ___0__unity_self, float ___1_value, const RuntimeMethod* method) 
+{
+	typedef void (*CharacterController_set_minMoveDistance_Injected_mAAB2F5A3D895FF5859A30AC4A07E3549BA3A4673_ftn) (intptr_t, float);
+	static CharacterController_set_minMoveDistance_Injected_mAAB2F5A3D895FF5859A30AC4A07E3549BA3A4673_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (CharacterController_set_minMoveDistance_Injected_mAAB2F5A3D895FF5859A30AC4A07E3549BA3A4673_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.CharacterController::set_minMoveDistance_Injected(System.IntPtr,System.Single)");
+	_il2cpp_icall_func(___0__unity_self, ___1_value);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

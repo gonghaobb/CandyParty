@@ -324,6 +324,7 @@ struct Action_1_t3DC3411926243F1DB9C330F8E105B904E38C1A0B;
 struct Action_2_t6A27AF0A3585FFCF87D39ADE472BCFD2F2930F19;
 struct Action_2_tB79528C85CFEF7DFF52C575DDAA398D2FE6BC333;
 struct Action_2_t4943DD8C32CAB983950535CEF3BABA85DF8C9AAA;
+struct Action_2_tAE8A107BF234FA7C2417606ABD3072F6728F8603;
 struct Action_2_t98484D5E010470A78B21BE26672B8EA6A5E2444A;
 struct Action_2_t88CE93253F88926E89BAD0E96117E6DCE14A40BE;
 struct Action_2_t4D6C6A84A6B44BE6193A1F64753F6E48558FBE9D;
@@ -490,6 +491,7 @@ struct Func_2_t35A0759604C6FA9D13A00A7CC21B570688F82AC8;
 struct Func_2_t9B09C5B81DDDD4DE86CA950919B2C1E9EBEFA578;
 struct Func_2_tBE6BE5A4E4F7FED7B1EE3446A907877305B72A87;
 struct Func_3_t42E9F5CDEF4CF174C35D943F427EF585FE829937;
+struct HashMapHelper_1_t9CB6B25EDA71DB75518C8E491E2F6935C93F7259;
 struct HashMapHelper_1_tA9B75C8F9CC29B07AE1E9886F8F7819DAF6FE251;
 struct HashSet_1_t015F1F38EE02675ACF63C72E1E1D832249BB06DA;
 struct HashSet_1_tAE2F12E55878645F5BE7C4D5603228A6FAB429C7;
@@ -521,6 +523,8 @@ struct NetworkListEvent_1_tCC801A00B5429272A0134E2C7C475EEB8C6A9A90;
 struct NetworkListEvent_1_tDD69FC248BA24D9DC0F7713182297A1941FE2C29;
 struct NetworkListEvent_1_t95B1A3BB01D6D42139DB56A83D3A1621F73E2697;
 struct NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3;
+struct NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE;
+struct NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496;
 struct Recursion_1_tDFF1B549E70648F1694033FADF89F8F0EB28587D;
 struct RefCounted_t6B975CD3D06E8D955346FC0D66E8F6E449D49A44;
 struct RefCounted_t0E133AD36715877AE1CE72539A0199B4D3AA8CD1;
@@ -545,18 +549,26 @@ struct UnsafeList_1_t239C74D869DA59B0CA5E63716E71208DEC68A70B;
 struct UnsafeList_1_tDC1954C7A4E474089EB0C1CB1EC9DCE8324C5BE8;
 struct UnsafeList_1_tB399333E6BA2A8CC5574A2280A941383F0F70814;
 struct UnsafeList_1_t7FB68536B9D771E5C2E399C01B395449EBDA5022;
+struct UnsafeList_1_tBB41174511503D8FEF0D8FA7F667D53E6170B6F4;
 struct UnsafeList_1_t778B2F7252E312B13D6246FDF11E43D9830882D0;
 struct UnsafeList_1_t6C5E84D303190B625F3759C244502E1735453718;
 struct UnsafeList_1_t6536D7A9C34D38B0421BA85AC9793E0F14F65CCF;
 struct UnsafeList_1_t86E1B55915C0B6CE8368236B0D8EDB80B7D396D6;
 struct UnsafeList_1_t414FED53EC4FCC224CD6E9501F375B71ACC6C6F4;
+struct UnsafeList_1_tFD7DB6B00333C2C114D553F48DA91C512E033F99;
+struct UnsafeList_1_t82F42318A0459C3699EAFEFFF8A8BA3D3A098E33;
+struct UnsafeList_1_t663E4C6332C30AD19F05EF986ECCEDC60B61CF52;
+struct UnsafeList_1_t3B699AD7B2AAAB1ECC45766BCC7D8994E28DF28D;
 struct UnsafeList_1_t0019D98C6D95AF9C6414C149BAA15CBBCC837C8A;
 struct UnsafeList_1_t453075A075D99649F8B3C2ED564085F6F2036D73;
 struct UnsafeList_1_t0B514D46EF09CD2AD227C46904D4A19A6BCD3516;
 struct UnsafeList_1_t7A543190DA1A83E02E2B1A875EA82180D6B548AB;
 struct UnsafeList_1_t654D4A1DC3B0AE23EEBE8B889AD312E67B96BEB8;
 struct UnsafeList_1_tBBA2813E39DF02BCF903DF5387C884420C28F644;
+struct UnsafeList_1_t557C9C31121D73D732851DA0465D2D22CFFBF099;
 struct UnsafeList_1_t965A22A20AAA75F74B381491E1D9B5DF262424DB;
+struct UnsafeQueue_1_t0323897433D8F18174111DB978F6D9EB951CB258;
+struct UnsafeQueue_1_t369255B1A1AFDBCC4B50BCC7BDB9CD1F2681A3CC;
 struct ValueCollection_t68C95977A6405D46453CCCFD51F7CB3B90A6832D;
 struct Action_1U5BU5D_t18C922CAB85EAE463E29566305D718EF64B12A16;
 struct Action_2U5BU5D_tBE18774DE78EE629377991D4C8F3B44D96E3A529;
@@ -762,6 +774,8 @@ struct RowingProgressEntry_t3BA27C9184456A51ACBC15629622165F645C10E0;
 struct PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655;
 struct RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597;
 struct ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD;
+struct PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6;
+struct TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7;
 struct FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5;
 struct ReceiveQueueItem_tC07D121A91E2DA50FCBD08D1720CE0B4BA0F93BE;
 struct SendQueueItem_t028997B9499F98F8FBFDDCA6245A3CCE69A37CB7;
@@ -1427,6 +1441,10 @@ struct LifecycleScopeWithContext_1_t35373E7691E4D4045644241660D92D3E94032599  : 
 {
 	Il2CppSharedGenericObject* ___U3CContextU3Ek__BackingField;
 };
+struct NativeHashMap_2_t531A8C9D6E02B13A97DD089372B536809AF092E8 
+{
+	HashMapHelper_1_t9CB6B25EDA71DB75518C8E491E2F6935C93F7259* ___m_Data;
+};
 struct NativeHashMap_2_t0333CC014CB2C39D1C63CE8031AF561B255BB9AF 
 {
 	HashMapHelper_1_tA9B75C8F9CC29B07AE1E9886F8F7819DAF6FE251* ___m_Data;
@@ -1459,6 +1477,10 @@ struct NativeList_1_t6425109D46A7A86E1C15E98595D1DCC7E45A0927
 {
 	UnsafeList_1_t1285B03D332D32C2E94E3215FFD520400D6C7FA4* ___m_ListData;
 };
+struct NativeList_1_tEEE3A07B710DA14F96F06ECF1D5D8D7353698B94 
+{
+	UnsafeList_1_t5C65DCA6782B7C9860C859C2F0C07A2C497E822D* ___m_ListData;
+};
 struct NativeList_1_tEB969B9BCC8F8BA3FAED448FBBC7DDC61CBF89B0 
 {
 	UnsafeList_1_tDC1954C7A4E474089EB0C1CB1EC9DCE8324C5BE8* ___m_ListData;
@@ -1471,17 +1493,49 @@ struct NativeList_1_tC8127B29CD84222CC53ECD47D6178E62BFE67549
 {
 	UnsafeList_1_t7FB68536B9D771E5C2E399C01B395449EBDA5022* ___m_ListData;
 };
+struct NativeList_1_t01ED65BC04F7260F897C89F71E57A41F95B679C3 
+{
+	UnsafeList_1_tBB41174511503D8FEF0D8FA7F667D53E6170B6F4* ___m_ListData;
+};
 struct NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213 
 {
 	UnsafeList_1_t6C5E84D303190B625F3759C244502E1735453718* ___m_ListData;
+};
+struct NativeList_1_t163E4B6B8B23750406A8688DA1D7FD433EF9EDC1 
+{
+	UnsafeList_1_tFD7DB6B00333C2C114D553F48DA91C512E033F99* ___m_ListData;
+};
+struct NativeList_1_tAB6AB8742D716D9C57C12B774FB35CFF814456B4 
+{
+	UnsafeList_1_t82F42318A0459C3699EAFEFFF8A8BA3D3A098E33* ___m_ListData;
+};
+struct NativeList_1_t6991118F5186CB8652760C0D202019D02FDD453E 
+{
+	UnsafeList_1_t663E4C6332C30AD19F05EF986ECCEDC60B61CF52* ___m_ListData;
+};
+struct NativeList_1_tABB80F41A867425794A066A582A476F0FA6C969A 
+{
+	UnsafeList_1_t3B699AD7B2AAAB1ECC45766BCC7D8994E28DF28D* ___m_ListData;
 };
 struct NativeList_1_tB6007C869E1511FACD91D9611A0C7B98D6E9D030 
 {
 	UnsafeList_1_t7A543190DA1A83E02E2B1A875EA82180D6B548AB* ___m_ListData;
 };
+struct NativeList_1_t7D0C4FADF421E663CFE4731E9B320F919701A66C 
+{
+	UnsafeList_1_t557C9C31121D73D732851DA0465D2D22CFFBF099* ___m_ListData;
+};
 struct NativeList_1_tAA330078CB16F8A7A0EEB990E7959165995CE844 
 {
 	UnsafeList_1_t965A22A20AAA75F74B381491E1D9B5DF262424DB* ___m_ListData;
+};
+struct NativeQueue_1_tC1DEEC6300FED2BCDE96AFD346BEE6CF8E03412A 
+{
+	UnsafeQueue_1_t0323897433D8F18174111DB978F6D9EB951CB258* ___m_Queue;
+};
+struct NativeQueue_1_t1998FE7B3590BD3E5658462E15CDFDC7E946B3F8 
+{
+	UnsafeQueue_1_t369255B1A1AFDBCC4B50BCC7BDB9CD1F2681A3CC* ___m_Queue;
 };
 struct Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 
 {
@@ -3116,6 +3170,7 @@ struct RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597
 	float ___jumpRemainingSeconds;
 	bool ___finished;
 	float ___finishTimeSeconds;
+	uint32_t ___resetSequence;
 };
 struct RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597_marshaled_pinvoke
 {
@@ -3126,6 +3181,7 @@ struct RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597_marshaled_pinv
 	float ___jumpRemainingSeconds;
 	int32_t ___finished;
 	float ___finishTimeSeconds;
+	uint32_t ___resetSequence;
 };
 struct RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597_marshaled_com
 {
@@ -3136,6 +3192,7 @@ struct RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597_marshaled_com
 	float ___jumpRemainingSeconds;
 	int32_t ___finished;
 	float ___finishTimeSeconds;
+	uint32_t ___resetSequence;
 };
 struct ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD 
 {
@@ -4159,6 +4216,14 @@ struct EventType_t56AD5CB2D75A415ED46F5000738E655EC94F1908
 {
 	uint8_t ___value__;
 };
+struct EventType_tDE77F89136C2E1757A6305B0B2EB552F2D6C9F15 
+{
+	uint8_t ___value__;
+};
+struct EventType_tB7766F78D4AE4B094CCE3978A871E99C2B1DD766 
+{
+	uint8_t ___value__;
+};
 struct FunctionPointer_1_t43DAB60A8D20BF327F8250485C83EE4BC2782CEF 
 {
 	intptr_t ____ptr;
@@ -4277,6 +4342,16 @@ struct NativeReference_1_t78DE3B3E65DCF5A0D282ECD76BA4F0C3638C5D59
 	AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 ___m_AllocatorLabel;
 };
 struct NativeReference_1_tCD2ACC816757CE149181B16B47C0E60AEB2D9C01 
+{
+	void* ___m_Data;
+	AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 ___m_AllocatorLabel;
+};
+struct NativeReference_1_t5B192C8AF30EB1CE9FBBDEDE05E725954C7C32EC 
+{
+	void* ___m_Data;
+	AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 ___m_AllocatorLabel;
+};
+struct NativeReference_1_t89675C756A0EFE7786D0E59AAAFA53C759FDEF14 
 {
 	void* ___m_Data;
 	AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 ___m_AllocatorLabel;
@@ -4423,6 +4498,22 @@ struct UnsafeList_1_tE0D891690337EF3E3EE78336E9172C61C66F9495
 struct UnsafeList_1_tA601F60126A6E35A430D5C378366EF758AAD8630 
 {
 	NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3* ___Ptr;
+	int32_t ___m_length;
+	int32_t ___m_capacity;
+	AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 ___Allocator;
+	int32_t ___padding;
+};
+struct UnsafeList_1_tCC1AF924DEC0BDFF9F3E78ED7C361CC3335DF0D8 
+{
+	NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE* ___Ptr;
+	int32_t ___m_length;
+	int32_t ___m_capacity;
+	AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 ___Allocator;
+	int32_t ___padding;
+};
+struct UnsafeList_1_t609CE12D0534775048A9C971BA11EFA88E24B914 
+{
+	NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496* ___Ptr;
 	int32_t ___m_length;
 	int32_t ___m_capacity;
 	AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 ___Allocator;
@@ -5172,6 +5263,22 @@ struct UnsafeList_1_t0F6D9997092E864DFEE4ADE5E13751A577F50040
 	AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 ___Allocator;
 	int32_t ___padding;
 };
+struct UnsafeList_1_t9E4C6CE4C034371FAC5D2729719FD9A78F148C50 
+{
+	PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6* ___Ptr;
+	int32_t ___m_length;
+	int32_t ___m_capacity;
+	AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 ___Allocator;
+	int32_t ___padding;
+};
+struct UnsafeList_1_tBECCB7AA5BA9EA49381E29FF13C896E39835EC2A 
+{
+	TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7* ___Ptr;
+	int32_t ___m_length;
+	int32_t ___m_capacity;
+	AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 ___Allocator;
+	int32_t ___padding;
+};
 struct UnsafeList_1_t48F05227A71C57D26477CA087FE73B2908CEF600 
 {
 	FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5* ___Ptr;
@@ -5272,7 +5379,17 @@ struct UnsafeParallelHashMap_2_t10F99AC4AA4756244BBD7A79878226D47E35DF85
 	UnsafeParallelHashMapData_t43CAB3170FBB624A9CCB6F30C0EC1BB820D57926* ___m_Buffer;
 	AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 ___m_AllocatorLabel;
 };
+struct UnsafeParallelHashMap_2_t7874980C8D81273B642A8D7CFF8EADD52DF15138 
+{
+	UnsafeParallelHashMapData_t43CAB3170FBB624A9CCB6F30C0EC1BB820D57926* ___m_Buffer;
+	AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 ___m_AllocatorLabel;
+};
 struct UnsafeParallelHashMap_2_t4FDC7F19FD7C691F19E26D6025F164D275F84C3A 
+{
+	UnsafeParallelHashMapData_t43CAB3170FBB624A9CCB6F30C0EC1BB820D57926* ___m_Buffer;
+	AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 ___m_AllocatorLabel;
+};
+struct UnsafeParallelHashMap_2_tDC8E4F4F713CF8AE6FC2A40D27B1D80A7F52CAB8 
 {
 	UnsafeParallelHashMapData_t43CAB3170FBB624A9CCB6F30C0EC1BB820D57926* ___m_Buffer;
 	AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 ___m_AllocatorLabel;
@@ -6964,6 +7081,12 @@ struct NetworkDelivery_t8AEDF5FAB32A531130149F7D6D89023D3164D6AD
 {
 	int32_t ___value__;
 };
+struct NetworkEventQueue_tDE8EC1A139521E69F9BBEC2D54C58B58E44CA723 
+{
+	NativeQueue_1_t1998FE7B3590BD3E5658462E15CDFDC7E946B3F8 ___m_MasterEventQ;
+	NativeList_1_t163E4B6B8B23750406A8688DA1D7FD433EF9EDC1 ___m_ConnectionEventQ;
+	NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213 ___m_ConnectionEventHeadTail;
+};
 struct NetworkInterfaceLayer_t660D73C3AF2705F31F375C4855AADBDCC17AF21D 
 {
 	NetworkInterfaceWrapper_t5A159A13060FF3369270FBB8F57A7CF9FC1924D2 ___m_InterfaceWrapper;
@@ -7756,6 +7879,42 @@ struct BoatStateEntry_tF74997E8F9D2505698CBE8554168F8D9FBAD669A
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___pos;
 	float ___yawDeg;
 };
+struct PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 
+{
+	uint64_t ___clientId;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position;
+	float ___yaw;
+	uint32_t ___hitSequence;
+	bool ___knockedDown;
+	bool ___moving;
+	float ___knockdownStartedAt;
+};
+struct PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_marshaled_pinvoke
+{
+	uint64_t ___clientId;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position;
+	float ___yaw;
+	uint32_t ___hitSequence;
+	int32_t ___knockedDown;
+	int32_t ___moving;
+	float ___knockdownStartedAt;
+};
+struct PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_marshaled_com
+{
+	uint64_t ___clientId;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position;
+	float ___yaw;
+	uint32_t ___hitSequence;
+	int32_t ___knockedDown;
+	int32_t ___moving;
+	float ___knockdownStartedAt;
+};
+struct TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 
+{
+	uint32_t ___id;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position;
+	float ___yaw;
+};
 struct AnimatorParamCache_t8B920B60D5DFBA3F4443930387E48A47652E475D 
 {
 	bool ___Exclude;
@@ -8116,6 +8275,16 @@ struct AlignOfHelper_1_tE3D5395AA62E59525F644070777CBE64B4609A22
 {
 	uint8_t ___dummy;
 	UnsafeList_1_tA601F60126A6E35A430D5C378366EF758AAD8630 ___data;
+};
+struct AlignOfHelper_1_tBBA4C2A08206D314D1FCF98536FE32491EF05C6E 
+{
+	uint8_t ___dummy;
+	UnsafeList_1_tCC1AF924DEC0BDFF9F3E78ED7C361CC3335DF0D8 ___data;
+};
+struct AlignOfHelper_1_t19B1BFCD751519E544DCE0B178C1CFBD6F0DABF6 
+{
+	uint8_t ___dummy;
+	UnsafeList_1_t609CE12D0534775048A9C971BA11EFA88E24B914 ___data;
 };
 struct AlignOfHelper_1_tAE30BF694529328624C55648A337418A7AB96380 
 {
@@ -8582,6 +8751,16 @@ struct AlignOfHelper_1_t8EEC7A9433DA3C63F92ADDC0882C6FD6D343D59E
 	uint8_t ___dummy;
 	UnsafeList_1_t0F6D9997092E864DFEE4ADE5E13751A577F50040 ___data;
 };
+struct AlignOfHelper_1_t106CE437C409DE6D2725E6705B5DF80D5CD880EF 
+{
+	uint8_t ___dummy;
+	UnsafeList_1_t9E4C6CE4C034371FAC5D2729719FD9A78F148C50 ___data;
+};
+struct AlignOfHelper_1_t13ACA0563B0ADF8622DA7FA3E4ECD65B019CB9BE 
+{
+	uint8_t ___dummy;
+	UnsafeList_1_tBECCB7AA5BA9EA49381E29FF13C896E39835EC2A ___data;
+};
 struct AlignOfHelper_1_t873BFE9DBC8137E24DDD7BE9B805D721029308B3 
 {
 	uint8_t ___dummy;
@@ -8952,6 +9131,16 @@ struct AlignOfHelper_1_tDA676903EBF868EE645254C645568BE0A77BAF5B
 	uint8_t ___dummy;
 	BoatStateEntry_tF74997E8F9D2505698CBE8554168F8D9FBAD669A ___data;
 };
+struct AlignOfHelper_1_t5A7BA263255CABF447E017F896D75BC5F963B256 
+{
+	uint8_t ___dummy;
+	PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 ___data;
+};
+struct AlignOfHelper_1_t77E2C4021419DF36B656B1885D81AA04A62A784B 
+{
+	uint8_t ___dummy;
+	TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 ___data;
+};
 struct AlignOfHelper_1_t244462E38EC179155F993038CCA8BC92BB81A374 
 {
 	uint8_t ___dummy;
@@ -9138,6 +9327,18 @@ struct NativeArray_1_t2144CC5865581F6F441B3FB6F127237F018A0330
 	int32_t ___m_Length;
 	int32_t ___m_AllocatorLabel;
 };
+struct NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8D4BAC38B2C 
+{
+	void* ___m_Buffer;
+	int32_t ___m_Length;
+	int32_t ___m_AllocatorLabel;
+};
+struct NativeArray_1_t25F6CEC65DB0532CB91E2B2890FF6C2D52A210A3 
+{
+	void* ___m_Buffer;
+	int32_t ___m_Length;
+	int32_t ___m_AllocatorLabel;
+};
 struct NativeArray_1_tA04FF6E7BE3D24B3E6351C63BF7229421DFE1259 
 {
 	void* ___m_Buffer;
@@ -9190,9 +9391,17 @@ struct NativeParallelHashMap_2_t4A0E892F5866103140E54B381439282EBFB2856B
 {
 	UnsafeParallelHashMap_2_t10F99AC4AA4756244BBD7A79878226D47E35DF85 ___m_HashMapData;
 };
+struct NativeParallelHashMap_2_t69461CB9E6D976D18D61DDA455358589C3C7EF54 
+{
+	UnsafeParallelHashMap_2_t7874980C8D81273B642A8D7CFF8EADD52DF15138 ___m_HashMapData;
+};
 struct NativeParallelHashMap_2_tAA41F1B1C723626ABFD815E62B40CDF08A2C8A41 
 {
 	UnsafeParallelHashMap_2_t4FDC7F19FD7C691F19E26D6025F164D275F84C3A ___m_HashMapData;
+};
+struct NativeParallelHashMap_2_t220FBAE93AB0577D264128CDDAB994BC7901B698 
+{
+	UnsafeParallelHashMap_2_tDC8E4F4F713CF8AE6FC2A40D27B1D80A7F52CAB8 ___m_HashMapData;
 };
 struct NetworkListEvent_1_t0301AE3E5679FA94340335A9523447937CB514CA 
 {
@@ -9248,6 +9457,20 @@ struct NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3
 	uint8_t ___Type;
 	ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD ___Value;
 	ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD ___PreviousValue;
+	int32_t ___Index;
+};
+struct NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE 
+{
+	uint8_t ___Type;
+	PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 ___Value;
+	PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 ___PreviousValue;
+	int32_t ___Index;
+};
+struct NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 
+{
+	uint8_t ___Type;
+	TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 ___Value;
+	TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 ___PreviousValue;
 	int32_t ___Index;
 };
 struct RingQueueData_t9BF480B9CCBCF8D1B178AB75D9EA210EA16252C0 
@@ -9634,6 +9857,11 @@ struct NativeHandleAllocator_t47E1DB0A5AB93147ABE2C4AE681132799EE2022B
 	UnsafeList_1_t48F05227A71C57D26477CA087FE73B2908CEF600 ___m_FreeBitChunksDense;
 	UnsafeList_1_t6C5E84D303190B625F3759C244502E1735453718 ___m_FreeChunkIndicesSparse;
 };
+struct NetworkDriverSender_tF3B34F6ABB3F10418CBE4478BAFA34E0216611B9 
+{
+	PacketsQueue_t55C35EE7F179B6EFC322A3BD4262FA0F753E0A7D ___m_SendQueue;
+	NativeQueue_1_tC1DEEC6300FED2BCDE96AFD346BEE6CF8E03412A ___m_PendingSendQueue;
+};
 struct NetworkEvent_t4F520D24065EC589593AE1281E955525AD11233F 
 {
 	union
@@ -9713,6 +9941,10 @@ struct NetworkLayerWrapper_t6D78DE474098851EC3C82A6085753A4BF1ADC5F8
 	ManagedCallWrapper_t3B4797EF1A8280564B8EE82F05363C6A1CEA4C8E ___m_Dispose_FPtr;
 	ManagedCallWrapper_t3B4797EF1A8280564B8EE82F05363C6A1CEA4C8E ___m_ScheduleReceive_FPtr;
 	ManagedCallWrapper_t3B4797EF1A8280564B8EE82F05363C6A1CEA4C8E ___m_ScheduleSend_FPtr;
+};
+struct OperationResult_t5D30C83B499D54306DA5F5FD96C12D0EDA9D06CF 
+{
+	NativeReference_1_t89675C756A0EFE7786D0E59AAAFA53C759FDEF14 ___m_Data;
 };
 struct PacketProcessor_tE7FAD0C734B978AEB8525A31EEE69D3ABFCA0D88 
 {
@@ -11392,6 +11624,16 @@ struct AlignOfHelper_1_tFF0E3E3A29D07D925FBE092B643F3732E2E4CAC4
 	uint8_t ___dummy;
 	NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3 ___data;
 };
+struct AlignOfHelper_1_tBD737ACCF34CDC2E07EC348A66EAA987F425FC35 
+{
+	uint8_t ___dummy;
+	NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE ___data;
+};
+struct AlignOfHelper_1_t57F4C21CA62F19DA9A9594139FB30246925700C4 
+{
+	uint8_t ___dummy;
+	NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 ___data;
+};
 struct AlignOfHelper_1_t25864019DEBDD9EF2C5B633423CDF9DC659D9FE3 
 {
 	uint8_t ___dummy;
@@ -11935,6 +12177,10 @@ struct Func_2_t186E00006A014C383229647C4BDA6B25B7019307  : public MulticastDeleg
 struct Func_2_tB5F9BE35E4AA94B462634399A29B0A00F9C45B4B  : public MulticastDelegate_t
 {
 };
+struct NativeParallelHashSet_1_t4EBD9E0A4D7B16720B9C15E9A3806469E3747A93 
+{
+	NativeParallelHashMap_2_t220FBAE93AB0577D264128CDDAB994BC7901B698 ___m_Data;
+};
 struct StyleData_tF73D38B6364DDBEC1C3CD1A60A5843017550EB99 
 {
 	BackgroundRepeat_t446EC7315DED2C6822F1047B7587C3018BFB277F ___startValue;
@@ -12235,6 +12481,12 @@ struct NativePassAttachment_t55DBA5EF1FDFC2F35EF13D395908A90497585ED4_marshaled_
 	int32_t ___mipLevel;
 	int32_t ___depthSlice;
 };
+struct NetworkDriverReceiver_t69D0CDFCD49A8A9D27C7FC5DD507C59E4B245A4C 
+{
+	PacketsQueue_t55C35EE7F179B6EFC322A3BD4262FA0F753E0A7D ___m_ReceiveQueue;
+	NativeList_1_tEEE3A07B710DA14F96F06ECF1D5D8D7353698B94 ___m_DataStream;
+	OperationResult_t5D30C83B499D54306DA5F5FD96C12D0EDA9D06CF ___m_Result;
+};
 struct NetworkPipelineStage_tEF17CBE5C7F718292F2E9F3E51D727D672A0400E 
 {
 	TransportFunctionPointer_1_t511C3C8E675E5CB219FF3A1D96C2427B3FE67093 ___Receive;
@@ -12247,6 +12499,22 @@ struct NetworkPipelineStage_tEF17CBE5C7F718292F2E9F3E51D727D672A0400E
 	int32_t ___PayloadCapacity;
 	int32_t ___StaticStateStart;
 	int32_t ___StaticStateCapacity;
+};
+struct NetworkSettings_tF4E51C6335E296671D0F783AF9497052A3D903E0 
+{
+	NativeParallelHashMap_2_t69461CB9E6D976D18D61DDA455358589C3C7EF54 ___m_ParameterOffsets;
+	NativeList_1_tEEE3A07B710DA14F96F06ECF1D5D8D7353698B94 ___m_Parameters;
+	uint8_t ___m_Initialized;
+	uint8_t ___m_ReadOnly;
+};
+struct NetworkStack_tED8BF3A3E8D779955E4F360EE1604B91400711CF 
+{
+	NativeList_1_tAB6AB8742D716D9C57C12B774FB35CFF814456B4 ___m_Layers;
+	NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213 ___m_AccumulatedPacketPadding;
+	int32_t ___m_TotalPacketPadding;
+	ConnectionList_t44A2E822FB7BF1857B165A02353B85C6A293FA42 ___m_Connections;
+	NetworkInterfaceWrapper_t5A159A13060FF3369270FBB8F57A7CF9FC1924D2 ___m_InterfaceWrapper;
+	int64_t ___NetworkInterfaceTypeHash;
 };
 struct PassFragmentData_t67D0B4EC16AF3DBC4233CC7537B93A27C78BFA8C 
 {
@@ -13112,6 +13380,23 @@ struct NetworkEndpoint_t0F60A2EF4E82ED5F26845E5537772D24C32426AC
 {
 	TransferrableData_tE4092BB2D19869881CCCD6B9B3E54FDC904B3197 ___Transferrable;
 };
+struct NetworkPipelineProcessor_tB90104D304F7FE6A0E8BB5AD39C95B2441F6E59C 
+{
+	NativeList_1_t6991118F5186CB8652760C0D202019D02FDD453E ___m_StageStructs;
+	NativeList_1_tABB80F41A867425794A066A582A476F0FA6C969A ___m_StageIds;
+	NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213 ___m_PipelineStagesIndices;
+	NativeList_1_t0EA735A94E6EBF8FE7F3B79411C98BF692EA2213 ___m_AccumulatedHeaderCapacity;
+	NativeList_1_t7D0C4FADF421E663CFE4731E9B320F919701A66C ___m_Pipelines;
+	NativeList_1_tEEE3A07B710DA14F96F06ECF1D5D8D7353698B94 ___m_StaticInstanceBuffer;
+	NativeList_1_tEEE3A07B710DA14F96F06ECF1D5D8D7353698B94 ___m_ReceiveBuffer;
+	NativeList_1_tEEE3A07B710DA14F96F06ECF1D5D8D7353698B94 ___m_SendBuffer;
+	NativeList_1_tEEE3A07B710DA14F96F06ECF1D5D8D7353698B94 ___m_SharedBuffer;
+	NativeParallelHashSet_1_t4EBD9E0A4D7B16720B9C15E9A3806469E3747A93 ___m_ReceiveStageNeedsUpdate;
+	NativeParallelHashSet_1_t4EBD9E0A4D7B16720B9C15E9A3806469E3747A93 ___m_SendStageNeedsUpdate;
+	NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8D4BAC38B2C ___sizePerConnection;
+	NativeArray_1_t25F6CEC65DB0532CB91E2B2890FF6C2D52A210A3 ___m_timestamp;
+	int32_t ___m_MaxPacketHeaderSize;
+};
 struct UnmanagedFilterFunction_t46D1C73262CD8245474DBC2CA5878C80E08A1B11 
 {
 	int32_t ___m_Type;
@@ -13248,6 +13533,18 @@ struct NativePassData_tC0F1669A8ED49F7203325B91DF9C473D65AA9CD2_marshaled_com
 	int32_t ___primitiveShadingRateCombiner;
 	int32_t ___fragmentShadingRateCombiner;
 };
+struct NetworkDriver_t3E4A5DD4686388B9F25135C01E4DB57E79449036 
+{
+	NetworkStack_tED8BF3A3E8D779955E4F360EE1604B91400711CF ___m_NetworkStack;
+	NetworkDriverSender_tF3B34F6ABB3F10418CBE4478BAFA34E0216611B9 ___m_DriverSender;
+	NetworkDriverReceiver_t69D0CDFCD49A8A9D27C7FC5DD507C59E4B245A4C ___m_DriverReceiver;
+	NetworkEventQueue_tDE8EC1A139521E69F9BBEC2D54C58B58E44CA723 ___m_EventQueue;
+	NativeReference_1_t5B192C8AF30EB1CE9FBBDEDE05E725954C7C32EC ___m_InternalState;
+	NetworkPipelineProcessor_tB90104D304F7FE6A0E8BB5AD39C95B2441F6E59C ___m_PipelineProcessor;
+	NetworkSettings_tF4E51C6335E296671D0F783AF9497052A3D903E0 ___m_NetworkSettings;
+	NativeHashMap_2_t531A8C9D6E02B13A97DD089372B536809AF092E8 ___m_ConnectionPayloads;
+	NativeList_1_t01ED65BC04F7260F897C89F71E57A41F95B679C3 ___m_HostnameLookups;
+};
 struct RelayServerData_t8D74FE8A133FB1F7C1BF9C0D39C69B5A75F70F09 
 {
 	NetworkEndpoint_t0F60A2EF4E82ED5F26845E5537772D24C32426AC ___Endpoint;
@@ -13351,6 +13648,9 @@ struct CallbackContext_tA0A9F5EE728305E47F4C76BC3B91E0635982EA4D
 	int32_t ___PacketPadding;
 	NetworkEndpoint_t0F60A2EF4E82ED5F26845E5537772D24C32426AC ___NewPacketsEndpoint;
 	ConnectionId_tEA78CDC27F3C855E62B4A8046ECAFF5DB06128EB ___NewPacketsConnection;
+};
+struct Action_2_tAE8A107BF234FA7C2417606ABD3072F6728F8603  : public MulticastDelegate_t
+{
 };
 struct AlignOfHelper_1_t21B472E2E91BE5F95ACDEE6898839509867FA2BD 
 {
@@ -13640,6 +13940,10 @@ struct RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B_StaticFi
 struct ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814_StaticFields
 {
 	RuntimeObject* ___Comparer;
+};
+struct NetworkDriver_t3E4A5DD4686388B9F25135C01E4DB57E79449036_StaticFields
+{
+	bool ___OverrideLocalhostLookup;
 };
 struct VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_StaticFields
 {
@@ -15700,6 +16004,68 @@ inline RewindableAllocator_tB18F8ADC8F2EE36E1F51FCCCFF0AC093108EF254* UnsafeUtil
 {
 	return ((  RewindableAllocator_tB18F8ADC8F2EE36E1F51FCCCFF0AC093108EF254* (*) (void*, const RuntimeMethod*))UnsafeUtilityInternal_AsRef_TisIl2CppFullySharedGenericStruct_m4AE204964F54C3F7626BE47CADE4A52CF2797B6B_fshared_inline)(___0_ptr, method);
 }
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+void Action_2_Invoke_mD7C393AE045EF225975A8BF6B27887913C28A829_Multicast(Action_2_tAE8A107BF234FA7C2417606ABD3072F6728F8603* __this, int32_t ___0_arg1, NetworkDriver_t3E4A5DD4686388B9F25135C01E4DB57E79449036 ___1_arg2, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		Action_2_tAE8A107BF234FA7C2417606ABD3072F6728F8603* currentDelegate = reinterpret_cast<Action_2_tAE8A107BF234FA7C2417606ABD3072F6728F8603*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, int32_t, NetworkDriver_t3E4A5DD4686388B9F25135C01E4DB57E79449036, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl)((Il2CppObject*)currentDelegate->___method_code, ___0_arg1, ___1_arg2, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method));
+	}
+}
+void Action_2_Invoke_mD7C393AE045EF225975A8BF6B27887913C28A829_OpenStatic(Action_2_tAE8A107BF234FA7C2417606ABD3072F6728F8603* __this, int32_t ___0_arg1, NetworkDriver_t3E4A5DD4686388B9F25135C01E4DB57E79449036 ___1_arg2, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (int32_t, NetworkDriver_t3E4A5DD4686388B9F25135C01E4DB57E79449036, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr)(___0_arg1, ___1_arg2, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_2__ctor_m0CBCD6E8AF222E913F4F6948DD06E3FAA22298E3 (Action_2_tAE8A107BF234FA7C2417606ABD3072F6728F8603* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) 
+{
+	__this->___method_ptr = (intptr_t)il2cpp_codegen_get_direct_method_pointer((RuntimeMethod*)___1_method);
+	__this->___method = ___1_method;
+	__this->___m_target = ___0_object;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target), (void*)___0_object);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___1_method);
+	__this->___method_code = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___1_method))
+	{
+		bool isOpen = parameterCount == 2;
+		if (isOpen)
+		{
+			__this->___invoke_impl = (intptr_t)Action_2_Invoke_mD7C393AE045EF225975A8BF6B27887913C28A829_OpenStatic;
+		}
+		else
+		{
+			__this->___method_code = (intptr_t)__this->___m_target;
+			__this->___invoke_impl = (intptr_t)__this->___method_ptr;
+		}
+	}
+	else
+	{
+		if (___0_object == NULL)
+			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
+		if (il2cpp_codegen_class_is_value_type(il2cpp_codegen_object_get_class(__this->___m_target)))
+			__this->___method_code = (intptr_t)il2cpp_codegen_get_raw_data<void*>(__this->___m_target);
+		else
+			__this->___method_code = (intptr_t)__this->___m_target;
+		__this->___invoke_impl = (intptr_t)__this->___method_ptr;
+	}
+	__this->___extra_arg = (intptr_t)Action_2_Invoke_mD7C393AE045EF225975A8BF6B27887913C28A829_Multicast;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_2_Invoke_mD7C393AE045EF225975A8BF6B27887913C28A829 (Action_2_tAE8A107BF234FA7C2417606ABD3072F6728F8603* __this, int32_t ___0_arg1, NetworkDriver_t3E4A5DD4686388B9F25135C01E4DB57E79449036 ___1_arg2, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, int32_t, NetworkDriver_t3E4A5DD4686388B9F25135C01E4DB57E79449036, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_arg1, ___1_arg2, reinterpret_cast<RuntimeMethod*>(__this->___method));
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -27612,6 +27978,70 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AffordanceThemeData_1__ctor_m211AA620948
 		return;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

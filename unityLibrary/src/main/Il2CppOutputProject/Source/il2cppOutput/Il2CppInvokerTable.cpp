@@ -859,6 +859,7 @@ struct List_1_tF43D0DA1B22D0A91FBF53BD9D3F2134C10703D4D;
 struct List_1_tE8267DC50323E6835C1F1668CBED621535AD99C4;
 struct List_1_tE74211ABCF8F7082E227771B01B714D543B89E58;
 struct List_1_tCACE72F49C5F55410BB183965866A94A2B48CA28;
+struct List_1_tBAE4750C29B336617D949EA25C2CA377F633EEB8;
 struct List_1_t80D43CC426B520567FE49EEA17C1D8FD86D6696F;
 struct List_1_tC7B44C78CA50A1798BFA24A4EEB9790F6849F89C;
 struct List_1_tFC07559704F46121FC09966FB01CDF3153799769;
@@ -5127,6 +5128,16 @@ struct ReadOnly_tD2A1A5CBC6F3FBE2C53643795B33F6C80518209C
 	void* ___m_Buffer;
 	int32_t ___m_Length;
 };
+struct ReadOnly_t92AD3A7814D2B778CE2A4ACDD933086978EEA21C 
+{
+	void* ___m_Buffer;
+	int32_t ___m_Length;
+};
+struct ReadOnly_tD50E4DE172EA73A7A999BCE9BE4AA0CBA286D1F0 
+{
+	void* ___m_Buffer;
+	int32_t ___m_Length;
+};
 struct ReadOnly_t43E90A23C1ADED0B9884590ED6C513AB8F503A4B 
 {
 	void* ___m_Buffer;
@@ -6424,6 +6435,16 @@ struct ReadOnly_t24713BFE0C08F60313A8801A89E7AAC74712500A
 	int32_t ___m_Length;
 };
 struct ReadOnly_t67F9BF388337799D3E2F8BD55B4B16E977CBCC63 
+{
+	void* ___m_Buffer;
+	int32_t ___m_Length;
+};
+struct ReadOnly_t620AB76754D9BFB8587924945E3DB1DAD965C7D8 
+{
+	void* ___m_Buffer;
+	int32_t ___m_Length;
+};
+struct ReadOnly_tE67B0B7293B25922B4C0A0BFC1722228F5AAC9CC 
 {
 	void* ___m_Buffer;
 	int32_t ___m_Length;
@@ -14717,6 +14738,11 @@ struct CharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91CB_marshaled_com
 	uint8_t ___original;
 	uint8_t ___replacement;
 };
+struct PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0 
+{
+	int32_t ___from;
+	int32_t ___to;
+};
 struct TableRange_tD242F3D62C818E84B6903C18A6CE33399672B497 
 {
 	int32_t ___Start;
@@ -17179,6 +17205,14 @@ struct ShuffleStep_tE03F141E679F3E0E3D015AB236E3687EE28696FD
 	float ___duration;
 	float ___arcHeight;
 };
+struct ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99 
+{
+	int32_t ___activeMask;
+	float ___started0;
+	float ___started1;
+	float ___started2;
+	float ___started3;
+};
 struct NotePatternEntry_tA13FD75F7498EC1211DCBE9C496515043C3C7928 
 {
 	uint64_t ___noteId;
@@ -17238,6 +17272,7 @@ struct RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597
 	float ___jumpRemainingSeconds;
 	bool ___finished;
 	float ___finishTimeSeconds;
+	uint32_t ___resetSequence;
 };
 struct RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597_marshaled_pinvoke
 {
@@ -17248,6 +17283,7 @@ struct RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597_marshaled_pinv
 	float ___jumpRemainingSeconds;
 	int32_t ___finished;
 	float ___finishTimeSeconds;
+	uint32_t ___resetSequence;
 };
 struct RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597_marshaled_com
 {
@@ -17258,6 +17294,7 @@ struct RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597_marshaled_com
 	float ___jumpRemainingSeconds;
 	int32_t ___finished;
 	float ___finishTimeSeconds;
+	uint32_t ___resetSequence;
 };
 struct ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD 
 {
@@ -24323,6 +24360,14 @@ struct EventType_t4F3830A008A6F99ED7DBC9B07A67B745EE77DF0A
 	uint8_t ___value__;
 };
 struct EventType_t56AD5CB2D75A415ED46F5000738E655EC94F1908 
+{
+	uint8_t ___value__;
+};
+struct EventType_tDE77F89136C2E1757A6305B0B2EB552F2D6C9F15 
+{
+	uint8_t ___value__;
+};
+struct EventType_tB7766F78D4AE4B094CCE3978A871E99C2B1DD766 
 {
 	uint8_t ___value__;
 };
@@ -43086,6 +43131,75 @@ struct BoatStateEntry_tF74997E8F9D2505698CBE8554168F8D9FBAD669A
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___pos;
 	float ___yawDeg;
 };
+struct PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 
+{
+	uint64_t ___clientId;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position;
+	float ___yaw;
+	uint32_t ___hitSequence;
+	bool ___knockedDown;
+	bool ___moving;
+	float ___knockdownStartedAt;
+};
+struct PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_marshaled_pinvoke
+{
+	uint64_t ___clientId;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position;
+	float ___yaw;
+	uint32_t ___hitSequence;
+	int32_t ___knockedDown;
+	int32_t ___moving;
+	float ___knockdownStartedAt;
+};
+struct PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_marshaled_com
+{
+	uint64_t ___clientId;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position;
+	float ___yaw;
+	uint32_t ___hitSequence;
+	int32_t ___knockedDown;
+	int32_t ___moving;
+	float ___knockdownStartedAt;
+};
+struct ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 
+{
+	uint32_t ___id;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___direction;
+	float ___yaw;
+	float ___distance;
+	float ___verticalVelocity;
+	float ___fallStartY;
+	bool ___falling;
+};
+struct ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_marshaled_pinvoke
+{
+	uint32_t ___id;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___direction;
+	float ___yaw;
+	float ___distance;
+	float ___verticalVelocity;
+	float ___fallStartY;
+	int32_t ___falling;
+};
+struct ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_marshaled_com
+{
+	uint32_t ___id;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___direction;
+	float ___yaw;
+	float ___distance;
+	float ___verticalVelocity;
+	float ___fallStartY;
+	int32_t ___falling;
+};
+struct TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 
+{
+	uint32_t ___id;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position;
+	float ___yaw;
+};
 struct ReadOnly_t2F0B641F41CF4430BAC4C30B56FEBFE4596349F9 
 {
 	ReadOnly_t2A8256E46E82BFCBBCD732DE99F33A675AFA377A ___m_BitArray;
@@ -45309,6 +45423,25 @@ struct Enumerator_t13AC03A740471E6E05774756DC15694154CC63F0
 	int32_t ___m_Index;
 	BoatStateEntry_tF74997E8F9D2505698CBE8554168F8D9FBAD669A ___value;
 };
+struct Enumerator_t4EAC2BA76672ECBC0B4824A0DA2BC465F7359EC6 
+{
+	ReadOnly_t620AB76754D9BFB8587924945E3DB1DAD965C7D8 ___m_Array;
+	int32_t ___m_Index;
+	PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 ___value;
+};
+struct Enumerator_tB5BAB886D6732CE658884046A4CB40B6DAB3B177 
+{
+	List_1_tBAE4750C29B336617D949EA25C2CA377F633EEB8* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 ____current;
+};
+struct Enumerator_t5BFB82B524EBE85A5D872321803F2952450DFEE9 
+{
+	ReadOnly_tE67B0B7293B25922B4C0A0BFC1722228F5AAC9CC ___m_Array;
+	int32_t ___m_Index;
+	TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 ___value;
+};
 struct Enumerator_t1B99FDE2CCDA57565434551FE524B948182C2D0D 
 {
 	ReadOnly_t74A027F3C68EC3F52E7E19C5976BB17C717AC1D1 ___m_Array;
@@ -46875,6 +47008,18 @@ struct NativeArray_1_t6A65E43DD3F62F86C8306844138A8540FB0C249C
 	int32_t ___m_Length;
 	int32_t ___m_AllocatorLabel;
 };
+struct NativeArray_1_t4D1FF88837A78D62EE091965CC2F4EA7B71107C6 
+{
+	void* ___m_Buffer;
+	int32_t ___m_Length;
+	int32_t ___m_AllocatorLabel;
+};
+struct NativeArray_1_tE9BF3773A1E7AB3948FF90A055A0776D4DA43310 
+{
+	void* ___m_Buffer;
+	int32_t ___m_Length;
+	int32_t ___m_AllocatorLabel;
+};
 struct NativeArray_1_tE7AC447D25C22B568AC26D291E5E43F9555B3CBE 
 {
 	void* ___m_Buffer;
@@ -48411,6 +48556,18 @@ struct NativeArray_1_t7D062F6088F0A20A4420B76C6C8A5BEF40AC0CEB
 	int32_t ___m_Length;
 	int32_t ___m_AllocatorLabel;
 };
+struct NativeArray_1_tE3C041EE019701B3AECB0ED51FDF99E6FF7C0804 
+{
+	void* ___m_Buffer;
+	int32_t ___m_Length;
+	int32_t ___m_AllocatorLabel;
+};
+struct NativeArray_1_t6EBCB14ED589BF189AA83B1BF231AF289EF19B4C 
+{
+	void* ___m_Buffer;
+	int32_t ___m_Length;
+	int32_t ___m_AllocatorLabel;
+};
 struct NativeArray_1_t2CBD21EAB7229CDAFB0E96544889F7EB97241310 
 {
 	void* ___m_Buffer;
@@ -48713,6 +48870,20 @@ struct NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3
 	uint8_t ___Type;
 	ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD ___Value;
 	ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD ___PreviousValue;
+	int32_t ___Index;
+};
+struct NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE 
+{
+	uint8_t ___Type;
+	PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 ___Value;
+	PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 ___PreviousValue;
+	int32_t ___Index;
+};
+struct NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 
+{
+	uint8_t ___Type;
+	TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 ___Value;
+	TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 ___PreviousValue;
 	int32_t ___Index;
 };
 struct Node_tA8F7ED85FD786FE388B1ED3CF8DDFEDC56587258 
@@ -49337,6 +49508,10 @@ struct AnimationMotionXToDeltaPlayable_t3946605ADB0B4C054A27B3D65A59F8EB75B6BE18
 struct AnimationOffsetPlayable_t39A1B1103995D63650F606BA2EA4ABDF9484AFB4 
 {
 	PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4 ___m_Handle;
+};
+struct AnimationPlayableOutput_t753AC95DC826789BC537D18449E93114777DDF4E 
+{
+	PlayableOutputHandle_tEB217645A8C0356A3AC6F964F283003B9740E883 ___m_Handle;
 };
 struct AnimationPosePlayable_tBB5B82AC675A509F3808C8F825EA24943714CD5C 
 {
@@ -59903,6 +60078,30 @@ struct Enumerator_t50200597D7A1C187E6B524AA5E5561CE69C553DF
 	int32_t ___m_Index;
 	NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3 ___value;
 };
+struct Enumerator_t5F41DB9846CAD51CE8B0125B93B3FA219D1F3B60 
+{
+	NativeArray_1_t4D1FF88837A78D62EE091965CC2F4EA7B71107C6 ___m_Array;
+	int32_t ___m_Index;
+	NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE ___value;
+};
+struct Enumerator_tCC8501F85E76154903EA7E13F2B012EF2FFCDB40 
+{
+	ReadOnly_t92AD3A7814D2B778CE2A4ACDD933086978EEA21C ___m_Array;
+	int32_t ___m_Index;
+	NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE ___value;
+};
+struct Enumerator_tE7A96B9EF9851AB8717491C97333B625DE4E9867 
+{
+	NativeArray_1_tE9BF3773A1E7AB3948FF90A055A0776D4DA43310 ___m_Array;
+	int32_t ___m_Index;
+	NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 ___value;
+};
+struct Enumerator_t6EE69B3AC9E1869E9F1331DD25B09908097559DB 
+{
+	ReadOnly_tD50E4DE172EA73A7A999BCE9BE4AA0CBA286D1F0 ___m_Array;
+	int32_t ___m_Index;
+	NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 ___value;
+};
 struct Enumerator_t429C176A06B2040A1B2E20DFC073F71FFC25D0DA 
 {
 	NativeArray_1_tE7AC447D25C22B568AC26D291E5E43F9555B3CBE ___m_Array;
@@ -61985,6 +62184,18 @@ struct Enumerator_t545647CBBC55E90DDADA54A4E99C4B4BFCE5AC32
 	NativeArray_1_t7D062F6088F0A20A4420B76C6C8A5BEF40AC0CEB ___m_Array;
 	int32_t ___m_Index;
 	ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD ___value;
+};
+struct Enumerator_t1F4859AE2E90B1AC978D38FD10717A11D29D68E5 
+{
+	NativeArray_1_tE3C041EE019701B3AECB0ED51FDF99E6FF7C0804 ___m_Array;
+	int32_t ___m_Index;
+	PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 ___value;
+};
+struct Enumerator_tAB0BC1CF5EDD01E7A99FFE34207B0D14A8DDCB15 
+{
+	NativeArray_1_t6EBCB14ED589BF189AA83B1BF231AF289EF19B4C ___m_Array;
+	int32_t ___m_Index;
+	TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 ___value;
 };
 struct Enumerator_tBD57D13B3A3AD85C68579E65E228AC97F1FD528B 
 {
@@ -66888,8 +67099,6 @@ struct XRSaveAnchorResult_t30DC9C1CC8C9B5A35D3846C455096D08A6462DC8
 };
 struct XrAvatarPosePacket_t0AA057B06459E3547B077CF8ABE11D9B294B501B 
 {
-	uint32_t ___sequence;
-	double ___sentTime;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___headLocalPos;
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___headLocalRot;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___leftWristLocalPos;
@@ -86385,6 +86594,12 @@ void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_
 	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, (void*)args[0], *((int32_t*)args[1]), *((int32_t*)args[2]), *((PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655*)args[3]), (void*)args[4], methodMetadata);
 }
 
+void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* obj, void* p1, int32_t p2, int32_t p3, ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 p4, void* p5, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, (void*)args[0], *((int32_t*)args[1]), *((int32_t*)args[2]), *((ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33*)args[3]), (void*)args[4], methodMetadata);
+}
+
 void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AnimationState_t90091AD2757C132602279750EFF7907F066817B0_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef int32_t (*Func)(void* obj, void* p1, int32_t p2, int32_t p3, AnimationState_t90091AD2757C132602279750EFF7907F066817B0 p4, void* p5, const RuntimeMethod* method);
@@ -88299,10 +88514,22 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t68
 	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((uint64_t*)args[1]), *((FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99*)args[2]), (void*)args[3], (void*)args[4], methodMetadata);
 }
 
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, int32_t p1, uint64_t p2, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p3, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p4, float p5, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((uint64_t*)args[1]), *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[2]), *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[3]), *((float*)args[4]), methodMetadata);
+}
+
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void (*Func)(void* obj, int32_t p1, Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A p2, int32_t p3, double p4, int32_t p5, const RuntimeMethod* method);
 	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A*)args[1]), *((int32_t*)args[2]), *((double*)args[3]), *((int32_t*)args[4]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, int32_t p1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p2, uint64_t p3, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p4, float p5, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[1]), *((uint64_t*)args[2]), *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[3]), *((float*)args[4]), methodMetadata);
 }
 
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ControlBitRangeNode_t21274A438B0E0877F1495EC579EB1DAF81B1A6B0_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -89607,6 +89834,12 @@ void RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_float4
 	*((void**)returnAddress) = ((Func)methodPointer)(obj, *((float4_t545A994996126766890C1F28B43EA823F2410190*)args[0]), *((float4_t545A994996126766890C1F28B43EA823F2410190*)args[1]), *((float*)args[2]), (void*)args[3], methodMetadata);
 }
 
+void RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99_ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void* (*Func)(void* obj, ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99 p1, ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99 p2, void* p3, void* p4, const RuntimeMethod* method);
+	*((void**)returnAddress) = ((Func)methodPointer)(obj, *((ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99*)args[0]), *((ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99*)args[1]), (void*)args[2], (void*)args[3], methodMetadata);
+}
+
 void RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6_TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void* (*Func)(void* obj, TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6 p1, TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6 p2, void* p3, void* p4, const RuntimeMethod* method);
@@ -90481,6 +90714,18 @@ void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_
 {
 	typedef int32_t (*Func)(void* obj, void* p1, NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3 p2, int32_t p3, int32_t p4, const RuntimeMethod* method);
 	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, (void*)args[0], *((NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3*)args[1]), *((int32_t*)args[2]), *((int32_t*)args[3]), methodMetadata);
+}
+
+void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* obj, void* p1, NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE p2, int32_t p3, int32_t p4, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, (void*)args[0], *((NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE*)args[1]), *((int32_t*)args[2]), *((int32_t*)args[3]), methodMetadata);
+}
+
+void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* obj, void* p1, NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 p2, int32_t p3, int32_t p4, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, (void*)args[0], *((NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496*)args[1]), *((int32_t*)args[2]), *((int32_t*)args[3]), methodMetadata);
 }
 
 void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -93831,6 +94076,24 @@ void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_
 	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, (void*)args[0], *((ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD*)args[1]), *((int32_t*)args[2]), *((int32_t*)args[3]), methodMetadata);
 }
 
+void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* obj, void* p1, PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 p2, int32_t p3, int32_t p4, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, (void*)args[0], *((PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6*)args[1]), *((int32_t*)args[2]), *((int32_t*)args[3]), methodMetadata);
+}
+
+void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* obj, void* p1, ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 p2, int32_t p3, int32_t p4, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, (void*)args[0], *((ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33*)args[1]), *((int32_t*)args[2]), *((int32_t*)args[3]), methodMetadata);
+}
+
+void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* obj, void* p1, TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 p2, int32_t p3, int32_t p4, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, (void*)args[0], *((TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7*)args[1]), *((int32_t*)args[2]), *((int32_t*)args[3]), methodMetadata);
+}
+
 void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef int32_t (*Func)(void* obj, void* p1, FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5 p2, int32_t p3, int32_t p4, const RuntimeMethod* method);
@@ -95767,6 +96030,12 @@ void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t6
 {
 	typedef int32_t (*Func)(void* obj, int32_t p1, int32_t p2, PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655 p3, void* p4, const RuntimeMethod* method);
 	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, *((int32_t*)args[0]), *((int32_t*)args[1]), *((PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655*)args[2]), (void*)args[3], methodMetadata);
+}
+
+void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* obj, int32_t p1, int32_t p2, ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 p3, void* p4, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, *((int32_t*)args[0]), *((int32_t*)args[1]), *((ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33*)args[2]), (void*)args[3], methodMetadata);
 }
 
 void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AnimationState_t90091AD2757C132602279750EFF7907F066817B0_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -97821,6 +98090,12 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t
 	((Func)methodPointer)(obj, (void*)args[0], *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[1]), *((double*)args[2]), *((uint8_t*)args[3]), methodMetadata);
 }
 
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Color_tD001788D726C3A7F1379BEED0260B9591F440C1F (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, void* p1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p2, float p3, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F p4, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, (void*)args[0], *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[1]), *((float*)args[2]), *((Color_tD001788D726C3A7F1379BEED0260B9591F440C1F*)args[3]), methodMetadata);
+}
+
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void (*Func)(void* obj, void* p1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p2, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 p3, float p4, const RuntimeMethod* method);
@@ -98661,18 +98936,6 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t68
 	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((uint64_t*)args[1]), (void*)args[2], *((uint8_t*)args[3]), methodMetadata);
 }
 
-void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
-{
-	typedef void (*Func)(void* obj, int32_t p1, uint64_t p2, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p3, float p4, const RuntimeMethod* method);
-	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((uint64_t*)args[1]), *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[2]), *((float*)args[3]), methodMetadata);
-}
-
-void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
-{
-	typedef void (*Func)(void* obj, int32_t p1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p2, uint64_t p3, float p4, const RuntimeMethod* method);
-	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[1]), *((uint64_t*)args[2]), *((float*)args[3]), methodMetadata);
-}
-
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void (*Func)(void* obj, int32_t p1, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 p2, float p3, float p4, const RuntimeMethod* method);
@@ -98875,6 +99138,12 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Single_t4
 {
 	typedef void (*Func)(void* obj, float p1, float p2, float p3, bool3_t441AC74ECEF37A02C7F99EEE17436B76FCF27B02 p4, const RuntimeMethod* method);
 	((Func)methodPointer)(obj, *((float*)args[0]), *((float*)args[1]), *((float*)args[2]), *((bool3_t441AC74ECEF37A02C7F99EEE17436B76FCF27B02*)args[3]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_ServerRpcParams_tA2B8E26BB420EE0CB740E586BF306E215A4D0558 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, float p1, float p2, uint32_t p3, ServerRpcParams_tA2B8E26BB420EE0CB740E586BF306E215A4D0558 p4, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((float*)args[0]), *((float*)args[1]), *((uint32_t*)args[2]), *((ServerRpcParams_tA2B8E26BB420EE0CB740E586BF306E215A4D0558*)args[3]), methodMetadata);
 }
 
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_TextureHandle_t680ABA3F8B50859351BA5DD66220084F87F37388_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -99129,12 +99398,6 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector2_t
 	((Func)methodPointer)(obj, *((Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)args[0]), *((float*)args[1]), *((float*)args[2]), *((uint8_t*)args[3]), methodMetadata);
 }
 
-void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
-{
-	typedef void (*Func)(void* obj, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p1, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 p2, uint32_t p3, double p4, const RuntimeMethod* method);
-	((Func)methodPointer)(obj, *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[0]), *((Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974*)args[1]), *((uint32_t*)args[2]), *((double*)args[3]), methodMetadata);
-}
-
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void (*Func)(void* obj, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p1, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 p2, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p3, uint8_t p4, const RuntimeMethod* method);
@@ -99145,6 +99408,12 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t
 {
 	typedef void (*Func)(void* obj, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p1, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 p2, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p3, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p4, const RuntimeMethod* method);
 	((Func)methodPointer)(obj, *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[0]), *((Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974*)args[1]), *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[2]), *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[3]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p1, uint64_t p2, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p3, uint8_t p4, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[0]), *((uint64_t*)args[1]), *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[2]), *((uint8_t*)args[3]), methodMetadata);
 }
 
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -99867,6 +100136,18 @@ void RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Networ
 	*((void**)returnAddress) = ((Func)methodPointer)(obj, *((NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3*)args[0]), (void*)args[1], (void*)args[2], methodMetadata);
 }
 
+void RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void* (*Func)(void* obj, NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE p1, void* p2, void* p3, const RuntimeMethod* method);
+	*((void**)returnAddress) = ((Func)methodPointer)(obj, *((NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE*)args[0]), (void*)args[1], (void*)args[2], methodMetadata);
+}
+
+void RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void* (*Func)(void* obj, NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 p1, void* p2, void* p3, const RuntimeMethod* method);
+	*((void**)returnAddress) = ((Func)methodPointer)(obj, *((NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496*)args[0]), (void*)args[1], (void*)args[2], methodMetadata);
+}
+
 void RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void* (*Func)(void* obj, ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC p1, int32_t p2, int32_t p3, const RuntimeMethod* method);
@@ -100273,6 +100554,12 @@ void RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_
 {
 	typedef void* (*Func)(void* obj, int32_t p1, uint64_t p2, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F p3, const RuntimeMethod* method);
 	*((void**)returnAddress) = ((Func)methodPointer)(obj, *((int32_t*)args[0]), *((uint64_t*)args[1]), *((Color_tD001788D726C3A7F1379BEED0260B9591F440C1F*)args[2]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void* (*Func)(void* obj, int32_t p1, uint64_t p2, int32_t p3, const RuntimeMethod* method);
+	*((void**)returnAddress) = ((Func)methodPointer)(obj, *((int32_t*)args[0]), *((uint64_t*)args[1]), *((int32_t*)args[2]), methodMetadata);
 }
 
 void RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -101065,12 +101352,6 @@ void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t
 {
 	typedef uint8_t (*Func)(void* obj, void* p1, double p2, void* p3, const RuntimeMethod* method);
 	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, (void*)args[0], *((double*)args[1]), (void*)args[2], methodMetadata);
-}
-
-void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F_Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
-{
-	typedef uint8_t (*Func)(void* obj, void* p1, double p2, double p3, const RuntimeMethod* method);
-	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, (void*)args[0], *((double*)args[1]), *((double*)args[2]), methodMetadata);
 }
 
 void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F_InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -102397,6 +102678,12 @@ void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Vector3_t
 {
 	typedef uint8_t (*Func)(void* obj, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p1, int32_t p2, void* p3, const RuntimeMethod* method);
 	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[0]), *((int32_t*)args[1]), (void*)args[2], methodMetadata);
+}
+
+void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef uint8_t (*Func)(void* obj, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p1, float p2, float p3, const RuntimeMethod* method);
+	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[0]), *((float*)args[1]), *((float*)args[2]), methodMetadata);
 }
 
 void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -106425,6 +106712,18 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t68
 	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD*)args[1]), *((uint8_t*)args[2]), methodMetadata);
 }
 
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, int32_t p1, PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 p2, uint8_t p3, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6*)args[1]), *((uint8_t*)args[2]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, int32_t p1, TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 p2, uint8_t p3, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7*)args[1]), *((uint8_t*)args[2]), methodMetadata);
+}
+
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ConnectionData_t047259821C45CA9102A1337567BA69F793E7C336_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void (*Func)(void* obj, int32_t p1, ConnectionData_t047259821C45CA9102A1337567BA69F793E7C336 p2, int32_t p3, const RuntimeMethod* method);
@@ -107223,12 +107522,6 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t
 	((Func)methodPointer)(obj, *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[0]), *((float*)args[1]), *((float*)args[2]), methodMetadata);
 }
 
-void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
-{
-	typedef void (*Func)(void* obj, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p1, uint64_t p2, uint8_t p3, const RuntimeMethod* method);
-	((Func)methodPointer)(obj, *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[0]), *((uint64_t*)args[1]), *((uint8_t*)args[2]), methodMetadata);
-}
-
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void (*Func)(void* obj, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p2, void* p3, const RuntimeMethod* method);
@@ -107545,6 +107838,12 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ControlBi
 {
 	typedef void (*Func)(void* obj, ControlBitRangeNode_t21274A438B0E0877F1495EC579EB1DAF81B1A6B0 p1, uint32_t p2, void* p3, const RuntimeMethod* method);
 	((Func)methodPointer)(obj, *((ControlBitRangeNode_t21274A438B0E0877F1495EC579EB1DAF81B1A6B0*)args[0]), *((uint32_t*)args[1]), (void*)args[2], methodMetadata);
+}
+
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99 p1, int32_t p2, int32_t p3, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99*)args[0]), *((int32_t*)args[1]), *((int32_t*)args[2]), methodMetadata);
 }
 
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -108373,6 +108672,12 @@ void RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2
 {
 	typedef void* (*Func)(void* obj, void* p1, CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED p2, const RuntimeMethod* method);
 	*((void**)returnAddress) = ((Func)methodPointer)(obj, (void*)args[0], *((CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Color_tD001788D726C3A7F1379BEED0260B9591F440C1F (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void* (*Func)(void* obj, void* p1, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F p2, const RuntimeMethod* method);
+	*((void**)returnAddress) = ((Func)methodPointer)(obj, (void*)args[0], *((Color_tD001788D726C3A7F1379BEED0260B9591F440C1F*)args[1]), methodMetadata);
 }
 
 void RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_EntityId_t982FBD037EAC5CA077B1602A7EA40E3523AA0FC8 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -110233,6 +110538,18 @@ void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_NetworkLi
 {
 	typedef uint8_t (*Func)(void* obj, NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3 p1, NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3 p2, const RuntimeMethod* method);
 	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3*)args[0]), *((NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef uint8_t (*Func)(void* obj, NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE p1, NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE p2, const RuntimeMethod* method);
+	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE*)args[0]), *((NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef uint8_t (*Func)(void* obj, NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 p1, NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 p2, const RuntimeMethod* method);
+	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496*)args[0]), *((NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496*)args[1]), methodMetadata);
 }
 
 void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165_Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -115179,6 +115496,24 @@ void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_ClaimEntr
 	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD*)args[0]), *((ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD*)args[1]), methodMetadata);
 }
 
+void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef uint8_t (*Func)(void* obj, PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 p1, PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 p2, const RuntimeMethod* method);
+	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6*)args[0]), *((PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef uint8_t (*Func)(void* obj, ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 p1, ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 p2, const RuntimeMethod* method);
+	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33*)args[0]), *((ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef uint8_t (*Func)(void* obj, TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 p1, TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 p2, const RuntimeMethod* method);
+	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7*)args[0]), *((TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7*)args[1]), methodMetadata);
+}
+
 void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5_FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef uint8_t (*Func)(void* obj, FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5 p1, FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5 p2, const RuntimeMethod* method);
@@ -119187,6 +119522,18 @@ void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PlayerSc
 	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, *((PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655*)args[0]), *((PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655*)args[1]), methodMetadata);
 }
 
+void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* obj, ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 p1, void* p2, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, *((ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33*)args[0]), (void*)args[1], methodMetadata);
+}
+
+void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* obj, ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 p1, ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 p2, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, *((ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33*)args[0]), *((ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33*)args[1]), methodMetadata);
+}
+
 void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AnimationState_t90091AD2757C132602279750EFF7907F066817B0_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef int32_t (*Func)(void* obj, AnimationState_t90091AD2757C132602279750EFF7907F066817B0 p1, void* p2, const RuntimeMethod* method);
@@ -122595,6 +122942,12 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Byte_t94D
 	((Func)methodPointer)(obj, *((uint8_t*)args[0]), *((uint64_t*)args[1]), methodMetadata);
 }
 
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, uint8_t p1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p2, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((uint8_t*)args[0]), *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[1]), methodMetadata);
+}
+
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void (*Func)(void* obj, CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED p1, void* p2, const RuntimeMethod* method);
@@ -125689,6 +126042,18 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t68
 {
 	typedef void (*Func)(void* obj, int32_t p1, NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3 p2, const RuntimeMethod* method);
 	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, int32_t p1, NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE p2, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, int32_t p1, NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 p2, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496*)args[1]), methodMetadata);
 }
 
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Node_tA8F7ED85FD786FE388B1ED3CF8DDFEDC56587258 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -129249,12 +129614,6 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t68
 	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((XRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5*)args[1]), methodMetadata);
 }
 
-void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XrAvatarPosePacket_t0AA057B06459E3547B077CF8ABE11D9B294B501B (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
-{
-	typedef void (*Func)(void* obj, int32_t p1, XrAvatarPosePacket_t0AA057B06459E3547B077CF8ABE11D9B294B501B p2, const RuntimeMethod* method);
-	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((XrAvatarPosePacket_t0AA057B06459E3547B077CF8ABE11D9B294B501B*)args[1]), methodMetadata);
-}
-
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XrBoxf_tB0E84D6272ADF2ECA0C0A42E1EB11948FF3501A8 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void (*Func)(void* obj, int32_t p1, XrBoxf_tB0E84D6272ADF2ECA0C0A42E1EB11948FF3501A8 p2, const RuntimeMethod* method);
@@ -129553,6 +129912,12 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t68
 {
 	typedef void (*Func)(void* obj, int32_t p1, CharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91CB p2, const RuntimeMethod* method);
 	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((CharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91CB*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, int32_t p1, PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0 p2, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0*)args[1]), methodMetadata);
 }
 
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_TableRange_tD242F3D62C818E84B6903C18A6CE33399672B497 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -130219,6 +130584,24 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t68
 {
 	typedef void (*Func)(void* obj, int32_t p1, ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD p2, const RuntimeMethod* method);
 	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, int32_t p1, PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 p2, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, int32_t p1, ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 p2, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, int32_t p1, TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 p2, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((int32_t*)args[0]), *((TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7*)args[1]), methodMetadata);
 }
 
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -131583,6 +131966,12 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_PlayableH
 	((Func)methodPointer)(obj, *((PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4*)args[0]), *((uint8_t*)args[1]), methodMetadata);
 }
 
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4 p1, int32_t p2, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4*)args[0]), *((int32_t*)args[1]), methodMetadata);
+}
+
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void (*Func)(void* obj, PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42 p1, void* p2, const RuntimeMethod* method);
@@ -132171,6 +132560,12 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_UInt32_t1
 	((Func)methodPointer)(obj, *((uint32_t*)args[0]), *((uint64_t*)args[1]), methodMetadata);
 }
 
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, uint32_t p1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 p2, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((uint32_t*)args[0]), *((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)args[1]), methodMetadata);
+}
+
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_WorldSpaceData_t1F653E7DB8EA00BA1A22EC93964627BCB938E922 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void (*Func)(void* obj, uint32_t p1, WorldSpaceData_t1F653E7DB8EA00BA1A22EC93964627BCB938E922 p2, const RuntimeMethod* method);
@@ -132397,6 +132792,12 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector2_t
 {
 	typedef void (*Func)(void* obj, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 p1, int32_t p2, const RuntimeMethod* method);
 	((Func)methodPointer)(obj, *((Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)args[0]), *((int32_t*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_ServerRpcParams_tA2B8E26BB420EE0CB740E586BF306E215A4D0558 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 p1, ServerRpcParams_tA2B8E26BB420EE0CB740E586BF306E215A4D0558 p2, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)args[0]), *((ServerRpcParams_tA2B8E26BB420EE0CB740E586BF306E215A4D0558*)args[1]), methodMetadata);
 }
 
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -132999,10 +133400,22 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Rectangle
 	((Func)methodPointer)(obj, *((RectangleParams_t13A34E9E14DEF5B8B0349F7C543FAE7EBF22064D*)args[0]), *((uint8_t*)args[1]), methodMetadata);
 }
 
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99_ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99 p1, ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99 p2, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99*)args[0]), *((ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99*)args[1]), methodMetadata);
+}
+
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6_TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void (*Func)(void* obj, TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6 p1, TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6 p2, const RuntimeMethod* method);
 	((Func)methodPointer)(obj, *((TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6*)args[0]), *((TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 p1, void* p2, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6*)args[0]), (void*)args[1], methodMetadata);
 }
 
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_AnimationMessage_tF1A1A3CF56E776370CB13D68C38EB2433C4CC187_RpcParams_t230EE00CD9A98836455C756E14F0C575971412FD (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -136345,6 +136758,18 @@ void RuntimeInvoker_InstNetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B5581
 {
 	typedef NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3 (*Func)(void* obj, int32_t p1, const RuntimeMethod* method);
 	*((NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3*)returnAddress) = ((Func)methodPointer)(obj, *((int32_t*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstNetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE (*Func)(void* obj, int32_t p1, const RuntimeMethod* method);
+	*((NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE*)returnAddress) = ((Func)methodPointer)(obj, *((int32_t*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstNetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 (*Func)(void* obj, int32_t p1, const RuntimeMethod* method);
+	*((NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496*)returnAddress) = ((Func)methodPointer)(obj, *((int32_t*)args[0]), methodMetadata);
 }
 
 void RuntimeInvoker_InstNode_tA8F7ED85FD786FE388B1ED3CF8DDFEDC56587258_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -141625,6 +142050,18 @@ void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_NetworkLi
 {
 	typedef uint8_t (*Func)(void* obj, NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3 p1, const RuntimeMethod* method);
 	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef uint8_t (*Func)(void* obj, NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE p1, const RuntimeMethod* method);
+	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef uint8_t (*Func)(void* obj, NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 p1, const RuntimeMethod* method);
+	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496*)args[0]), methodMetadata);
 }
 
 void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Node_tA8F7ED85FD786FE388B1ED3CF8DDFEDC56587258 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -147015,6 +147452,12 @@ void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_CharRepla
 	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((CharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91CB*)args[0]), methodMetadata);
 }
 
+void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef uint8_t (*Func)(void* obj, PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0 p1, const RuntimeMethod* method);
+	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0*)args[0]), methodMetadata);
+}
+
 void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TableRange_tD242F3D62C818E84B6903C18A6CE33399672B497 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef uint8_t (*Func)(void* obj, TableRange_tD242F3D62C818E84B6903C18A6CE33399672B497 p1, const RuntimeMethod* method);
@@ -147645,6 +148088,12 @@ void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_ShuffleSt
 	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((ShuffleStep_tE03F141E679F3E0E3D015AB236E3687EE28696FD*)args[0]), methodMetadata);
 }
 
+void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef uint8_t (*Func)(void* obj, ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99 p1, const RuntimeMethod* method);
+	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99*)args[0]), methodMetadata);
+}
+
 void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef uint8_t (*Func)(void* obj, TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6 p1, const RuntimeMethod* method);
@@ -147697,6 +148146,24 @@ void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_ClaimEntr
 {
 	typedef uint8_t (*Func)(void* obj, ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD p1, const RuntimeMethod* method);
 	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef uint8_t (*Func)(void* obj, PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 p1, const RuntimeMethod* method);
+	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef uint8_t (*Func)(void* obj, ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 p1, const RuntimeMethod* method);
+	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef uint8_t (*Func)(void* obj, TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 p1, const RuntimeMethod* method);
+	*((uint8_t*)returnAddress) = ((Func)methodPointer)(obj, *((TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7*)args[0]), methodMetadata);
 }
 
 void RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Enumerator_tF50B6A349DB9B6D1A9E5AD924A439A670F70E1ED (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -152847,6 +153314,18 @@ void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkL
 	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, *((NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3*)args[0]), methodMetadata);
 }
 
+void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* obj, NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE p1, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, *((NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* obj, NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 p1, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, *((NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496*)args[0]), methodMetadata);
+}
+
 void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Node_tA8F7ED85FD786FE388B1ED3CF8DDFEDC56587258 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef int32_t (*Func)(void* obj, Node_tA8F7ED85FD786FE388B1ED3CF8DDFEDC56587258 p1, const RuntimeMethod* method);
@@ -156705,12 +157184,6 @@ void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XRView_t
 	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, *((XRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5*)args[0]), methodMetadata);
 }
 
-void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XrAvatarPosePacket_t0AA057B06459E3547B077CF8ABE11D9B294B501B (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
-{
-	typedef int32_t (*Func)(void* obj, XrAvatarPosePacket_t0AA057B06459E3547B077CF8ABE11D9B294B501B p1, const RuntimeMethod* method);
-	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, *((XrAvatarPosePacket_t0AA057B06459E3547B077CF8ABE11D9B294B501B*)args[0]), methodMetadata);
-}
-
 void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XrBoxf_tB0E84D6272ADF2ECA0C0A42E1EB11948FF3501A8 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef int32_t (*Func)(void* obj, XrBoxf_tB0E84D6272ADF2ECA0C0A42E1EB11948FF3501A8 p1, const RuntimeMethod* method);
@@ -157003,6 +157476,12 @@ void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_CharRepl
 {
 	typedef int32_t (*Func)(void* obj, CharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91CB p1, const RuntimeMethod* method);
 	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, *((CharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91CB*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* obj, PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0 p1, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, *((PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0*)args[0]), methodMetadata);
 }
 
 void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_TableRange_tD242F3D62C818E84B6903C18A6CE33399672B497 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -157687,6 +158166,24 @@ void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ClaimEnt
 {
 	typedef int32_t (*Func)(void* obj, ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD p1, const RuntimeMethod* method);
 	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, *((ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* obj, PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 p1, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, *((PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* obj, ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 p1, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, *((ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* obj, TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 p1, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(obj, *((TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7*)args[0]), methodMetadata);
 }
 
 void RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -166023,6 +166520,18 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_NetworkLi
 	((Func)methodPointer)(obj, *((NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3*)args[0]), methodMetadata);
 }
 
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE p1, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 p1, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496*)args[0]), methodMetadata);
+}
+
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Node_tA8F7ED85FD786FE388B1ED3CF8DDFEDC56587258 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void (*Func)(void* obj, Node_tA8F7ED85FD786FE388B1ED3CF8DDFEDC56587258 p1, const RuntimeMethod* method);
@@ -167437,6 +167946,12 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Cancellat
 {
 	typedef void (*Func)(void* obj, CancellationTokenRegistration_tC925A8BC86C629A2A3DA73765FA964A95FC83389 p1, const RuntimeMethod* method);
 	((Func)methodPointer)(obj, *((CancellationTokenRegistration_tC925A8BC86C629A2A3DA73765FA964A95FC83389*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ClientRpcParams_t601849CAFBF3D524390FCD760D36C67665ECACB9 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, ClientRpcParams_t601849CAFBF3D524390FCD760D36C67665ECACB9 p1, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((ClientRpcParams_t601849CAFBF3D524390FCD760D36C67665ECACB9*)args[0]), methodMetadata);
 }
 
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ClusterInfo_tEB8CE53228687A1E926DEF3AB47DEC36DD5AC26F (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -171567,6 +172082,12 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_CharRepla
 	((Func)methodPointer)(obj, *((CharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91CB*)args[0]), methodMetadata);
 }
 
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0 p1, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0*)args[0]), methodMetadata);
+}
+
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_TableRange_tD242F3D62C818E84B6903C18A6CE33399672B497 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void (*Func)(void* obj, TableRange_tD242F3D62C818E84B6903C18A6CE33399672B497 p1, const RuntimeMethod* method);
@@ -172287,6 +172808,12 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ShuffleSt
 	((Func)methodPointer)(obj, *((ShuffleStep_tE03F141E679F3E0E3D015AB236E3687EE28696FD*)args[0]), methodMetadata);
 }
 
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99 p1, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99*)args[0]), methodMetadata);
+}
+
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void (*Func)(void* obj, TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6 p1, const RuntimeMethod* method);
@@ -172339,6 +172866,24 @@ void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ClaimEntr
 {
 	typedef void (*Func)(void* obj, ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD p1, const RuntimeMethod* method);
 	((Func)methodPointer)(obj, *((ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 p1, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 p1, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* obj, TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 p1, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7*)args[0]), methodMetadata);
 }
 
 void RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -173931,12 +174476,6 @@ void RuntimeInvoker_InstXRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5_Int32_t
 	*((XRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5*)returnAddress) = ((Func)methodPointer)(obj, *((int32_t*)args[0]), methodMetadata);
 }
 
-void RuntimeInvoker_InstXrAvatarPosePacket_t0AA057B06459E3547B077CF8ABE11D9B294B501B_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
-{
-	typedef XrAvatarPosePacket_t0AA057B06459E3547B077CF8ABE11D9B294B501B (*Func)(void* obj, int32_t p1, const RuntimeMethod* method);
-	*((XrAvatarPosePacket_t0AA057B06459E3547B077CF8ABE11D9B294B501B*)returnAddress) = ((Func)methodPointer)(obj, *((int32_t*)args[0]), methodMetadata);
-}
-
 void RuntimeInvoker_InstXrBoxf_tB0E84D6272ADF2ECA0C0A42E1EB11948FF3501A8_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef XrBoxf_tB0E84D6272ADF2ECA0C0A42E1EB11948FF3501A8 (*Func)(void* obj, int32_t p1, const RuntimeMethod* method);
@@ -174535,6 +175074,12 @@ void RuntimeInvoker_InstCharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91C
 {
 	typedef CharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91CB (*Func)(void* obj, int32_t p1, const RuntimeMethod* method);
 	*((CharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91CB*)returnAddress) = ((Func)methodPointer)(obj, *((int32_t*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstPatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0 (*Func)(void* obj, int32_t p1, const RuntimeMethod* method);
+	*((PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0*)returnAddress) = ((Func)methodPointer)(obj, *((int32_t*)args[0]), methodMetadata);
 }
 
 void RuntimeInvoker_InstTableRange_tD242F3D62C818E84B6903C18A6CE33399672B497_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -175693,6 +176238,42 @@ void RuntimeInvoker_InstClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD_Int
 {
 	typedef ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD (*Func)(void* obj, int32_t p1, const RuntimeMethod* method);
 	*((ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD*)returnAddress) = ((Func)methodPointer)(obj, *((int32_t*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstPlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 (*Func)(void* obj, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 p1, const RuntimeMethod* method);
+	*((PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6*)returnAddress) = ((Func)methodPointer)(obj, *((FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstPlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 (*Func)(void* obj, int32_t p1, const RuntimeMethod* method);
+	*((PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6*)returnAddress) = ((Func)methodPointer)(obj, *((int32_t*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 (*Func)(void* obj, void* p1, const RuntimeMethod* method);
+	*((ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33*)returnAddress) = ((Func)methodPointer)(obj, (void*)args[0], methodMetadata);
+}
+
+void RuntimeInvoker_InstServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 (*Func)(void* obj, int32_t p1, const RuntimeMethod* method);
+	*((ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33*)returnAddress) = ((Func)methodPointer)(obj, *((int32_t*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstTruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7_FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 (*Func)(void* obj, FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99 p1, const RuntimeMethod* method);
+	*((TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7*)returnAddress) = ((Func)methodPointer)(obj, *((FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_InstTruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 (*Func)(void* obj, int32_t p1, const RuntimeMethod* method);
+	*((TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7*)returnAddress) = ((Func)methodPointer)(obj, *((int32_t*)args[0]), methodMetadata);
 }
 
 void RuntimeInvoker_InstFreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -178891,6 +179472,30 @@ void RuntimeInvoker_InstEnumerator_t50200597D7A1C187E6B524AA5E5561CE69C553DF (Il
 {
 	typedef Enumerator_t50200597D7A1C187E6B524AA5E5561CE69C553DF (*Func)(void* obj, const RuntimeMethod* method);
 	*((Enumerator_t50200597D7A1C187E6B524AA5E5561CE69C553DF*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
+}
+
+void RuntimeInvoker_InstEnumerator_t5F41DB9846CAD51CE8B0125B93B3FA219D1F3B60 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef Enumerator_t5F41DB9846CAD51CE8B0125B93B3FA219D1F3B60 (*Func)(void* obj, const RuntimeMethod* method);
+	*((Enumerator_t5F41DB9846CAD51CE8B0125B93B3FA219D1F3B60*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
+}
+
+void RuntimeInvoker_InstEnumerator_tCC8501F85E76154903EA7E13F2B012EF2FFCDB40 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef Enumerator_tCC8501F85E76154903EA7E13F2B012EF2FFCDB40 (*Func)(void* obj, const RuntimeMethod* method);
+	*((Enumerator_tCC8501F85E76154903EA7E13F2B012EF2FFCDB40*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
+}
+
+void RuntimeInvoker_InstEnumerator_tE7A96B9EF9851AB8717491C97333B625DE4E9867 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef Enumerator_tE7A96B9EF9851AB8717491C97333B625DE4E9867 (*Func)(void* obj, const RuntimeMethod* method);
+	*((Enumerator_tE7A96B9EF9851AB8717491C97333B625DE4E9867*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
+}
+
+void RuntimeInvoker_InstEnumerator_t6EE69B3AC9E1869E9F1331DD25B09908097559DB (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef Enumerator_t6EE69B3AC9E1869E9F1331DD25B09908097559DB (*Func)(void* obj, const RuntimeMethod* method);
+	*((Enumerator_t6EE69B3AC9E1869E9F1331DD25B09908097559DB*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
 }
 
 void RuntimeInvoker_InstEnumerator_t7C563E6C9B3C8C29835C7696014FEECFAD62E27F (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -183907,6 +184512,36 @@ void RuntimeInvoker_InstEnumerator_t77C6DB5EB318BC2B925F8441F0D8E99B929EDFE3 (Il
 {
 	typedef Enumerator_t77C6DB5EB318BC2B925F8441F0D8E99B929EDFE3 (*Func)(void* obj, const RuntimeMethod* method);
 	*((Enumerator_t77C6DB5EB318BC2B925F8441F0D8E99B929EDFE3*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
+}
+
+void RuntimeInvoker_InstEnumerator_t1F4859AE2E90B1AC978D38FD10717A11D29D68E5 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef Enumerator_t1F4859AE2E90B1AC978D38FD10717A11D29D68E5 (*Func)(void* obj, const RuntimeMethod* method);
+	*((Enumerator_t1F4859AE2E90B1AC978D38FD10717A11D29D68E5*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
+}
+
+void RuntimeInvoker_InstEnumerator_t4EAC2BA76672ECBC0B4824A0DA2BC465F7359EC6 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef Enumerator_t4EAC2BA76672ECBC0B4824A0DA2BC465F7359EC6 (*Func)(void* obj, const RuntimeMethod* method);
+	*((Enumerator_t4EAC2BA76672ECBC0B4824A0DA2BC465F7359EC6*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
+}
+
+void RuntimeInvoker_InstEnumerator_tB5BAB886D6732CE658884046A4CB40B6DAB3B177 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef Enumerator_tB5BAB886D6732CE658884046A4CB40B6DAB3B177 (*Func)(void* obj, const RuntimeMethod* method);
+	*((Enumerator_tB5BAB886D6732CE658884046A4CB40B6DAB3B177*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
+}
+
+void RuntimeInvoker_InstEnumerator_tAB0BC1CF5EDD01E7A99FFE34207B0D14A8DDCB15 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef Enumerator_tAB0BC1CF5EDD01E7A99FFE34207B0D14A8DDCB15 (*Func)(void* obj, const RuntimeMethod* method);
+	*((Enumerator_tAB0BC1CF5EDD01E7A99FFE34207B0D14A8DDCB15*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
+}
+
+void RuntimeInvoker_InstEnumerator_t5BFB82B524EBE85A5D872321803F2952450DFEE9 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef Enumerator_t5BFB82B524EBE85A5D872321803F2952450DFEE9 (*Func)(void* obj, const RuntimeMethod* method);
+	*((Enumerator_t5BFB82B524EBE85A5D872321803F2952450DFEE9*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
 }
 
 void RuntimeInvoker_InstEnumerator_tE77DBDC5F3E4FED1452607A3D6A20E7C159AA0B8 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -189681,6 +190316,18 @@ void RuntimeInvoker_InstNetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B5581
 	*((NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
 }
 
+void RuntimeInvoker_InstNetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE (*Func)(void* obj, const RuntimeMethod* method);
+	*((NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
+}
+
+void RuntimeInvoker_InstNetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 (*Func)(void* obj, const RuntimeMethod* method);
+	*((NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
+}
+
 void RuntimeInvoker_InstNoAllocEnumerator_1_t04CA97CA728D4CB1A2794AA24EE265D5B787F25A (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef NoAllocEnumerator_1_t04CA97CA728D4CB1A2794AA24EE265D5B787F25A (*Func)(void* obj, const RuntimeMethod* method);
@@ -195255,12 +195902,6 @@ void RuntimeInvoker_InstXRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5 (Il2Cpp
 	*((XRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
 }
 
-void RuntimeInvoker_InstXrAvatarPosePacket_t0AA057B06459E3547B077CF8ABE11D9B294B501B (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
-{
-	typedef XrAvatarPosePacket_t0AA057B06459E3547B077CF8ABE11D9B294B501B (*Func)(void* obj, const RuntimeMethod* method);
-	*((XrAvatarPosePacket_t0AA057B06459E3547B077CF8ABE11D9B294B501B*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
-}
-
 void RuntimeInvoker_InstXrBoxf_tB0E84D6272ADF2ECA0C0A42E1EB11948FF3501A8 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef XrBoxf_tB0E84D6272ADF2ECA0C0A42E1EB11948FF3501A8 (*Func)(void* obj, const RuntimeMethod* method);
@@ -195679,6 +196320,12 @@ void RuntimeInvoker_InstCharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91C
 {
 	typedef CharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91CB (*Func)(void* obj, const RuntimeMethod* method);
 	*((CharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91CB*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
+}
+
+void RuntimeInvoker_InstPatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0 (*Func)(void* obj, const RuntimeMethod* method);
+	*((PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
 }
 
 void RuntimeInvoker_InstTableRange_tD242F3D62C818E84B6903C18A6CE33399672B497 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -196509,6 +197156,12 @@ void RuntimeInvoker_InstShuffleStep_tE03F141E679F3E0E3D015AB236E3687EE28696FD (I
 	*((ShuffleStep_tE03F141E679F3E0E3D015AB236E3687EE28696FD*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
 }
 
+void RuntimeInvoker_InstClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99 (*Func)(void* obj, const RuntimeMethod* method);
+	*((ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
+}
+
 void RuntimeInvoker_InstTeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6 (*Func)(void* obj, const RuntimeMethod* method);
@@ -196561,6 +197214,24 @@ void RuntimeInvoker_InstClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD (Il
 {
 	typedef ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD (*Func)(void* obj, const RuntimeMethod* method);
 	*((ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
+}
+
+void RuntimeInvoker_InstPlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 (*Func)(void* obj, const RuntimeMethod* method);
+	*((PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
+}
+
+void RuntimeInvoker_InstServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 (*Func)(void* obj, const RuntimeMethod* method);
+	*((ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
+}
+
+void RuntimeInvoker_InstTruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 (*Func)(void* obj, const RuntimeMethod* method);
+	*((TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7*)returnAddress) = ((Func)methodPointer)(obj, methodMetadata);
 }
 
 void RuntimeInvoker_InstConcurrent_tEC3B3B65B1619E8DCDD1073FDB8BCFD99C84CE32 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -200923,6 +201594,12 @@ void RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Void
 {
 	typedef void* (*Func)(void* p1, void* p2, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 p3, void* p4, void* p5, void* p6, const RuntimeMethod* method);
 	*((void**)returnAddress) = ((Func)methodPointer)((void*)args[0], (void*)args[1], *((StreamingContext_t56760522A751890146EE45F82F866B55B7E33677*)args[2]), (void*)args[3], (void*)args[4], (void*)args[5], methodMetadata);
+}
+
+void RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void* (*Func)(void* p1, void* p2, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 p3, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 p4, float p5, int32_t p6, const RuntimeMethod* method);
+	*((void**)returnAddress) = ((Func)methodPointer)((void*)args[0], (void*)args[1], *((Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)args[2]), *((Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)args[3]), *((float*)args[4]), *((int32_t*)args[5]), methodMetadata);
 }
 
 void RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -210021,6 +210698,12 @@ void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2
 	*((int32_t*)returnAddress) = ((Func)methodPointer)((void*)args[0], *((int32_t*)args[1]), *((int32_t*)args[2]), *((PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655*)args[3]), (void*)args[4], methodMetadata);
 }
 
+void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* p1, int32_t p2, int32_t p3, ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 p4, void* p5, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)((void*)args[0], *((int32_t*)args[1]), *((int32_t*)args[2]), *((ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33*)args[3]), (void*)args[4], methodMetadata);
+}
+
 void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AnimationState_t90091AD2757C132602279750EFF7907F066817B0_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef int32_t (*Func)(void* p1, int32_t p2, int32_t p3, AnimationState_t90091AD2757C132602279750EFF7907F066817B0 p4, void* p5, const RuntimeMethod* method);
@@ -215295,6 +215978,18 @@ void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2
 	*((int32_t*)returnAddress) = ((Func)methodPointer)((void*)args[0], *((NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3*)args[1]), *((int32_t*)args[2]), *((int32_t*)args[3]), methodMetadata);
 }
 
+void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* p1, NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE p2, int32_t p3, int32_t p4, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)((void*)args[0], *((NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE*)args[1]), *((int32_t*)args[2]), *((int32_t*)args[3]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* p1, NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 p2, int32_t p3, int32_t p4, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)((void*)args[0], *((NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496*)args[1]), *((int32_t*)args[2]), *((int32_t*)args[3]), methodMetadata);
+}
+
 void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_PooledResourceEntry_1_t71513DDA5CE24619FE4D20DCFB1A74AC10C1B894_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef int32_t (*Func)(void* p1, PooledResourceEntry_1_t71513DDA5CE24619FE4D20DCFB1A74AC10C1B894 p2, int32_t p3, int32_t p4, const RuntimeMethod* method);
@@ -218257,6 +218952,24 @@ void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2
 {
 	typedef int32_t (*Func)(void* p1, ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD p2, int32_t p3, int32_t p4, const RuntimeMethod* method);
 	*((int32_t*)returnAddress) = ((Func)methodPointer)((void*)args[0], *((ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD*)args[1]), *((int32_t*)args[2]), *((int32_t*)args[3]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* p1, PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 p2, int32_t p3, int32_t p4, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)((void*)args[0], *((PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6*)args[1]), *((int32_t*)args[2]), *((int32_t*)args[3]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* p1, ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33 p2, int32_t p3, int32_t p4, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)((void*)args[0], *((ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33*)args[1]), *((int32_t*)args[2]), *((int32_t*)args[3]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(void* p1, TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 p2, int32_t p3, int32_t p4, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)((void*)args[0], *((TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7*)args[1]), *((int32_t*)args[2]), *((int32_t*)args[3]), methodMetadata);
 }
 
 void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -221445,6 +222158,12 @@ void RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_IntPtr_
 	((Func)methodPointer)(*((intptr_t*)args[0]), *((intptr_t*)args[1]), *((int32_t*)args[2]), *((float*)args[3]), methodMetadata);
 }
 
+void RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_IntPtr_t_IntPtr_t_IntPtr_t_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(intptr_t p1, intptr_t p2, intptr_t p3, uint8_t p4, const RuntimeMethod* method);
+	((Func)methodPointer)(*((intptr_t*)args[0]), *((intptr_t*)args[1]), *((intptr_t*)args[2]), *((uint8_t*)args[3]), methodMetadata);
+}
+
 void RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_IntPtr_t_IntPtr_t_IntPtr_t_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void (*Func)(intptr_t p1, intptr_t p2, intptr_t p3, int32_t p4, const RuntimeMethod* method);
@@ -222253,6 +222972,18 @@ void RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Void
 {
 	typedef void* (*Func)(void* p1, NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3 p2, int32_t p3, const RuntimeMethod* method);
 	*((void**)returnAddress) = ((Func)methodPointer)((void*)args[0], *((NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3*)args[1]), *((int32_t*)args[2]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void* (*Func)(void* p1, NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE p2, int32_t p3, const RuntimeMethod* method);
+	*((void**)returnAddress) = ((Func)methodPointer)((void*)args[0], *((NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE*)args[1]), *((int32_t*)args[2]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void* (*Func)(void* p1, NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 p2, int32_t p3, const RuntimeMethod* method);
+	*((void**)returnAddress) = ((Func)methodPointer)((void*)args[0], *((NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496*)args[1]), *((int32_t*)args[2]), methodMetadata);
 }
 
 void RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_UnsafeList_1_t3A26A222433F7993EC942046A500D6EA3DCB97E6_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -223077,6 +223808,18 @@ void RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Void
 	*((void**)returnAddress) = ((Func)methodPointer)((void*)args[0], *((ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD*)args[1]), *((int32_t*)args[2]), methodMetadata);
 }
 
+void RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void* (*Func)(void* p1, PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 p2, int32_t p3, const RuntimeMethod* method);
+	*((void**)returnAddress) = ((Func)methodPointer)((void*)args[0], *((PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6*)args[1]), *((int32_t*)args[2]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void* (*Func)(void* p1, TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 p2, int32_t p3, const RuntimeMethod* method);
+	*((void**)returnAddress) = ((Func)methodPointer)((void*)args[0], *((TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7*)args[1]), *((int32_t*)args[2]), methodMetadata);
+}
+
 void RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_SubQueueItem_tAE6DA2A0B68107490190DB4680442767B9D420B7_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void* (*Func)(void* p1, SubQueueItem_tAE6DA2A0B68107490190DB4680442767B9D420B7 p2, int32_t p3, const RuntimeMethod* method);
@@ -223557,6 +224300,12 @@ void RuntimeInvoker_StaticAdditionalLightsShadowAtlasLayout_t2641AB50478ED46482F
 	*((AdditionalLightsShadowAtlasLayout_t2641AB50478ED46482F321134D86853AA802E50E*)returnAddress) = ((Func)methodPointer)((void*)args[0], (void*)args[1], (void*)args[2], methodMetadata);
 }
 
+void RuntimeInvoker_StaticAnimationPlayableOutput_t753AC95DC826789BC537D18449E93114777DDF4E_PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef AnimationPlayableOutput_t753AC95DC826789BC537D18449E93114777DDF4E (*Func)(PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E p1, void* p2, void* p3, const RuntimeMethod* method);
+	*((AnimationPlayableOutput_t753AC95DC826789BC537D18449E93114777DDF4E*)returnAddress) = ((Func)methodPointer)(*((PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E*)args[0]), (void*)args[1], (void*)args[2], methodMetadata);
+}
+
 void RuntimeInvoker_StaticAsyncOperationHandle_t58B507DCAA6531B85FDBA6188D8E1F7DF89D3F5D_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef AsyncOperationHandle_t58B507DCAA6531B85FDBA6188D8E1F7DF89D3F5D (*Func)(void* p1, int32_t p2, uint8_t p3, const RuntimeMethod* method);
@@ -223929,6 +224678,12 @@ void RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A
 	*((uint8_t*)returnAddress) = ((Func)methodPointer)((void*)args[0], *((int64_t*)args[1]), (void*)args[2], methodMetadata);
 }
 
+void RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_IntPtr_t_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef uint8_t (*Func)(void* p1, intptr_t p2, void* p3, const RuntimeMethod* method);
+	*((uint8_t*)returnAddress) = ((Func)methodPointer)((void*)args[0], *((intptr_t*)args[1]), (void*)args[2], methodMetadata);
+}
+
 void RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_IntPtr_t_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef uint8_t (*Func)(void* p1, intptr_t p2, int32_t p3, const RuntimeMethod* method);
@@ -224197,6 +224952,12 @@ void RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_IntPtr_
 {
 	typedef uint8_t (*Func)(intptr_t p1, uint32_t p2, void* p3, const RuntimeMethod* method);
 	*((uint8_t*)returnAddress) = ((Func)methodPointer)(*((intptr_t*)args[0]), *((uint32_t*)args[1]), (void*)args[2], methodMetadata);
+}
+
+void RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef uint8_t (*Func)(PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E p1, void* p2, void* p3, const RuntimeMethod* method);
+	*((uint8_t*)returnAddress) = ((Func)methodPointer)(*((PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E*)args[0]), (void*)args[1], (void*)args[2], methodMetadata);
 }
 
 void RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -227703,6 +228464,18 @@ void RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A
 	((Func)methodPointer)((void*)args[0], *((int32_t*)args[1]), *((NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3*)args[2]), methodMetadata);
 }
 
+void RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* p1, int32_t p2, NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE p3, const RuntimeMethod* method);
+	((Func)methodPointer)((void*)args[0], *((int32_t*)args[1]), *((NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE*)args[2]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* p1, int32_t p2, NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 p3, const RuntimeMethod* method);
+	((Func)methodPointer)((void*)args[0], *((int32_t*)args[1]), *((NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496*)args[2]), methodMetadata);
+}
+
 void RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UnsafeList_1_t3A26A222433F7993EC942046A500D6EA3DCB97E6 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void (*Func)(void* p1, int32_t p2, UnsafeList_1_t3A26A222433F7993EC942046A500D6EA3DCB97E6 p3, const RuntimeMethod* method);
@@ -229183,6 +229956,18 @@ void RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A
 {
 	typedef void (*Func)(void* p1, int32_t p2, ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD p3, const RuntimeMethod* method);
 	((Func)methodPointer)((void*)args[0], *((int32_t*)args[1]), *((ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD*)args[2]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* p1, int32_t p2, PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 p3, const RuntimeMethod* method);
+	((Func)methodPointer)((void*)args[0], *((int32_t*)args[1]), *((PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6*)args[2]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(void* p1, int32_t p2, TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 p3, const RuntimeMethod* method);
+	((Func)methodPointer)((void*)args[0], *((int32_t*)args[1]), *((TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7*)args[2]), methodMetadata);
 }
 
 void RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -231153,6 +231938,18 @@ void RuntimeInvoker_StaticNetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55
 	*((NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3*)returnAddress) = ((Func)methodPointer)((void*)args[0], *((int32_t*)args[1]), methodMetadata);
 }
 
+void RuntimeInvoker_StaticNetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE (*Func)(void* p1, int32_t p2, const RuntimeMethod* method);
+	*((NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE*)returnAddress) = ((Func)methodPointer)((void*)args[0], *((int32_t*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticNetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496 (*Func)(void* p1, int32_t p2, const RuntimeMethod* method);
+	*((NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496*)returnAddress) = ((Func)methodPointer)((void*)args[0], *((int32_t*)args[1]), methodMetadata);
+}
+
 void RuntimeInvoker_StaticNullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 (*Func)(void* p1, void* p2, const RuntimeMethod* method);
@@ -232159,6 +232956,12 @@ void RuntimeInvoker_StaticAABB_tE57BAC64D9F8465BBFCC4A9C66AF4E884166982A_float4x
 {
 	typedef AABB_tE57BAC64D9F8465BBFCC4A9C66AF4E884166982A (*Func)(float4x4_t2F0C8ED1AD9B4E39295F0A2D7418771B5F05CECA p1, AABB_tE57BAC64D9F8465BBFCC4A9C66AF4E884166982A p2, const RuntimeMethod* method);
 	*((AABB_tE57BAC64D9F8465BBFCC4A9C66AF4E884166982A*)returnAddress) = ((Func)methodPointer)(*((float4x4_t2F0C8ED1AD9B4E39295F0A2D7418771B5F05CECA*)args[0]), *((AABB_tE57BAC64D9F8465BBFCC4A9C66AF4E884166982A*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticAnimationClipPlayable_t54CEA0DD315B1674C2BD49E681005C4271D73969_PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef AnimationClipPlayable_t54CEA0DD315B1674C2BD49E681005C4271D73969 (*Func)(PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E p1, void* p2, const RuntimeMethod* method);
+	*((AnimationClipPlayable_t54CEA0DD315B1674C2BD49E681005C4271D73969*)returnAddress) = ((Func)methodPointer)(*((PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E*)args[0]), (void*)args[1], methodMetadata);
 }
 
 void RuntimeInvoker_StaticAsyncGPUReadbackRequest_t6A735D3E0F1DEF8F43EBD0E6FE550FAE564519C7_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -235767,6 +236570,18 @@ void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Native
 	*((int32_t*)returnAddress) = ((Func)methodPointer)(*((NativeList_1_tC1434025FAC1738D2E1A0029AA90EC61D91370C1*)args[0]), *((ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD*)args[1]), methodMetadata);
 }
 
+void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NativeList_1_tC1434025FAC1738D2E1A0029AA90EC61D91370C1_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(NativeList_1_tC1434025FAC1738D2E1A0029AA90EC61D91370C1 p1, PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 p2, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(*((NativeList_1_tC1434025FAC1738D2E1A0029AA90EC61D91370C1*)args[0]), *((PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NativeList_1_tC1434025FAC1738D2E1A0029AA90EC61D91370C1_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(NativeList_1_tC1434025FAC1738D2E1A0029AA90EC61D91370C1 p1, TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 p2, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(*((NativeList_1_tC1434025FAC1738D2E1A0029AA90EC61D91370C1*)args[0]), *((TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7*)args[1]), methodMetadata);
+}
+
 void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NativeSlice_1_tA54E5D259EBCC7CD8512AA352C6F3709EB237B52_Il2CppFullySharedGenericAny (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef int32_t (*Func)(NativeSlice_1_tA54E5D259EBCC7CD8512AA352C6F3709EB237B52 p1, Il2CppFullySharedGenericAny p2, const RuntimeMethod* method);
@@ -235963,6 +236778,18 @@ void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ReadOn
 {
 	typedef int32_t (*Func)(ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC p1, ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD p2, const RuntimeMethod* method);
 	*((int32_t*)returnAddress) = ((Func)methodPointer)(*((ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC*)args[0]), *((ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC p1, PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 p2, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(*((ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC*)args[0]), *((PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC p1, TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 p2, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(*((ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC*)args[0]), *((TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7*)args[1]), methodMetadata);
 }
 
 void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Span_1_tDEB40BEFA77B5E4BB49B058CD3050EEA4DD36C54_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -237607,6 +238434,12 @@ void RuntimeInvoker_StaticPlane_tB7D8CC6F7AACF5F3AA483AF005C1102A8577BC0C_VoidU2
 {
 	typedef Plane_tB7D8CC6F7AACF5F3AA483AF005C1102A8577BC0C (*Func)(void* p1, int32_t p2, const RuntimeMethod* method);
 	*((Plane_tB7D8CC6F7AACF5F3AA483AF005C1102A8577BC0C*)returnAddress) = ((Func)methodPointer)((void*)args[0], *((int32_t*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticPlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4_PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4 (*Func)(PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E p1, void* p2, const RuntimeMethod* method);
+	*((PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4*)returnAddress) = ((Func)methodPointer)(*((PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E*)args[0]), (void*)args[1], methodMetadata);
 }
 
 void RuntimeInvoker_StaticPlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -239919,6 +240752,12 @@ void RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A
 	((Func)methodPointer)((void*)args[0], *((Capabilities_t74B96FD5AC8243C251D7CD8DD3F08DAFF2CF8A1B*)args[1]), methodMetadata);
 }
 
+void RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_AnimationPlayableOutput_t753AC95DC826789BC537D18449E93114777DDF4E_AnimationClipPlayable_t54CEA0DD315B1674C2BD49E681005C4271D73969 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef void (*Func)(AnimationPlayableOutput_t753AC95DC826789BC537D18449E93114777DDF4E p1, AnimationClipPlayable_t54CEA0DD315B1674C2BD49E681005C4271D73969 p2, const RuntimeMethod* method);
+	((Func)methodPointer)(*((AnimationPlayableOutput_t753AC95DC826789BC537D18449E93114777DDF4E*)args[0]), *((AnimationClipPlayable_t54CEA0DD315B1674C2BD49E681005C4271D73969*)args[1]), methodMetadata);
+}
+
 void RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_AsyncOperationHandle_t58B507DCAA6531B85FDBA6188D8E1F7DF89D3F5D_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef void (*Func)(AsyncOperationHandle_t58B507DCAA6531B85FDBA6188D8E1F7DF89D3F5D p1, void* p2, const RuntimeMethod* method);
@@ -241873,6 +242712,18 @@ void RuntimeInvoker_StaticClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD_V
 {
 	typedef ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD (*Func)(void* p1, int32_t p2, const RuntimeMethod* method);
 	*((ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD*)returnAddress) = ((Func)methodPointer)((void*)args[0], *((int32_t*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticPlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6 (*Func)(void* p1, int32_t p2, const RuntimeMethod* method);
+	*((PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6*)returnAddress) = ((Func)methodPointer)((void*)args[0], *((int32_t*)args[1]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticTruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7 (*Func)(void* p1, int32_t p2, const RuntimeMethod* method);
+	*((TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7*)returnAddress) = ((Func)methodPointer)((void*)args[0], *((int32_t*)args[1]), methodMetadata);
 }
 
 void RuntimeInvoker_StaticAnimatorParamCache_t8B920B60D5DFBA3F4443930387E48A47652E475D_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -245793,6 +246644,12 @@ void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2
 	*((int32_t*)returnAddress) = ((Func)methodPointer)((void*)args[0], methodMetadata);
 }
 
+void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AnimationPlayableOutput_t753AC95DC826789BC537D18449E93114777DDF4E (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef int32_t (*Func)(AnimationPlayableOutput_t753AC95DC826789BC537D18449E93114777DDF4E p1, const RuntimeMethod* method);
+	*((int32_t*)returnAddress) = ((Func)methodPointer)(*((AnimationPlayableOutput_t753AC95DC826789BC537D18449E93114777DDF4E*)args[0]), methodMetadata);
+}
+
 void RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef int32_t (*Func)(BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F p1, const RuntimeMethod* method);
@@ -246757,6 +247614,12 @@ void RuntimeInvoker_StaticPhysicsWorldDefinition_t7811796145DBEECECCC48F106ED3C0
 {
 	typedef PhysicsWorldDefinition_t7811796145DBEECECCC48F106ED3C03A72157454 (*Func)(uint8_t p1, const RuntimeMethod* method);
 	*((PhysicsWorldDefinition_t7811796145DBEECECCC48F106ED3C03A72157454*)returnAddress) = ((Func)methodPointer)(*((uint8_t*)args[0]), methodMetadata);
+}
+
+void RuntimeInvoker_StaticPlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E (*Func)(void* p1, const RuntimeMethod* method);
+	*((PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E*)returnAddress) = ((Func)methodPointer)((void*)args[0], methodMetadata);
 }
 
 void RuntimeInvoker_StaticPose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
@@ -251337,6 +252200,12 @@ void RuntimeInvoker_StaticAngle_t0229F612898D65B3CC646C40A32D93D8A33C1DFC (Il2Cp
 	*((Angle_t0229F612898D65B3CC646C40A32D93D8A33C1DFC*)returnAddress) = ((Func)methodPointer)(methodMetadata);
 }
 
+void RuntimeInvoker_StaticAnimationPlayableOutput_t753AC95DC826789BC537D18449E93114777DDF4E (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
+{
+	typedef AnimationPlayableOutput_t753AC95DC826789BC537D18449E93114777DDF4E (*Func)(const RuntimeMethod* method);
+	*((AnimationPlayableOutput_t753AC95DC826789BC537D18449E93114777DDF4E*)returnAddress) = ((Func)methodPointer)(methodMetadata);
+}
+
 void RuntimeInvoker_StaticAsyncFlowControl_t1BB65380CA8AA973CAE0814179796E762403EF92 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args, void* returnAddress)
 {
 	typedef AsyncFlowControl_t1BB65380CA8AA973CAE0814179796E762403EF92 (*Func)(const RuntimeMethod* method);
@@ -253012,7 +253881,7 @@ void RuntimeInvoker_StaticMonoScriptData_tE8CE27F1B50A55060EDAD9796B65329E684904
 }
 
 IL2CPP_EXTERN_C const InvokerMethod g_Il2CppInvokerPointers[];
-const InvokerMethod g_Il2CppInvokerPointers[27440] = 
+const InvokerMethod g_Il2CppInvokerPointers[27550] = 
 {
 	RuntimeInvoker_7E1E739E1B7FD470D65ADAA23838106EFD77BD0E,
 	RuntimeInvoker_5C4A5BA2EB8A236C31BC9E795BE5D9796C0D2373,
@@ -254187,6 +255056,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AllocToUpdate_t7E5493AF0DAEBF6C8D1E005C93179042069A46A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NotePatternEntry_tA13FD75F7498EC1211DCBE9C496515043C3C7928_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
+	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AnimationState_t90091AD2757C132602279750EFF7907F066817B0_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ParametersUpdateMessage_tA77A911264605B5AE8FE181D2A1BA78A4E2B41CC_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AnimationUpdate_tB25184E4A505C5741D850E8AF0EECAE8830AC6CC_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
@@ -254478,7 +255348,9 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ControlBitRangeNode_t21274A438B0E0877F1495EC579EB1DAF81B1A6B0_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ConversionParams_t062706B15E2C508C54473A1FD72013C4381CCB62_IntPtr_t_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_IntPtr_t,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_IntPtr_t_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_IntPtr_t_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
@@ -254650,6 +255522,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_float2_t3398D7209CB6D09FEA5C49AC55070C5E7BE0B2A5_float2_t3398D7209CB6D09FEA5C49AC55070C5E7BE0B2A5_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_float3_t7600B73F092B37F484B12910A5269F30C778D31E_float3_t7600B73F092B37F484B12910A5269F30C778D31E_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_float4_t545A994996126766890C1F28B43EA823F2410190_float4_t545A994996126766890C1F28B43EA823F2410190_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
+	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99_ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6_TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkTransformState_tCCC77820160AFE28825DDD9C3F090B523CA8F5ED_NetworkTransformState_tCCC77820160AFE28825DDD9C3F090B523CA8F5ED_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstAsyncOperationHandle_t58B507DCAA6531B85FDBA6188D8E1F7DF89D3F5D_AsyncOperationHandle_t58B507DCAA6531B85FDBA6188D8E1F7DF89D3F5D_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
@@ -254780,6 +255653,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_tDD69FC248BA24D9DC0F7713182297A1941FE2C29_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_t95B1A3BB01D6D42139DB56A83D3A1621F73E2697_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_ObjectIntPair_1_t0E000A33FB83C4DC17266C99E85F168A9448833B_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
@@ -255336,6 +256211,9 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_AnimationState_t90091AD2757C132602279750EFF7907F066817B0_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_AnimatorParamCache_t8B920B60D5DFBA3F4443930387E48A47652E475D_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
@@ -255657,6 +256535,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AllocToUpdate_t7E5493AF0DAEBF6C8D1E005C93179042069A46A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NotePatternEntry_tA13FD75F7498EC1211DCBE9C496515043C3C7928_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
+	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AnimationState_t90091AD2757C132602279750EFF7907F066817B0_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ParametersUpdateMessage_tA77A911264605B5AE8FE181D2A1BA78A4E2B41CC_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AnimationUpdate_tB25184E4A505C5741D850E8AF0EECAE8830AC6CC_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
@@ -255981,6 +256860,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Color_tD001788D726C3A7F1379BEED0260B9591F440C1F,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
@@ -256103,8 +256983,6 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_ArraySegment_1_t00CCB00D2C671984CD055C219135EB0500C79178_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
-	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
-	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ConversionParams_t062706B15E2C508C54473A1FD72013C4381CCB62_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_IntPtr_t,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
@@ -256139,6 +257017,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_bool3_t441AC74ECEF37A02C7F99EEE17436B76FCF27B02,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_ServerRpcParams_tA2B8E26BB420EE0CB740E586BF306E215A4D0558,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_TextureHandle_t680ABA3F8B50859351BA5DD66220084F87F37388_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_TextureHandle_t680ABA3F8B50859351BA5DD66220084F87F37388_TextureHandle_t680ABA3F8B50859351BA5DD66220084F87F37388_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7_Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_IntPtr_t,
@@ -256181,9 +257060,9 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_UnsafeMeshGenerationNode_t1FF7D38D9B39DC59A2F8E2DFC92BFAB2481E88A2_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
-	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
@@ -256266,6 +257145,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_tDD69FC248BA24D9DC0F7713182297A1941FE2C29_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_t95B1A3BB01D6D42139DB56A83D3A1621F73E2697_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
+	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
+	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_StructMultiKey_2_t5D4B566D2815511893ECD555824F93E19E448328_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_AsyncOperationHandle_1_tA8880E46029B4940231544D15BD46E6C5AAAFE65_InstantiationParameters_t4CA06BFEB246233E9FEBC2DB0B09124C0BFC7669,
@@ -256334,6 +257215,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_Color_tD001788D726C3A7F1379BEED0260B9591F440C1F,
+	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
@@ -256456,7 +257338,6 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_DataSourceContext_t7458B85023D9BF30FBDC3023358BD2FB7BBE0332_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
-	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F_Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F_InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_EntityId_t982FBD037EAC5CA077B1602A7EA40E3523AA0FC8_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
@@ -256676,6 +257557,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_ValueTuple_2_t4BC958336F5E31F49459112BAB22FC776AFF71C3_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
+	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
@@ -257281,6 +258163,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ConnectionData_t047259821C45CA9102A1337567BA69F793E7C336_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_SimpleConnectionData_t9DF6B0F90ADE109C095852276716C03D3B397BE4_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ConnectionData_t3BEBDF28C0A7A2F719E5F6D298735DCC6B0AE8F5_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
@@ -257408,7 +258292,6 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_ServerRpcParams_tA2B8E26BB420EE0CB740E586BF306E215A4D0558,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
-	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Color_tD001788D726C3A7F1379BEED0260B9591F440C1F,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
@@ -257440,6 +258323,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_CallbackContext_tB251EE41F509C6E8A6B05EC97C029A45DF4F5FA8_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_UnmanagedMemory_t862EBE5224929ED0E2F989D790EB6B8633E612A2_InputControlList_1_t84F2DA44C9BD66500A2844A168208BD391B51BF4_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ControlBitRangeNode_t21274A438B0E0877F1495EC579EB1DAF81B1A6B0_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_UpdatePipeline_t8D511DB7DDEC2170FC3349B879D1E46CD18C35D2_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_NetworkTransformState_tCCC77820160AFE28825DDD9C3F090B523CA8F5ED_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
@@ -257556,6 +258440,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_BoundedPlane_tF51C315A8961EB42F0A1B60D47158646E5AF75CE,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED,
+	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Color_tD001788D726C3A7F1379BEED0260B9591F440C1F,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_EntityId_t982FBD037EAC5CA077B1602A7EA40E3523AA0FC8,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3,
@@ -257848,6 +258733,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_NetworkListEvent_1_tDD69FC248BA24D9DC0F7713182297A1941FE2C29_NetworkListEvent_1_tDD69FC248BA24D9DC0F7713182297A1941FE2C29,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_NetworkListEvent_1_t95B1A3BB01D6D42139DB56A83D3A1621F73E2697_NetworkListEvent_1_t95B1A3BB01D6D42139DB56A83D3A1621F73E2697,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3_NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3,
+	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE,
+	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165_Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75_Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_ObjectIntPair_1_t0E000A33FB83C4DC17266C99E85F168A9448833B_ObjectIntPair_1_t0E000A33FB83C4DC17266C99E85F168A9448833B,
@@ -258658,6 +259545,9 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597_RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD_ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD,
+	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6,
+	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33,
+	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5_FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_AnimationState_t90091AD2757C132602279750EFF7907F066817B0_AnimationState_t90091AD2757C132602279750EFF7907F066817B0,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_AnimatorParamCache_t8B920B60D5DFBA3F4443930387E48A47652E475D_AnimatorParamCache_t8B920B60D5DFBA3F4443930387E48A47652E475D,
@@ -259312,6 +260202,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NotePatternEntry_tA13FD75F7498EC1211DCBE9C496515043C3C7928_NotePatternEntry_tA13FD75F7498EC1211DCBE9C496515043C3C7928,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655,
+	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
+	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AnimationState_t90091AD2757C132602279750EFF7907F066817B0_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AnimationState_t90091AD2757C132602279750EFF7907F066817B0_AnimationState_t90091AD2757C132602279750EFF7907F066817B0,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ParametersUpdateMessage_tA77A911264605B5AE8FE181D2A1BA78A4E2B41CC_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
@@ -259868,6 +260760,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED_CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Color_tD001788D726C3A7F1379BEED0260B9591F440C1F_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
@@ -260380,6 +261273,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_tDD69FC248BA24D9DC0F7713182297A1941FE2C29,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_t95B1A3BB01D6D42139DB56A83D3A1621F73E2697,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Node_tA8F7ED85FD786FE388B1ED3CF8DDFEDC56587258,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Node_t299905C052EE0D8A835E38326073B23299A2B8A1,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165,
@@ -260973,7 +261868,6 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XRTrackedImage_t0F99DAB96B2D6422D0F8DA720F9BEFD3655DDFDD,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XRTrackedObject_t56B5A101A8698B5C95F2CBE93FCF0F8911B67E75,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5,
-	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XrAvatarPosePacket_t0AA057B06459E3547B077CF8ABE11D9B294B501B,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XrBoxf_tB0E84D6272ADF2ECA0C0A42E1EB11948FF3501A8,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XrHandJointLocationEXT_t6BD5FBECDCDBFC9B057505C5A5A0C8942070438C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XrHandJointVelocityEXT_tD4FA0ED11524143ED47A7E189FAB6847150CE2FF,
@@ -261022,6 +261916,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Block_tBD2149E220F819A66A4A0A18F237932ACD9011DE,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_RTEntry_tF17BA88D95BE8A8B05A0D5823DA09F35238F7301,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_CharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91CB,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_TableRange_tD242F3D62C818E84B6903C18A6CE33399672B497,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NativeTexture_t8FD14B363C4CF09A49C53EF3E13C876ABF90F0D9,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NewDisconnection_t4C9A055521BAFED7511704B07D2572997FB05AEE,
@@ -261133,6 +262028,9 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AnimationState_t90091AD2757C132602279750EFF7907F066817B0,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AnimatorParamCache_t8B920B60D5DFBA3F4443930387E48A47652E475D,
@@ -261356,6 +262254,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_PhysicsWorld_tD76337CF6B632797461123938E650738C9A18952_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F_FrameData_t02E705D0271F73A24ADF9BA4B6F8760B6696F314,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_PointerModel_t6E979AA49D01ACA529A68AF8F48624E73484CD42_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
@@ -261454,6 +262353,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_TMP_GlyphValueRecord_tEC542B60FE9106587E051A4C3D64506A8B4641B1,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_WorldSpaceData_t1F653E7DB8EA00BA1A22EC93964627BCB938E922,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_NativeList_1_tC1434025FAC1738D2E1A0029AA90EC61D91370C1,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_PooledResourceEntry_1_t71513DDA5CE24619FE4D20DCFB1A74AC10C1B894,
@@ -261492,6 +262392,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_ServerRpcParams_tA2B8E26BB420EE0CB740E586BF306E215A4D0558,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
@@ -261570,7 +262471,9 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_UVFallbackBufferKey_t3F9D6A45A79F8460373E5C73AD1DE2F8D947453E_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_BorderParams_tA3F0684BE19E681B68F40A773737978EB3FD1509_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_RectangleParams_t13A34E9E14DEF5B8B0349F7C543FAE7EBF22064D_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99_ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6_TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_AnimationMessage_tF1A1A3CF56E776370CB13D68C38EB2433C4CC187_RpcParams_t230EE00CD9A98836455C756E14F0C575971412FD,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_AnimationTriggerMessage_t5E9BAC8B6B7C3A3D79E9448C8C735380FBFC72FF_RpcParams_t230EE00CD9A98836455C756E14F0C575971412FD,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ParametersUpdateMessage_tA77A911264605B5AE8FE181D2A1BA78A4E2B41CC_RpcParams_t230EE00CD9A98836455C756E14F0C575971412FD,
@@ -262112,6 +263015,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstNetworkListEvent_1_tDD69FC248BA24D9DC0F7713182297A1941FE2C29_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstNetworkListEvent_1_t95B1A3BB01D6D42139DB56A83D3A1621F73E2697_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstNetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_InstNetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_InstNetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstNode_tA8F7ED85FD786FE388B1ED3CF8DDFEDC56587258_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstNode_t299905C052EE0D8A835E38326073B23299A2B8A1_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstNodePath_tC3CDC05C2DFAD35988FD6B5F84FAD7417B313813_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
@@ -262986,6 +263891,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_NetworkListEvent_1_tDD69FC248BA24D9DC0F7713182297A1941FE2C29,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_NetworkListEvent_1_t95B1A3BB01D6D42139DB56A83D3A1621F73E2697,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3,
+	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE,
+	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Node_tA8F7ED85FD786FE388B1ED3CF8DDFEDC56587258,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Node_t299905C052EE0D8A835E38326073B23299A2B8A1,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Nullable_1_tCD6542A30967507F1E246B0FB47B2F109FA05AE7,
@@ -263882,6 +264789,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_RTEntry_tF17BA88D95BE8A8B05A0D5823DA09F35238F7301,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_ReleaseInfo_t788FC68354F5659F36EA620E67FBC7D3FDF79944,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_CharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91CB,
+	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TableRange_tD242F3D62C818E84B6903C18A6CE33399672B497,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_NativeTexture_t8FD14B363C4CF09A49C53EF3E13C876ABF90F0D9,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_NewDisconnection_t4C9A055521BAFED7511704B07D2572997FB05AEE,
@@ -263987,6 +264895,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_HiddenItemDefinition_t887CEA83940CFEF28EE036F88EE438A0EA76E76C,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_RoundConfig_t158CE6F8AA36D4B0E53E4A98F05B8BE685CBE59A,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_ShuffleStep_tE03F141E679F3E0E3D015AB236E3687EE28696FD,
+	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_HopPawnEntry_t47AA250F90984ADD7C3282787B94200CCFDEA02E,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_JumpRuntime_t7F3BFBCBA27A2B1B3ABF7893D99848CF52444CA7,
@@ -263996,6 +264905,9 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD,
+	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6,
+	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33,
+	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Enumerator_tF50B6A349DB9B6D1A9E5AD924A439A670F70E1ED,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5,
 	RuntimeInvoker_InstByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_ReadOnly_t7FCE1D9551E2596FECD15F574B336E3F361F7AD0,
@@ -264850,6 +265762,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_tDD69FC248BA24D9DC0F7713182297A1941FE2C29,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_t95B1A3BB01D6D42139DB56A83D3A1621F73E2697,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3,
+	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE,
+	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Node_tA8F7ED85FD786FE388B1ED3CF8DDFEDC56587258,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Node_t299905C052EE0D8A835E38326073B23299A2B8A1,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NodePath_tC3CDC05C2DFAD35988FD6B5F84FAD7417B313813,
@@ -265493,7 +266407,6 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XRTrackedImage_t0F99DAB96B2D6422D0F8DA720F9BEFD3655DDFDD,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XRTrackedObject_t56B5A101A8698B5C95F2CBE93FCF0F8911B67E75,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5,
-	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XrAvatarPosePacket_t0AA057B06459E3547B077CF8ABE11D9B294B501B,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XrBoxf_tB0E84D6272ADF2ECA0C0A42E1EB11948FF3501A8,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XrHandJointLocationEXT_t6BD5FBECDCDBFC9B057505C5A5A0C8942070438C,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_XrHandJointVelocityEXT_tD4FA0ED11524143ED47A7E189FAB6847150CE2FF,
@@ -265541,6 +266454,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Block_tBD2149E220F819A66A4A0A18F237932ACD9011DE,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_RTEntry_tF17BA88D95BE8A8B05A0D5823DA09F35238F7301,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_CharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91CB,
+	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_TableRange_tD242F3D62C818E84B6903C18A6CE33399672B497,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NativeTexture_t8FD14B363C4CF09A49C53EF3E13C876ABF90F0D9,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NewDisconnection_t4C9A055521BAFED7511704B07D2572997FB05AEE,
@@ -265655,6 +266569,9 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD,
+	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6,
+	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33,
+	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ReadOnly_t7FCE1D9551E2596FECD15F574B336E3F361F7AD0,
 	RuntimeInvoker_InstInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AnimationState_t90091AD2757C132602279750EFF7907F066817B0,
@@ -267042,6 +267959,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_NetworkListEvent_1_tDD69FC248BA24D9DC0F7713182297A1941FE2C29,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_NetworkListEvent_1_t95B1A3BB01D6D42139DB56A83D3A1621F73E2697,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Node_tA8F7ED85FD786FE388B1ED3CF8DDFEDC56587258,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Node_t299905C052EE0D8A835E38326073B23299A2B8A1,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Nullable_1_tCD6542A30967507F1E246B0FB47B2F109FA05AE7,
@@ -267278,6 +268197,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_CancellationCallbackCoreWorkArguments_t12DB960B203CDDF2119BC6A29ACA80175C15FAD0,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_CancellationTokenRegistration_tC925A8BC86C629A2A3DA73765FA964A95FC83389,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ClientRpcParams_t601849CAFBF3D524390FCD760D36C67665ECACB9,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ClusterInfo_tEB8CE53228687A1E926DEF3AB47DEC36DD5AC26F,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Color_tD001788D726C3A7F1379BEED0260B9591F440C1F,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Color2_t35316BB1AA7A5F82C686D69DA763B9E99A72EEAA,
@@ -267964,6 +268884,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_RTEntry_tF17BA88D95BE8A8B05A0D5823DA09F35238F7301,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ReleaseInfo_t788FC68354F5659F36EA620E67FBC7D3FDF79944,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_CharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91CB,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_PatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_TableRange_tD242F3D62C818E84B6903C18A6CE33399672B497,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_NativeTexture_t8FD14B363C4CF09A49C53EF3E13C876ABF90F0D9,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_NewDisconnection_t4C9A055521BAFED7511704B07D2572997FB05AEE,
@@ -268084,6 +269005,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_HiddenItemDefinition_t887CEA83940CFEF28EE036F88EE438A0EA76E76C,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_RoundConfig_t158CE6F8AA36D4B0E53E4A98F05B8BE685CBE59A,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ShuffleStep_tE03F141E679F3E0E3D015AB236E3687EE28696FD,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_TeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_HopPawnEntry_t47AA250F90984ADD7C3282787B94200CCFDEA02E,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_JumpRuntime_t7F3BFBCBA27A2B1B3ABF7893D99848CF52444CA7,
@@ -268093,6 +269015,9 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33,
+	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ReadOnly_t7FCE1D9551E2596FECD15F574B336E3F361F7AD0,
 	RuntimeInvoker_InstVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_ImplementationData_t5AC6D3C20140FCF72C4DF0D0A18540BA77F1FAEF,
@@ -268358,7 +269283,6 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstXRTrackedObject_t56B5A101A8698B5C95F2CBE93FCF0F8911B67E75_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstXRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstXRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
-	RuntimeInvoker_InstXrAvatarPosePacket_t0AA057B06459E3547B077CF8ABE11D9B294B501B_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstXrBoxf_tB0E84D6272ADF2ECA0C0A42E1EB11948FF3501A8_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstXrHandJointLocationEXT_t6BD5FBECDCDBFC9B057505C5A5A0C8942070438C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstXrHandJointVelocityEXT_tD4FA0ED11524143ED47A7E189FAB6847150CE2FF_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
@@ -268455,6 +269379,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstReleaseInfo_t788FC68354F5659F36EA620E67FBC7D3FDF79944_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_InstCharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91CB_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstCharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91CB_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_InstPatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstTableRange_tD242F3D62C818E84B6903C18A6CE33399672B497_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstNativeTexture_t8FD14B363C4CF09A49C53EF3E13C876ABF90F0D9_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstConnectionData_tC8FFF2547B5E7AC5023FBF19644E71C20A62B7ED_ConnectionId_tEA78CDC27F3C855E62B4A8046ECAFF5DB06128EB,
@@ -268648,6 +269573,12 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstRunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD_FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99,
 	RuntimeInvoker_InstClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_InstPlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99,
+	RuntimeInvoker_InstPlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_InstServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
+	RuntimeInvoker_InstServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_InstTruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7_FastBufferReader_t1FA49C2063B2EAAADB8DE7FF571FF284719D0E99,
+	RuntimeInvoker_InstTruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstFreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_InstAnimationState_t90091AD2757C132602279750EFF7907F066817B0_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_InstAnimationState_t90091AD2757C132602279750EFF7907F066817B0_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
@@ -269181,6 +270112,10 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstEnumerator_tE26567458FDC9D8501042EBCEF20B73C81CD3F53,
 	RuntimeInvoker_InstEnumerator_tB804CAB7054A104C0C0E1AD416FB13AD89C01C22,
 	RuntimeInvoker_InstEnumerator_t50200597D7A1C187E6B524AA5E5561CE69C553DF,
+	RuntimeInvoker_InstEnumerator_t5F41DB9846CAD51CE8B0125B93B3FA219D1F3B60,
+	RuntimeInvoker_InstEnumerator_tCC8501F85E76154903EA7E13F2B012EF2FFCDB40,
+	RuntimeInvoker_InstEnumerator_tE7A96B9EF9851AB8717491C97333B625DE4E9867,
+	RuntimeInvoker_InstEnumerator_t6EE69B3AC9E1869E9F1331DD25B09908097559DB,
 	RuntimeInvoker_InstEnumerator_t7C563E6C9B3C8C29835C7696014FEECFAD62E27F,
 	RuntimeInvoker_InstEnumerator_t6A11FE63188973969841D4B13F1F4D021BCDF090,
 	RuntimeInvoker_InstEnumerator_t02CD38A297320277736A838E77ADDD6185E9DCBD,
@@ -270017,6 +270952,11 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstEnumerator_tE4EA72D0CE9E7E7FEB14C1449D6D02FA300C38D6,
 	RuntimeInvoker_InstEnumerator_t545647CBBC55E90DDADA54A4E99C4B4BFCE5AC32,
 	RuntimeInvoker_InstEnumerator_t77C6DB5EB318BC2B925F8441F0D8E99B929EDFE3,
+	RuntimeInvoker_InstEnumerator_t1F4859AE2E90B1AC978D38FD10717A11D29D68E5,
+	RuntimeInvoker_InstEnumerator_t4EAC2BA76672ECBC0B4824A0DA2BC465F7359EC6,
+	RuntimeInvoker_InstEnumerator_tB5BAB886D6732CE658884046A4CB40B6DAB3B177,
+	RuntimeInvoker_InstEnumerator_tAB0BC1CF5EDD01E7A99FFE34207B0D14A8DDCB15,
+	RuntimeInvoker_InstEnumerator_t5BFB82B524EBE85A5D872321803F2952450DFEE9,
 	RuntimeInvoker_InstEnumerator_tE77DBDC5F3E4FED1452607A3D6A20E7C159AA0B8,
 	RuntimeInvoker_InstEnumerator_tBD57D13B3A3AD85C68579E65E228AC97F1FD528B,
 	RuntimeInvoker_InstEnumerator_t1B99FDE2CCDA57565434551FE524B948182C2D0D,
@@ -270979,6 +271919,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstNetworkListEvent_1_tDD69FC248BA24D9DC0F7713182297A1941FE2C29,
 	RuntimeInvoker_InstNetworkListEvent_1_t95B1A3BB01D6D42139DB56A83D3A1621F73E2697,
 	RuntimeInvoker_InstNetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3,
+	RuntimeInvoker_InstNetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE,
+	RuntimeInvoker_InstNetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496,
 	RuntimeInvoker_InstNoAllocEnumerator_1_t04CA97CA728D4CB1A2794AA24EE265D5B787F25A,
 	RuntimeInvoker_InstNode_tA8F7ED85FD786FE388B1ED3CF8DDFEDC56587258,
 	RuntimeInvoker_InstNode_t299905C052EE0D8A835E38326073B23299A2B8A1,
@@ -271908,7 +272850,6 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstXRTrackedImage_t0F99DAB96B2D6422D0F8DA720F9BEFD3655DDFDD,
 	RuntimeInvoker_InstXRTrackedObject_t56B5A101A8698B5C95F2CBE93FCF0F8911B67E75,
 	RuntimeInvoker_InstXRView_t70E23918C68E24DB22A8614AA8717B3BA213FAB5,
-	RuntimeInvoker_InstXrAvatarPosePacket_t0AA057B06459E3547B077CF8ABE11D9B294B501B,
 	RuntimeInvoker_InstXrBoxf_tB0E84D6272ADF2ECA0C0A42E1EB11948FF3501A8,
 	RuntimeInvoker_InstXrExtent2Df_t2BB5BF7CEA8AA0B9069175FF51A36CF88209CAE1,
 	RuntimeInvoker_InstXrExtent2Df_t4302AF6D9C771DE91C603A415095BC851189CE1C,
@@ -271979,6 +272920,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstRTEntry_tF17BA88D95BE8A8B05A0D5823DA09F35238F7301,
 	RuntimeInvoker_InstReleaseInfo_t788FC68354F5659F36EA620E67FBC7D3FDF79944,
 	RuntimeInvoker_InstCharReplacement_t71D7E02F802FEB944299534E40B5B6F58A9C91CB,
+	RuntimeInvoker_InstPatrolEdge_t55EF22A4A291513819D3F5C45E5A5BF669C2A6E0,
 	RuntimeInvoker_InstTableRange_tD242F3D62C818E84B6903C18A6CE33399672B497,
 	RuntimeInvoker_InstNativePassIterator_t7740CD05F4D772D39248F879DE9D5EE549D59DD6,
 	RuntimeInvoker_InstPassIterator_t3A1862F595749D7DB6D9E1E1E82874C80B4AD466,
@@ -272117,6 +273059,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstHiddenItemDefinition_t887CEA83940CFEF28EE036F88EE438A0EA76E76C,
 	RuntimeInvoker_InstRoundConfig_t158CE6F8AA36D4B0E53E4A98F05B8BE685CBE59A,
 	RuntimeInvoker_InstShuffleStep_tE03F141E679F3E0E3D015AB236E3687EE28696FD,
+	RuntimeInvoker_InstClapSnapshot_tFF67A8A4344F4C295542E804F4C17B6BBE05DF99,
 	RuntimeInvoker_InstTeacherSnapshot_tC7013B81BC45304DE74692C65918B484E67FDBA6,
 	RuntimeInvoker_InstHopPawnEntry_t47AA250F90984ADD7C3282787B94200CCFDEA02E,
 	RuntimeInvoker_InstJumpRuntime_t7F3BFBCBA27A2B1B3ABF7893D99848CF52444CA7,
@@ -272126,6 +273069,9 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_InstPlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655,
 	RuntimeInvoker_InstRunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597,
 	RuntimeInvoker_InstClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD,
+	RuntimeInvoker_InstPlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6,
+	RuntimeInvoker_InstServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33,
+	RuntimeInvoker_InstTruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7,
 	RuntimeInvoker_InstConcurrent_tEC3B3B65B1619E8DCDD1073FDB8BCFD99C84CE32,
 	RuntimeInvoker_InstEnumerator_tF50B6A349DB9B6D1A9E5AD924A439A670F70E1ED,
 	RuntimeInvoker_InstReadOnly_t2F0B641F41CF4430BAC4C30B56FEBFE4596349F9,
@@ -272817,6 +273763,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_StreamingContext_t56760522A751890146EE45F82F866B55B7E33677_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
+	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
@@ -273779,6 +274726,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AllocToUpdate_t7E5493AF0DAEBF6C8D1E005C93179042069A46A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NotePatternEntry_tA13FD75F7498EC1211DCBE9C496515043C3C7928_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
+	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AnimationState_t90091AD2757C132602279750EFF7907F066817B0_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ParametersUpdateMessage_tA77A911264605B5AE8FE181D2A1BA78A4E2B41CC_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AnimationUpdate_tB25184E4A505C5741D850E8AF0EECAE8830AC6CC_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
@@ -274502,6 +275450,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_tDD69FC248BA24D9DC0F7713182297A1941FE2C29_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_t95B1A3BB01D6D42139DB56A83D3A1621F73E2697_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_PooledResourceEntry_1_t71513DDA5CE24619FE4D20DCFB1A74AC10C1B894_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_SelectorWorkItem_tBC8638E7E2C3AF1A8C278D2DC1110CB940916E04_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_StructMultiKey_2_t5D4B566D2815511893ECD555824F93E19E448328_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
@@ -274984,6 +275934,9 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_ServerTruck_tA84514DA11D821EEE9CA8CB79168EF2DA67E8A33_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_AnimationState_t90091AD2757C132602279750EFF7907F066817B0_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_AnimatorParamCache_t8B920B60D5DFBA3F4443930387E48A47652E475D_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
@@ -275481,6 +276434,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_IntPtr_t_IntPtr_t_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_IntPtr_t_IntPtr_t_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_IntPtr_t,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_IntPtr_t_IntPtr_t_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
+	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_IntPtr_t_IntPtr_t_IntPtr_t_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_IntPtr_t_IntPtr_t_IntPtr_t_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_IntPtr_t_IntPtr_t_IntPtr_t_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_IntPtr_t_IntPtr_t_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
@@ -275602,6 +276556,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_tDD69FC248BA24D9DC0F7713182297A1941FE2C29_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_t95B1A3BB01D6D42139DB56A83D3A1621F73E2697_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_UnsafeList_1_t3A26A222433F7993EC942046A500D6EA3DCB97E6_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_UnsafePtrList_1_tA37C18AF110F20C6437047DBA50BF355602044E5_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Nullable_1_tA0100E837BD52F18AB922554EC6A7D55B444D858,
@@ -275735,6 +276691,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_SubQueueItem_tAE6DA2A0B68107490190DB4680442767B9D420B7_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_ReceiveQueueItem_tC07D121A91E2DA50FCBD08D1720CE0B4BA0F93BE_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_SendQueueItem_t028997B9499F98F8FBFDDCA6245A3CCE69A37CB7_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
@@ -275807,6 +276765,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_ErrorInfo_t776D0DEFF42C5321EB2548D87ED238CBE55467F8_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_StaticAdditionalLightsShadowAtlasLayout_t2641AB50478ED46482F321134D86853AA802E50E_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
+	RuntimeInvoker_StaticAnimationPlayableOutput_t753AC95DC826789BC537D18449E93114777DDF4E_PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticAsyncOperationHandle_t58B507DCAA6531B85FDBA6188D8E1F7DF89D3F5D_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_StaticBackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56_BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56_BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
 	RuntimeInvoker_StaticBackgroundRepeat_t446EC7315DED2C6822F1047B7587C3018BFB277F_BackgroundRepeat_t446EC7315DED2C6822F1047B7587C3018BFB277F_BackgroundRepeat_t446EC7315DED2C6822F1047B7587C3018BFB277F_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
@@ -275865,6 +276824,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455,
 	RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Il2CppFullySharedGenericAny,
 	RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
+	RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_IntPtr_t_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_IntPtr_t_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_TextureDesc_t396D28DED9DDC89189E68F41C3D169B249BEE673_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
@@ -275906,6 +276866,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_IntPtr_t_IntPtr_t_IntPtr_t,
 	RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_IntPtr_t_IntPtr_t_UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF,
 	RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_IntPtr_t_UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
+	RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_RasterGraphContext_tC4D3E53FF7131476487751ACB0237D56C8327147_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
@@ -276420,6 +277381,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_tDD69FC248BA24D9DC0F7713182297A1941FE2C29,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_t95B1A3BB01D6D42139DB56A83D3A1621F73E2697,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3,
+	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE,
+	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UnsafeList_1_t3A26A222433F7993EC942046A500D6EA3DCB97E6,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ValueTuple_2_tF0041945FE1FEEB3770B95F69A09EAC0A6D2CEAD,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ValueTuple_4_t1F73182D6C35AB70117495F0B2EDFBB466034CFA,
@@ -276665,6 +277628,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD,
+	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6,
+	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_FreeBitsChunk_tEA687BD905633D23A1F0C2DA3CE892F9A90FE1A5,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AnimatorParamCache_t8B920B60D5DFBA3F4443930387E48A47652E475D,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_SubQueueItem_tAE6DA2A0B68107490190DB4680442767B9D420B7,
@@ -276949,6 +277914,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticNetworkListEvent_1_tDD69FC248BA24D9DC0F7713182297A1941FE2C29_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticNetworkListEvent_1_t95B1A3BB01D6D42139DB56A83D3A1621F73E2697_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticNetworkListEvent_1_t5BF1BC291A69B433DABC41F30D78BC4B55811FB3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_StaticNetworkListEvent_1_t73920CE9CD816B963A6EF86B89F902884D94FCBE_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_StaticNetworkListEvent_1_tA05E048EA798A8BF940B8C42C46A63B59D902496_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticNullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticNullable_1_t6E154519A812D040E3016229CD7638843A2CC165_Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165_Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165,
 	RuntimeInvoker_StaticNullable_1_t6E154519A812D040E3016229CD7638843A2CC165_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
@@ -277107,6 +278074,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_OnScreenDeviceInfo_t2C7BB082C4486C5F8F0FE55F0BFA772B454AD0AC_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticAABB_tE57BAC64D9F8465BBFCC4A9C66AF4E884166982A_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticAABB_tE57BAC64D9F8465BBFCC4A9C66AF4E884166982A_float4x4_t2F0C8ED1AD9B4E39295F0A2D7418771B5F05CECA_AABB_tE57BAC64D9F8465BBFCC4A9C66AF4E884166982A,
+	RuntimeInvoker_StaticAnimationClipPlayable_t54CEA0DD315B1674C2BD49E681005C4271D73969_PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticAsyncGPUReadbackRequest_t6A735D3E0F1DEF8F43EBD0E6FE550FAE564519C7_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticAsyncOperationHandle_t58B507DCAA6531B85FDBA6188D8E1F7DF89D3F5D_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_StaticAttachmentDescriptor_tBAC9B26B50BB0838C5C0CC22BB296F9DFF41276E_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
@@ -277678,6 +278646,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NativeList_1_tC1434025FAC1738D2E1A0029AA90EC61D91370C1_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NativeList_1_tC1434025FAC1738D2E1A0029AA90EC61D91370C1_RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NativeList_1_tC1434025FAC1738D2E1A0029AA90EC61D91370C1_ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD,
+	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NativeList_1_tC1434025FAC1738D2E1A0029AA90EC61D91370C1_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6,
+	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NativeList_1_tC1434025FAC1738D2E1A0029AA90EC61D91370C1_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_NativeSlice_1_tA54E5D259EBCC7CD8512AA352C6F3709EB237B52_Il2CppFullySharedGenericAny,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Nullable_1_tA0100E837BD52F18AB922554EC6A7D55B444D858_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ParallelReader_tE9E5B90E22A4BC77DB4B327155E0A9F071FC4839_Il2CppFullySharedGenericAny,
@@ -277701,6 +278671,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC_PlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC_RunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC_ClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD,
+	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC_PlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6,
+	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC_TruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Span_1_tDEB40BEFA77B5E4BB49B058CD3050EEA4DD36C54_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_UnsafeList_1_t3A26A222433F7993EC942046A500D6EA3DCB97E6_Il2CppFullySharedGenericAny,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_KeyValuePair_2_tCFF84235BBE039DB505C77D55DC7E24D7345E171,
@@ -277959,6 +278931,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticPayload_t30EC56A63F1544AAEF0EC21CF3F597DE74323CAB_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticPhysicsRotate_t3AF8BA583108282C8B59872CB621EC366BC042B0_PhysicsRotate_t3AF8BA583108282C8B59872CB621EC366BC042B0_Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C,
 	RuntimeInvoker_StaticPlane_tB7D8CC6F7AACF5F3AA483AF005C1102A8577BC0C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_StaticPlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4_PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticPlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticPose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticPose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
@@ -278332,6 +279305,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_ControlItem_t25B2C46F52E78ADC5F54903F9E769364B02CD4AD,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Message_tCF2C708DDBE3016FEF4313A2D1C4ADE12201CD2E,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Capabilities_t74B96FD5AC8243C251D7CD8DD3F08DAFF2CF8A1B,
+	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_AnimationPlayableOutput_t753AC95DC826789BC537D18449E93114777DDF4E_AnimationClipPlayable_t54CEA0DD315B1674C2BD49E681005C4271D73969,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_AsyncOperationHandle_t58B507DCAA6531B85FDBA6188D8E1F7DF89D3F5D_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticVoid_t4861ACF8F4594C3437BB48B6E56783494B843915_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
@@ -278624,6 +279598,8 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticPlayerScoreEntry_t1589D41E7EDE41B6E5767D8713948FB500561655_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticRunnerStateEntry_t5E91402350119B5BEC9FF4777E42F66EF8D4C597_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticClaimEntry_tEC10AE3878CE528667B104E561CC875463CCA5AD_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_StaticPlayerState_t38DB4B77A0CD318AC0FC0B2AA697FBFFF93D1BC6_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
+	RuntimeInvoker_StaticTruckState_t20B77182E3F062548127504F5EC8AEF699DB5FA7_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticAnimatorParamCache_t8B920B60D5DFBA3F4443930387E48A47652E475D_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticSubQueueItem_tAE6DA2A0B68107490190DB4680442767B9D420B7_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
 	RuntimeInvoker_StaticReceiveQueueItem_tC07D121A91E2DA50FCBD08D1720CE0B4BA0F93BE_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965_Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C,
@@ -279271,6 +280247,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Span_1_tDEB40BEFA77B5E4BB49B058CD3050EEA4DD36C54,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Vector_1_t4FB40153F5AFF7BFDFB20E1BCB98343E42252AD2,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
+	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_AnimationPlayableOutput_t753AC95DC826789BC537D18449E93114777DDF4E,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_StaticInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D,
@@ -279424,6 +280401,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticPhysicsSliderJointDefinition_tF5E085072059E8F586D7D0AD04CF068785C9052C_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_StaticPhysicsWheelJointDefinition_t968205B8BB2F2B6041E24ED59BE483F7AA28F2DD_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
 	RuntimeInvoker_StaticPhysicsWorldDefinition_t7811796145DBEECECCC48F106ED3C03A72157454_Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3,
+	RuntimeInvoker_StaticPlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticPose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971_VoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticPose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971_Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971,
 	RuntimeInvoker_StaticPostProcessingMargins_tF4B704644AE2755A7CF52B5DE390D27C0CBD4EAD_ReadOnlySpan_1_tC416A5627E04F69CA2947A2A13F0A1DF096CABAC,
@@ -280175,6 +281153,7 @@ const InvokerMethod g_Il2CppInvokerPointers[27440] =
 	RuntimeInvoker_StaticVoidU2A_t104EAEFBD2D237A8C29618913DA9B4D99355E965,
 	RuntimeInvoker_StaticAffordanceStateData_t925209B85B56D04F7F178061B1C91280DA6DBC69,
 	RuntimeInvoker_StaticAngle_t0229F612898D65B3CC646C40A32D93D8A33C1DFC,
+	RuntimeInvoker_StaticAnimationPlayableOutput_t753AC95DC826789BC537D18449E93114777DDF4E,
 	RuntimeInvoker_StaticAsyncFlowControl_t1BB65380CA8AA973CAE0814179796E762403EF92,
 	RuntimeInvoker_StaticAsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06,
 	RuntimeInvoker_StaticAsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D,
