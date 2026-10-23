@@ -1,0 +1,52 @@
+{
+    "schema":  1,
+    "processor_revision":  "il2cpp-prebuild-v6",
+    "il2cpp_so_sha256":  "8a8f16aedd837f2299495478d8605976b5b352483b68f56d5f7b3099528d30f7",
+    "global_metadata_sha256":  "13b20b93205e07781e9ca2d6c60f1d595e807fa1f73ed856e213991bdfad0420",
+    "unity_version":  "6000.6.3f1",
+    "unity_template_version":  "26",
+    "ndk_version":  "27.2.12479018",
+    "abi":  [
+                "arm64-v8a"
+            ],
+    "target_sdk":  36,
+    "native_inventory":  [
+                             {
+                                 "name":  "libUnityOpenXR.so",
+                                 "sha256":  "d10e5d6ad2fd9ca6c686d23e7faa7512d88d6dfdf8e26502dcab617f3a377e51"
+                             },
+                             {
+                                 "name":  "libUnityOpenXRHands.so",
+                                 "sha256":  "98f66f7fb5eef8b5861ace1427ee290aac263070d520bc0d444dd1aa2979eb87"
+                             },
+                             {
+                                 "name":  "lib_burst_generated.so",
+                                 "sha256":  "f962bca733ce996e8d1a606c40a0eebbf6145792f479b09824d0b7bb929e4ee9"
+                             },
+                             {
+                                 "name":  "libil2cpp.so",
+                                 "sha256":  "8a8f16aedd837f2299495478d8605976b5b352483b68f56d5f7b3099528d30f7"
+                             },
+                             {
+                                 "name":  "libmain.so",
+                                 "sha256":  "5210b07b478d42cc104ec5645cb6a15d82aeaa70452bd7f1c105aa4b8fc25a9d"
+                             },
+                             {
+                                 "name":  "libopenxr_loader.so",
+                                 "sha256":  "2afa03c81a2165bb58d554635bd1065a378e05add44535adbe9e02026d83f6ea"
+                             },
+                             {
+                                 "name":  "libopenxr_pico.so",
+                                 "sha256":  "1294c73259f471655b6e805e49f0d6fbc19940308f507be14c6dda685569efe7"
+                             },
+                             {
+                                 "name":  "libpxrplatformloader.so",
+                                 "sha256":  "67f092e8aad6d573e6362f35ccc98bd2eabf737526f35f325428c5741b8d033d"
+                             },
+                             {
+                                 "name":  "libunity.so",
+                                 "sha256":  "d212e480e0375bcf4b6d759e9b17f66c946026dc067a479b32567df418805dc0"
+                             }
+                         ],
+    "generated_at":  "2026-10-23T07:44:40Z"
+}

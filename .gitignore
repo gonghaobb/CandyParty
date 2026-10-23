@@ -1,56 +1,11 @@
-# Gradle caches and generated module outputs
+/local.properties
 /.gradle/
-/.kotlin/
+/.cxx/
 /build/
 /launcher/build/
+/launcher/.cxx/
 /unityLibrary/build/
-/unityLibrary/*/build/
-
-# Generated Unity native symbols
+/unityLibrary/.cxx/
 /unityLibrary/symbols/
-/unityLibrary/src/main/jniLibs/*/libil2cpp.so
-/unityLibrary/src/main/Il2CppOutputProject/Source/il2cppOutput/compile-data.json
-
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Logs, profiling and OS files
-*.log
-*.hprof
-*.lprof
-.DS_Store
-Thumbs.db
-Desktop.ini
-
-# Android generated files and packages
-captures/
-.externalNativeBuild/
-.cxx/
-*.apk
-*.aab
-*.apks
-output-metadata.json
-lint-results*.xml
-
-# IDEs
-*.iml
-.idea/
-.vscode/
-*.suo
-*.user
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
-
-# Keystore files
-*.jks
-*.keystore
-
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Temporary and backup files
-*.tmp
-*.bak
-*.swp
-*~
+/unityLibrary/src/main/Il2CppOutputProject/
+/*.apk
