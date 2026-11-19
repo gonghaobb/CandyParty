@@ -1,6 +1,71 @@
 apply plugin: 'com.android.library'
 apply from: '../shared/keepUnitySymbols.gradle'
 apply from: '../shared/common.gradle'
+import groovy.json.JsonSlurper
+import java.security.MessageDigest
+import org.gradle.api.DefaultTask
+import org.gradle.api.file.DirectoryProperty
+import org.gradle.api.file.RegularFileProperty
+import org.gradle.api.tasks.InputDirectory
+import org.gradle.api.tasks.InputFile
+import org.gradle.api.tasks.OutputDirectory
+import org.gradle.api.tasks.TaskAction
+
+abstract class ReassembleVibelabDataTask extends DefaultTask {
+    @InputFile
+    abstract RegularFileProperty getManifestFile()
+
+    @InputDirectory
+    abstract DirectoryProperty getPartsDirectory()
+
+    @OutputDirectory
+    abstract DirectoryProperty getOutputDirectory()
+
+    @TaskAction
+    void reassemble() {
+        def manifest = new JsonSlurper().parse(manifestFile.get().asFile)
+        def outputFile = outputDirectory.file('bin/Data/data.unity3d').get().asFile
+        outputFile.parentFile.mkdirs()
+
+        def digest = MessageDigest.getInstance('SHA-256')
+        long assembledSize = 0
+        outputFile.withOutputStream { output ->
+            manifest.parts.each { partName ->
+                def partFile = partsDirectory.file(partName as String).get().asFile
+                if (!partFile.isFile()) {
+                    throw new GradleException("Missing VibeLab data part: ${partFile}")
+                }
+                partFile.withInputStream { input ->
+                    byte[] buffer = new byte[1024 * 1024]
+                    int count
+                    while ((count = input.read(buffer)) != -1) {
+                        output.write(buffer, 0, count)
+                        digest.update(buffer, 0, count)
+                        assembledSize += count
+                    }
+                }
+            }
+        }
+
+        def assembledHash = digest.digest().encodeHex().toString()
+        if (assembledSize != (manifest.size as long) ||
+            !assembledHash.equalsIgnoreCase(manifest.sha256 as String)) {
+            outputFile.delete()
+            throw new GradleException(
+                "VibeLab data verification failed: size=${assembledSize}, sha256=${assembledHash}"
+            )
+        }
+    }
+}
+
+def reassembleVibelabData = tasks.register(
+    'reassembleVibelabData',
+    ReassembleVibelabDataTask
+) {
+    manifestFile = layout.projectDirectory.file('vibelab-data/data.unity3d.parts.json')
+    partsDirectory = layout.projectDirectory.dir('vibelab-data/data.unity3d.parts')
+    outputDirectory = layout.buildDirectory.dir('generated/vibelabAssets')
+}
 
 dependencies {
     implementation 'com.github.gzu-liyujiang:Android_CN_OAID:4.2.11' 
@@ -63,6 +128,7 @@ android {
             useLegacyPackaging true
         }
     }
+
 }
 
 
@@ -120,6 +186,10 @@ android {
 
 androidComponents {
     onVariants(selector().all()) { variant ->
+        variant.sources.assets?.addGeneratedSourceDirectory(
+            reassembleVibelabData,
+            { task -> task.outputDirectory }
+        )
         tasks.configureEach { task ->
             def mergeTaskName = "merge${variant.name.capitalize()}JniLibFolders";
             if (task.name == mergeTaskName) {
@@ -232,5 +302,5 @@ def execCommand(String workDir, List<String> command, Map<String, String> env = 
         println "$stdout\n$stderr"
     }
 }
-
+
 tasks.named('buildIl2Cpp').configure { enabled = false }

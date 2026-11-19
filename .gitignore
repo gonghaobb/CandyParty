@@ -5,7 +5,9 @@
 /launcher/build/
 /launcher/.cxx/
 /unityLibrary/build/
+/unityLibrary/*/build/
 /unityLibrary/.cxx/
 /unityLibrary/symbols/
 /unityLibrary/src/main/Il2CppOutputProject/
+/unityLibrary/src/main/assets/bin/Data/data.unity3d
 /*.apk

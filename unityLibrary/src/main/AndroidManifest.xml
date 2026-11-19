@@ -38,6 +38,7 @@
     <meta-data android:name="pvr.sdk.version" android:value="Unity OpenXR 1.4.1" />
     <meta-data android:name="pxr.sdk.version_code" android:value="5110" />
     <meta-data android:name="handtracking" android:value="1" />
+    <meta-data android:name="controller" android:value="1" />
     <meta-data android:name="Hand_Tracking_HighFrequency" android:value="1" />
     <meta-data android:name="picovr.software.eye_tracking" android:value="1" />
     <meta-data android:name="eyetracking_calibration" android:value="true" />
