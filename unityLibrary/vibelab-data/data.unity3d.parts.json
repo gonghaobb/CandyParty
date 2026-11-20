@@ -1,12 +1,12 @@
 {
-  "file": "data.unity3d",
-  "size": 198816748,
-  "sha256": "a0b3addf431bd4ae95450ddeb12cd9c7c343a09b6e7fd741594e218a5237ca0a",
-  "parts": [
-    "data.unity3d.part000",
-    "data.unity3d.part001",
-    "data.unity3d.part002",
-    "data.unity3d.part003",
-    "data.unity3d.part004"
-  ]
+    "file":  "data.unity3d",
+    "size":  198805728,
+    "sha256":  "751697be5d38216c96844d2f96a5f6521c43a8a63a4fc33298c6663b41893193",
+    "parts":  [
+                  "data.unity3d.part000",
+                  "data.unity3d.part001",
+                  "data.unity3d.part002",
+                  "data.unity3d.part003",
+                  "data.unity3d.part004"
+              ]
 }

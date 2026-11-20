@@ -1,8 +1,8 @@
 {
     "schema":  1,
     "processor_revision":  "il2cpp-prebuild-v6",
-    "il2cpp_so_sha256":  "f21a4eb66d6e01e8bc828fcf0d0614fd9dbbc7f34a0399f9bdaf385522dba208",
-    "global_metadata_sha256":  "a33437e9af9e46687671d7c4cf85bcd2f8d5380f8710a47f0fd28f81dee482f8",
+    "il2cpp_so_sha256":  "04d86a06dbf8869d0c6c639dddddd170650d6ad677445ac2beb73900c7761684",
+    "global_metadata_sha256":  "62088470fa3be733d5f409ffdc427cfc4dcf6989236d1bc7912159c8bc55b105",
     "unity_version":  "6000.6.3f1",
     "unity_template_version":  "26",
     "ndk_version":  "27.2.12479018",
@@ -12,20 +12,12 @@
     "target_sdk":  36,
     "native_inventory":  [
                              {
-                                 "name":  "libUnityOpenXR.so",
-                                 "sha256":  "d10e5d6ad2fd9ca6c686d23e7faa7512d88d6dfdf8e26502dcab617f3a377e51"
-                             },
-                             {
-                                 "name":  "libUnityOpenXRHands.so",
-                                 "sha256":  "98f66f7fb5eef8b5861ace1427ee290aac263070d520bc0d444dd1aa2979eb87"
-                             },
-                             {
                                  "name":  "lib_burst_generated.so",
                                  "sha256":  "5a0524f40e696dbcad533dc921bd4655f4e204f9e820412edad1d5e56b3bb811"
                              },
                              {
                                  "name":  "libil2cpp.so",
-                                 "sha256":  "f21a4eb66d6e01e8bc828fcf0d0614fd9dbbc7f34a0399f9bdaf385522dba208"
+                                 "sha256":  "04d86a06dbf8869d0c6c639dddddd170650d6ad677445ac2beb73900c7761684"
                              },
                              {
                                  "name":  "libmain.so",
@@ -46,7 +38,15 @@
                              {
                                  "name":  "libunity.so",
                                  "sha256":  "d212e480e0375bcf4b6d759e9b17f66c946026dc067a479b32567df418805dc0"
+                             },
+                             {
+                                 "name":  "libUnityOpenXR.so",
+                                 "sha256":  "d10e5d6ad2fd9ca6c686d23e7faa7512d88d6dfdf8e26502dcab617f3a377e51"
+                             },
+                             {
+                                 "name":  "libUnityOpenXRHands.so",
+                                 "sha256":  "98f66f7fb5eef8b5861ace1427ee290aac263070d520bc0d444dd1aa2979eb87"
                              }
                          ],
-    "generated_at":  "2026-11-19T05:07:52Z"
+    "generated_at":  "2026-11-20T03:45:01Z"
 }
