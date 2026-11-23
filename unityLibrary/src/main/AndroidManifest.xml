@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -26,7 +25,8 @@
       <intent-filter>
         <category android:name="android.intent.category.LAUNCHER" />
         <action android:name="android.intent.action.MAIN" />
-      <category android:name="com.picovr.intent.category.VR" /></intent-filter>
+        <category android:name="com.picovr.intent.category.VR" />
+      </intent-filter>
       <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
       <meta-data android:name="android.app.lib_name" android:value="game" />
       <meta-data android:name="WindowManagerPreference:FreeformWindowSize" android:value="@string/FreeformWindowSize_maximize" />
@@ -38,12 +38,11 @@
     <meta-data android:name="pvr.sdk.version" android:value="Unity OpenXR 1.4.1" />
     <meta-data android:name="pxr.sdk.version_code" android:value="5110" />
     <meta-data android:name="handtracking" android:value="1" />
-    <meta-data android:name="controller" android:value="1" />
     <meta-data android:name="Hand_Tracking_HighFrequency" android:value="1" />
     <meta-data android:name="picovr.software.eye_tracking" android:value="1" />
     <meta-data android:name="eyetracking_calibration" android:value="true" />
     <meta-data android:name="pvr.app.splash" android:value="0" />
-    <meta-data android:name="pvr.app.id" android:value="11" />
+    <meta-data android:name="pvr.app.id" android:value="d89f1071a954ea44755cf936a2750ed9" />
     <meta-data android:name="use_record_highlight_feature" android:value="True" />
   </application>
   <uses-permission android:name="com.picovr.permission.HAND_TRACKING" />
